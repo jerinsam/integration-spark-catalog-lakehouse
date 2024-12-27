@@ -1,0 +1,50 @@
+# Openjdk 17 image
+FROM debian:bullseye
+
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+      sudo \
+      curl \
+      vim \
+      unzip \
+      rsync \       
+      openjdk-17-jdk \
+      build-essential \
+      software-properties-common \
+      ssh \
+      git && \
+      # nodejs \
+      # npm && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+# Create working folder 
+RUN mkdir /usr/unitycatalog
+
+# Assign work directory
+WORKDIR /usr/unitycatalog
+
+# # Install Yarn - Commenting as Yarn is already installed
+# RUN npm install --global yarn
+
+# Configure Git to use HTTP/1.1
+RUN git config --global http.version HTTP/1.1
+
+#Clone UnityCatalog repository
+RUN git clone -q https://github.com/unitycatalog/unitycatalog.git
+
+# Add to Environment Variables 
+ENV PATH="/usr/unitycatalog/unitycatalog/bin:/usr/unitycatalog/unitycatalog/ui:${PATH}"
+ENV UNITYCATALOG_HOME="/usr/unitycatalog/unitycatalog"
+
+# Install yarn dependencies
+RUN npm install --global yarn
+
+# WORKDIR /usr/unitycatalog/unitycatalog/
+
+# # Run YARN for Unity Catalog UI
+# RUN yarn install && yarn start
+
+# Keep the container running
+CMD ["tail", "-f", "/dev/null"]
+ 

@@ -14,9 +14,9 @@ services:
       timeout: 3s
       retries: 3
     volumes:
-      - /mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/main/spark-working-folder/data:/opt/spark/data
-      - /mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/main/spark-working-folder/spark_apps:/opt/spark/apps
-      - spark-logs:/opt/spark/spark-events
+      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/main/spark-working-folder/data:/opt/spark/data"
+      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/main/spark-working-folder/spark_apps:/opt/spark/apps"
+      - "spark-logs:/opt/spark/spark-events"
     env_file:
       - .env.spark
 
@@ -48,9 +48,9 @@ services:
     env_file:
       - .env.spark
     volumes:
-      - /mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/main/spark-working-folder/data:/opt/spark/data
-      - /mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/main/spark-working-folder/spark_apps:/opt/spark/apps
-      - spark-logs:/opt/spark/spark-events
+      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/main/spark-working-folder/data:/opt/spark/data"
+      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/main/spark-working-folder/spark_apps:/opt/spark/apps"
+      - "spark-logs:/opt/spark/spark-events"
 
 volumes:
   spark-logs:
