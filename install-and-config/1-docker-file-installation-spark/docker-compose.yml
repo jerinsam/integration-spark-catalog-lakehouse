@@ -52,5 +52,21 @@ services:
       - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/main/spark-working-folder/spark_apps:/opt/spark/apps"
       - "spark-logs:/opt/spark/spark-events"
 
+  unity-catalog:
+    container_name: unity-catalog
+    build: 
+      context: .
+      dockerfile: Dockerfile.unitycatalog
+    image: unity-catalog-image
+    depends_on:
+      - spark-master
+    env_file:
+      - .env.spark 
+    volumes:
+       - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/main/spark-working-folder/unity-catalog:/usr/unitycatalog/unity-catalog-dev"
+    ports:
+      - '3030:8080'
+      - '3000:3000'
+
 volumes:
   spark-logs:

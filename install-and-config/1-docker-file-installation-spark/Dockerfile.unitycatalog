@@ -1,31 +1,27 @@
-# Openjdk 17 image
-FROM debian:bullseye
+# Unity Catalog Openjdk 17 image
+FROM node:22-alpine
 
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
-      sudo \
-      curl \
-      vim \
-      unzip \
-      rsync \       
-      openjdk-17-jdk \
-      build-essential \
-      software-properties-common \
-      ssh \
-      git && \
-      # nodejs \
-      # npm && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+RUN apk add --no-cache \
+    sudo \
+    curl \
+    vim \
+    unzip \
+    rsync \
+    openjdk17 \
+    build-base \
+    openssh \
+    git \
+    python3 \
+    py3-pip \
+    make \
+    g++ \
+    bash
 
 # Create working folder 
 RUN mkdir /usr/unitycatalog
 
 # Assign work directory
 WORKDIR /usr/unitycatalog
-
-# # Install Yarn - Commenting as Yarn is already installed
-# RUN npm install --global yarn
 
 # Configure Git to use HTTP/1.1
 RUN git config --global http.version HTTP/1.1
@@ -37,14 +33,14 @@ RUN git clone -q https://github.com/unitycatalog/unitycatalog.git
 ENV PATH="/usr/unitycatalog/unitycatalog/bin:/usr/unitycatalog/unitycatalog/ui:${PATH}"
 ENV UNITYCATALOG_HOME="/usr/unitycatalog/unitycatalog"
 
-# Install yarn dependencies
-RUN npm install --global yarn
+# Run YARN for Unity Catalog UI
+WORKDIR /usr/unitycatalog/unitycatalog
+ 
 
-# WORKDIR /usr/unitycatalog/unitycatalog/
+# Start Unity Catalog Server and UI
+COPY entrypoint-unitycatalog.sh .
+ENTRYPOINT ["./entrypoint-unitycatalog.sh"]
 
-# # Run YARN for Unity Catalog UI
-# RUN yarn install && yarn start
-
-# Keep the container running
-CMD ["tail", "-f", "/dev/null"]
+# # Install Yarn - Commenting as Yarn is already installed
+# RUN npm install --global yarn
  
