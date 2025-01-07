@@ -1,0 +1,740 @@
+ps: unrecognized option: p
+BusyBox v1.37.0 (2024-12-13 21:18:49 UTC) multi-call binary.
+
+Usage: ps [-o COL1,COL2=HEADER] [-T]
+
+Show list of processes
+
+	-o COL1,COL2=HEADER	Select columns for display
+	-T			Show threads
+ps: unrecognized option: p
+BusyBox v1.37.0 (2024-12-13 21:18:49 UTC) multi-call binary.
+
+Usage: ps [-o COL1,COL2=HEADER] [-T]
+
+Show list of processes
+
+	-o COL1,COL2=HEADER	Select columns for display
+	-T			Show threads
+[I 2025-01-07 10:10:38.415 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-01-07 10:10:38.422 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-01-07 10:10:38.432 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-01-07 10:10:38.440 ServerApp] Writing Jupyter server cookie secret to /root/.local/share/jupyter/runtime/jupyter_cookie_secret
+[I 2025-01-07 10:10:39.420 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-01-07 10:10:39.462 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-01-07 10:10:39.470 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-01-07 10:10:39.471 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-01-07 10:10:39.472 LabApp] JupyterLab extension loaded from /usr/local/lib/python3.11/site-packages/jupyterlab
+[I 2025-01-07 10:10:39.473 LabApp] JupyterLab application directory is /usr/local/share/jupyter/lab
+[I 2025-01-07 10:10:39.475 LabApp] Extension Manager is 'pypi'.
+[I 2025-01-07 10:10:39.596 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-01-07 10:10:39.597 ServerApp] Serving notebooks from local directory: /usr/unitycatalog/unity-catalog-dev
+[I 2025-01-07 10:10:39.603 ServerApp] Jupyter Server 2.15.0 is running at:
+[I 2025-01-07 10:10:39.604 ServerApp] http://70cacaa594d5:8888/lab?token=d691f64074558e792383c014c1d124d1d2dc52b484261d65
+[I 2025-01-07 10:10:39.604 ServerApp]     http://127.0.0.1:8888/lab?token=d691f64074558e792383c014c1d124d1d2dc52b484261d65
+[I 2025-01-07 10:10:39.605 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2025-01-07 10:10:39.610 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///root/.local/share/jupyter/runtime/jpserver-9-open.html
+    Or copy and paste one of these URLs:
+        http://70cacaa594d5:8888/lab?token=d691f64074558e792383c014c1d124d1d2dc52b484261d65
+        http://127.0.0.1:8888/lab?token=d691f64074558e792383c014c1d124d1d2dc52b484261d65
+[I 2025-01-07 10:10:40.119 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2025-01-07 10:17:07.231 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-01-07 10:17:07.365 ServerApp] 403 GET /api/kernels?1736244996332 (@172.19.0.1) 600.21ms referer=http://127.0.0.1:8888/lab/tree/spark-apps/3-unity-calatog-config.ipynb
+[I 2025-01-07 10:17:10.066 LabApp] Build is up to date
+[I 2025-01-07 10:22:33.851 LabApp] Build is up to date
+[I 2025-01-07 10:22:57.485 LabApp] Build is up to date
+[I 2025-01-07 10:23:07.157 ServerApp] Writing notebook-signing key to /root/.local/share/jupyter/notebook_secret
+[W 2025-01-07 10:23:07.168 ServerApp] Notebook spark-apps/3-unity-calatog-config.ipynb is not trusted
+[I 2025-01-07 10:23:07.762 ServerApp] Kernel started: 49ee43d2-de22-4574-a8d5-054f87ee0484
+ps: unrecognized option: p
+BusyBox v1.37.0 (2024-12-13 21:18:49 UTC) multi-call binary.
+
+Usage: ps [-o COL1,COL2=HEADER] [-T]
+
+Show list of processes
+
+	-o COL1,COL2=HEADER	Select columns for display
+	-T			Show threads
+:: loading settings :: url = jar:file:/opt/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /root/.ivy2/cache
+The jars for the packages stored in: /root/.ivy2/jars
+io.delta#delta-spark_2.12 added as a dependency
+io.unitycatalog#unitycatalog-spark_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-545bcfaf-f51f-442a-9fce-4f44c593a220;1.0
+	confs: [default]
+	found io.delta#delta-spark_2.12;3.2.1 in central
+	found io.delta#delta-storage;3.2.1 in central
+	found org.antlr#antlr4-runtime;4.9.3 in central
+	found io.unitycatalog#unitycatalog-spark_2.12;0.2.0 in central
+	found io.unitycatalog#unitycatalog-client;0.2.0 in central
+	found org.slf4j#slf4j-api;2.0.13 in central
+[W 2025-01-07 10:24:07.818 ServerApp] Timeout waiting for kernel_info reply from 49ee43d2-de22-4574-a8d5-054f87ee0484
+[I 2025-01-07 10:24:07.821 ServerApp] Connecting to kernel 49ee43d2-de22-4574-a8d5-054f87ee0484.
+[W 2025-01-07 10:24:12.340 ServerApp] Nudge: attempt 10 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+	found org.apache.logging.log4j#log4j-slf4j2-impl;2.23.1 in central
+	found org.apache.logging.log4j#log4j-api;2.23.1 in central
+[W 2025-01-07 10:24:17.356 ServerApp] Nudge: attempt 20 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+	found org.apache.logging.log4j#log4j-core;2.23.1 in central
+[W 2025-01-07 10:24:22.370 ServerApp] Nudge: attempt 30 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:24:27.385 ServerApp] Nudge: attempt 40 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+	found com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.17.0 in central
+[W 2025-01-07 10:24:32.405 ServerApp] Nudge: attempt 50 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+	found org.openapitools#jackson-databind-nullable;0.2.6 in central
+	found com.google.code.findbugs#jsr305;3.0.2 in central
+[W 2025-01-07 10:24:37.419 ServerApp] Nudge: attempt 60 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:24:42.433 ServerApp] Nudge: attempt 70 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+	found com.fasterxml.jackson.core#jackson-databind;2.15.0 in central
+	found com.fasterxml.jackson.core#jackson-annotations;2.15.0 in central
+	found com.fasterxml.jackson.core#jackson-core;2.15.0 in central
+	found com.fasterxml.jackson.module#jackson-module-scala_2.12;2.15.0 in central
+[W 2025-01-07 10:24:47.454 ServerApp] Nudge: attempt 80 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+	found com.thoughtworks.paranamer#paranamer;2.8 in central
+	found com.fasterxml.jackson.dataformat#jackson-dataformat-xml;2.15.0 in central
+[W 2025-01-07 10:24:52.469 ServerApp] Nudge: attempt 90 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+	found org.codehaus.woodstox#stax2-api;4.2.1 in central
+	found com.fasterxml.woodstox#woodstox-core;6.5.1 in central
+	found org.antlr#antlr4;4.9.3 in central
+[W 2025-01-07 10:24:57.487 ServerApp] Nudge: attempt 100 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+	found org.antlr#antlr-runtime;3.5.2 in central
+	found org.antlr#ST4;4.3.1 in central
+	found org.abego.treelayout#org.abego.treelayout.core;1.0.3 in central
+[W 2025-01-07 10:25:02.501 ServerApp] Nudge: attempt 110 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+	found org.glassfish#javax.json;1.0.4 in central
+	found com.ibm.icu#icu4j;69.1 in central
+[I 2025-01-07 10:25:07.499 ServerApp] Saving file at /spark-apps/3-unity-calatog-config.ipynb
+[W 2025-01-07 10:25:07.502 ServerApp] Notebook spark-apps/3-unity-calatog-config.ipynb is not trusted
+[W 2025-01-07 10:25:07.522 ServerApp] Nudge: attempt 120 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[E 2025-01-07 10:25:07.828 ServerApp] Uncaught exception GET /api/kernels/49ee43d2-de22-4574-a8d5-054f87ee0484/channels?session_id=c960c3db-02fe-4fbb-95ca-2bec02631f7d (172.19.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='GET', uri='/api/kernels/49ee43d2-de22-4574-a8d5-054f87ee0484/channels?session_id=c960c3db-02fe-4fbb-95ca-2bec02631f7d', version='HTTP/1.1', remote_ip='172.19.0.1')
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.11/site-packages/tornado/websocket.py", line 940, in _accept_connection
+        await open_result
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/services/kernels/websocket.py", line 75, in open
+        await self.connection.connect()
+    TimeoutError: Timeout
+[W 2025-01-07 10:25:07.838 ServerApp] Timeout waiting for kernel_info reply from 49ee43d2-de22-4574-a8d5-054f87ee0484
+[I 2025-01-07 10:25:07.839 ServerApp] Connecting to kernel 49ee43d2-de22-4574-a8d5-054f87ee0484.
+	found org.apache.hadoop#hadoop-client-runtime;3.4.0 in central
+[W 2025-01-07 10:25:12.354 ServerApp] Nudge: attempt 10 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+	found org.apache.hadoop#hadoop-client-api;3.4.0 in central
+	found org.xerial.snappy#snappy-java;1.1.10.4 in central
+[W 2025-01-07 10:25:17.367 ServerApp] Nudge: attempt 20 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+	found commons-logging#commons-logging;1.2 in central
+downloading https://repo1.maven.org/maven2/io/delta/delta-spark_2.12/3.2.1/delta-spark_2.12-3.2.1.jar ...
+[W 2025-01-07 10:25:22.382 ServerApp] Nudge: attempt 30 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:25:27.400 ServerApp] Nudge: attempt 40 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:25:32.543 ServerApp] Nudge: attempt 50 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+	[SUCCESSFUL ] io.delta#delta-spark_2.12;3.2.1!delta-spark_2.12.jar (19087ms)
+downloading https://repo1.maven.org/maven2/io/unitycatalog/unitycatalog-spark_2.12/0.2.0/unitycatalog-spark_2.12-0.2.0.jar ...
+[W 2025-01-07 10:25:37.559 ServerApp] Nudge: attempt 60 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+	[SUCCESSFUL ] io.unitycatalog#unitycatalog-spark_2.12;0.2.0!unitycatalog-spark_2.12.jar (673ms)
+downloading https://repo1.maven.org/maven2/io/delta/delta-storage/3.2.1/delta-storage-3.2.1.jar ...
+	[SUCCESSFUL ] io.delta#delta-storage;3.2.1!delta-storage.jar (648ms)
+downloading https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.9.3/antlr4-runtime-4.9.3.jar ...
+	[SUCCESSFUL ] org.antlr#antlr4-runtime;4.9.3!antlr4-runtime.jar (1389ms)
+downloading https://repo1.maven.org/maven2/io/unitycatalog/unitycatalog-client/0.2.0/unitycatalog-client-0.2.0.jar ...
+	[SUCCESSFUL ] io.unitycatalog#unitycatalog-client;0.2.0!unitycatalog-client.jar (1686ms)
+downloading https://repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.13/slf4j-api-2.0.13.jar ...
+	[SUCCESSFUL ] org.slf4j#slf4j-api;2.0.13!slf4j-api.jar (696ms)
+[W 2025-01-07 10:25:42.575 ServerApp] Nudge: attempt 70 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+downloading https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-slf4j2-impl/2.23.1/log4j-slf4j2-impl-2.23.1.jar ...
+	[SUCCESSFUL ] org.apache.logging.log4j#log4j-slf4j2-impl;2.23.1!log4j-slf4j2-impl.jar (636ms)
+downloading https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.23.1/log4j-api-2.23.1.jar ...
+	[SUCCESSFUL ] org.apache.logging.log4j#log4j-api;2.23.1!log4j-api.jar (1219ms)
+downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.15.0/jackson-databind-2.15.0.jar ...
+[W 2025-01-07 10:25:47.590 ServerApp] Nudge: attempt 80 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+	[SUCCESSFUL ] com.fasterxml.jackson.core#jackson-databind;2.15.0!jackson-databind.jar (3891ms)
+downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_2.12/2.15.0/jackson-module-scala_2.12-2.15.0.jar ...
+	[SUCCESSFUL ] com.fasterxml.jackson.module#jackson-module-scala_2.12;2.15.0!jackson-module-scala_2.12.jar(bundle) (1926ms)
+downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.15.0/jackson-annotations-2.15.0.jar ...
+	[SUCCESSFUL ] com.fasterxml.jackson.core#jackson-annotations;2.15.0!jackson-annotations.jar (1301ms)
+downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.15.0/jackson-core-2.15.0.jar ...
+[W 2025-01-07 10:25:52.604 ServerApp] Nudge: attempt 90 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+	[SUCCESSFUL ] com.fasterxml.jackson.core#jackson-core;2.15.0!jackson-core.jar (2136ms)
+downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.15.0/jackson-dataformat-xml-2.15.0.jar ...
+	[SUCCESSFUL ] com.fasterxml.jackson.dataformat#jackson-dataformat-xml;2.15.0!jackson-dataformat-xml.jar (954ms)
+downloading https://repo1.maven.org/maven2/org/antlr/antlr4/4.9.3/antlr4-4.9.3.jar ...
+[W 2025-01-07 10:25:57.619 ServerApp] Nudge: attempt 100 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:26:02.632 ServerApp] Nudge: attempt 110 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+	[SUCCESSFUL ] org.antlr#antlr4;4.9.3!antlr4.jar (9502ms)
+downloading https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-client-runtime/3.4.0/hadoop-client-runtime-3.4.0.jar ...
+[W 2025-01-07 10:26:07.645 ServerApp] Nudge: attempt 120 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[E 2025-01-07 10:26:07.842 ServerApp] Uncaught exception GET /api/kernels/49ee43d2-de22-4574-a8d5-054f87ee0484/channels?session_id=fd00d529-342f-4a25-81f8-5bd62263e062 (172.19.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='GET', uri='/api/kernels/49ee43d2-de22-4574-a8d5-054f87ee0484/channels?session_id=fd00d529-342f-4a25-81f8-5bd62263e062', version='HTTP/1.1', remote_ip='172.19.0.1')
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.11/site-packages/tornado/websocket.py", line 940, in _accept_connection
+        await open_result
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/services/kernels/websocket.py", line 75, in open
+        await self.connection.connect()
+    TimeoutError: Timeout
+[W 2025-01-07 10:26:07.859 ServerApp] Timeout waiting for kernel_info reply from 49ee43d2-de22-4574-a8d5-054f87ee0484
+[I 2025-01-07 10:26:07.860 ServerApp] Connecting to kernel 49ee43d2-de22-4574-a8d5-054f87ee0484.
+[W 2025-01-07 10:26:07.885 ServerApp] Replacing stale connection: 49ee43d2-de22-4574-a8d5-054f87ee0484:c960c3db-02fe-4fbb-95ca-2bec02631f7d
+[W 2025-01-07 10:26:12.377 ServerApp] Nudge: attempt 10 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:26:17.391 ServerApp] Nudge: attempt 20 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:26:22.404 ServerApp] Nudge: attempt 30 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:26:27.418 ServerApp] Nudge: attempt 40 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:26:32.433 ServerApp] Nudge: attempt 50 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:26:37.447 ServerApp] Nudge: attempt 60 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:26:42.461 ServerApp] Nudge: attempt 70 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:26:47.476 ServerApp] Nudge: attempt 80 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:26:52.490 ServerApp] Nudge: attempt 90 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:26:57.506 ServerApp] Nudge: attempt 100 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:27:02.521 ServerApp] Nudge: attempt 110 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:27:07.536 ServerApp] Nudge: attempt 120 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[E 2025-01-07 10:27:07.864 ServerApp] Uncaught exception GET /api/kernels/49ee43d2-de22-4574-a8d5-054f87ee0484/channels?session_id=736d054b-3354-4eeb-bac8-53e226ea8d13 (172.19.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='GET', uri='/api/kernels/49ee43d2-de22-4574-a8d5-054f87ee0484/channels?session_id=736d054b-3354-4eeb-bac8-53e226ea8d13', version='HTTP/1.1', remote_ip='172.19.0.1')
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.11/site-packages/tornado/websocket.py", line 940, in _accept_connection
+        await open_result
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/services/kernels/websocket.py", line 75, in open
+        await self.connection.connect()
+    TimeoutError: Timeout
+[W 2025-01-07 10:27:07.887 ServerApp] Timeout waiting for kernel_info reply from 49ee43d2-de22-4574-a8d5-054f87ee0484
+[I 2025-01-07 10:27:07.888 ServerApp] Connecting to kernel 49ee43d2-de22-4574-a8d5-054f87ee0484.
+[W 2025-01-07 10:27:07.915 ServerApp] Replacing stale connection: 49ee43d2-de22-4574-a8d5-054f87ee0484:fd00d529-342f-4a25-81f8-5bd62263e062
+[W 2025-01-07 10:27:12.406 ServerApp] Nudge: attempt 10 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:27:17.421 ServerApp] Nudge: attempt 20 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:27:22.435 ServerApp] Nudge: attempt 30 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:27:27.449 ServerApp] Nudge: attempt 40 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:27:32.465 ServerApp] Nudge: attempt 50 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:27:37.480 ServerApp] Nudge: attempt 60 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:27:42.496 ServerApp] Nudge: attempt 70 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:27:47.510 ServerApp] Nudge: attempt 80 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:27:52.524 ServerApp] Nudge: attempt 90 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:27:57.540 ServerApp] Nudge: attempt 100 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:28:02.558 ServerApp] Nudge: attempt 110 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:28:07.573 ServerApp] Nudge: attempt 120 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[E 2025-01-07 10:28:07.892 ServerApp] Uncaught exception GET /api/kernels/49ee43d2-de22-4574-a8d5-054f87ee0484/channels?session_id=c960c3db-02fe-4fbb-95ca-2bec02631f7d (172.19.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='GET', uri='/api/kernels/49ee43d2-de22-4574-a8d5-054f87ee0484/channels?session_id=c960c3db-02fe-4fbb-95ca-2bec02631f7d', version='HTTP/1.1', remote_ip='172.19.0.1')
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.11/site-packages/tornado/websocket.py", line 940, in _accept_connection
+        await open_result
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/services/kernels/websocket.py", line 75, in open
+        await self.connection.connect()
+    TimeoutError: Timeout
+[W 2025-01-07 10:28:07.916 ServerApp] Timeout waiting for kernel_info reply from 49ee43d2-de22-4574-a8d5-054f87ee0484
+[I 2025-01-07 10:28:07.917 ServerApp] Connecting to kernel 49ee43d2-de22-4574-a8d5-054f87ee0484.
+[W 2025-01-07 10:28:07.934 ServerApp] Replacing stale connection: 49ee43d2-de22-4574-a8d5-054f87ee0484:736d054b-3354-4eeb-bac8-53e226ea8d13
+	[SUCCESSFUL ] org.apache.hadoop#hadoop-client-runtime;3.4.0!hadoop-client-runtime.jar (125073ms)
+downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.17.0/jackson-datatype-jsr310-2.17.0.jar ...
+	[SUCCESSFUL ] com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.17.0!jackson-datatype-jsr310.jar(bundle) (1153ms)
+downloading https://repo1.maven.org/maven2/org/openapitools/jackson-databind-nullable/0.2.6/jackson-databind-nullable-0.2.6.jar ...
+	[SUCCESSFUL ] org.openapitools#jackson-databind-nullable;0.2.6!jackson-databind-nullable.jar (665ms)
+downloading https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar ...
+	[SUCCESSFUL ] com.google.code.findbugs#jsr305;3.0.2!jsr305.jar (667ms)
+downloading https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.23.1/log4j-core-2.23.1.jar ...
+[W 2025-01-07 10:28:12.435 ServerApp] Nudge: attempt 10 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:28:17.448 ServerApp] Nudge: attempt 20 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+	[SUCCESSFUL ] org.apache.logging.log4j#log4j-core;2.23.1!log4j-core.jar (8087ms)
+downloading https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar ...
+	[SUCCESSFUL ] com.thoughtworks.paranamer#paranamer;2.8!paranamer.jar(bundle) (691ms)
+downloading https://repo1.maven.org/maven2/org/codehaus/woodstox/stax2-api/4.2.1/stax2-api-4.2.1.jar ...
+	[SUCCESSFUL ] org.codehaus.woodstox#stax2-api;4.2.1!stax2-api.jar(bundle) (1628ms)
+[W 2025-01-07 10:28:22.462 ServerApp] Nudge: attempt 30 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+downloading https://repo1.maven.org/maven2/com/fasterxml/woodstox/woodstox-core/6.5.1/woodstox-core-6.5.1.jar ...
+[W 2025-01-07 10:28:27.478 ServerApp] Nudge: attempt 40 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+	[SUCCESSFUL ] com.fasterxml.woodstox#woodstox-core;6.5.1!woodstox-core.jar(bundle) (6350ms)
+downloading https://repo1.maven.org/maven2/org/antlr/antlr-runtime/3.5.2/antlr-runtime-3.5.2.jar ...
+	[SUCCESSFUL ] org.antlr#antlr-runtime;3.5.2!antlr-runtime.jar (1766ms)
+downloading https://repo1.maven.org/maven2/org/antlr/ST4/4.3.1/ST4-4.3.1.jar ...
+	[SUCCESSFUL ] org.antlr#ST4;4.3.1!ST4.jar (1565ms)
+downloading https://repo1.maven.org/maven2/org/abego/treelayout/org.abego.treelayout.core/1.0.3/org.abego.treelayout.core-1.0.3.jar ...
+	[SUCCESSFUL ] org.abego.treelayout#org.abego.treelayout.core;1.0.3!org.abego.treelayout.core.jar(bundle) (695ms)
+[W 2025-01-07 10:28:32.494 ServerApp] Nudge: attempt 50 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+downloading https://repo1.maven.org/maven2/org/glassfish/javax.json/1.0.4/javax.json-1.0.4.jar ...
+	[SUCCESSFUL ] org.glassfish#javax.json;1.0.4!javax.json.jar(bundle) (845ms)
+downloading https://repo1.maven.org/maven2/com/ibm/icu/icu4j/69.1/icu4j-69.1.jar ...
+[W 2025-01-07 10:28:37.509 ServerApp] Nudge: attempt 60 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:28:42.523 ServerApp] Nudge: attempt 70 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:28:47.537 ServerApp] Nudge: attempt 80 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:28:52.551 ServerApp] Nudge: attempt 90 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+	[SUCCESSFUL ] com.ibm.icu#icu4j;69.1!icu4j.jar (23147ms)
+downloading https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-client-api/3.4.0/hadoop-client-api-3.4.0.jar ...
+[W 2025-01-07 10:28:57.569 ServerApp] Nudge: attempt 100 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:29:02.583 ServerApp] Nudge: attempt 110 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:29:07.597 ServerApp] Nudge: attempt 120 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[E 2025-01-07 10:29:07.921 ServerApp] Uncaught exception GET /api/kernels/49ee43d2-de22-4574-a8d5-054f87ee0484/channels?session_id=fd00d529-342f-4a25-81f8-5bd62263e062 (172.19.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8888', method='GET', uri='/api/kernels/49ee43d2-de22-4574-a8d5-054f87ee0484/channels?session_id=fd00d529-342f-4a25-81f8-5bd62263e062', version='HTTP/1.1', remote_ip='172.19.0.1')
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.11/site-packages/tornado/websocket.py", line 940, in _accept_connection
+        await open_result
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/services/kernels/websocket.py", line 75, in open
+        await self.connection.connect()
+    TimeoutError: Timeout
+[W 2025-01-07 10:29:07.936 ServerApp] Timeout waiting for kernel_info reply from 49ee43d2-de22-4574-a8d5-054f87ee0484
+[I 2025-01-07 10:29:07.937 ServerApp] Connecting to kernel 49ee43d2-de22-4574-a8d5-054f87ee0484.
+[W 2025-01-07 10:29:07.960 ServerApp] Replacing stale connection: 49ee43d2-de22-4574-a8d5-054f87ee0484:c960c3db-02fe-4fbb-95ca-2bec02631f7d
+[W 2025-01-07 10:29:12.452 ServerApp] Nudge: attempt 10 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:29:17.467 ServerApp] Nudge: attempt 20 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:29:22.482 ServerApp] Nudge: attempt 30 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+[W 2025-01-07 10:29:27.496 ServerApp] Nudge: attempt 40 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+	[SUCCESSFUL ] org.apache.hadoop#hadoop-client-api;3.4.0!hadoop-client-api.jar (31469ms)
+downloading https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.10.4/snappy-java-1.1.10.4.jar ...
+	[SUCCESSFUL ] org.xerial.snappy#snappy-java;1.1.10.4!snappy-java.jar(bundle) (3020ms)
+downloading https://repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2.jar ...
+	[SUCCESSFUL ] commons-logging#commons-logging;1.2!commons-logging.jar (930ms)
+:: resolution report :: resolve 125270ms :: artifacts dl 253526ms
+	:: modules in use:
+	com.fasterxml.jackson.core#jackson-annotations;2.15.0 from central in [default]
+	com.fasterxml.jackson.core#jackson-core;2.15.0 from central in [default]
+	com.fasterxml.jackson.core#jackson-databind;2.15.0 from central in [default]
+	com.fasterxml.jackson.dataformat#jackson-dataformat-xml;2.15.0 from central in [default]
+	com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.17.0 from central in [default]
+	com.fasterxml.jackson.module#jackson-module-scala_2.12;2.15.0 from central in [default]
+	com.fasterxml.woodstox#woodstox-core;6.5.1 from central in [default]
+	com.google.code.findbugs#jsr305;3.0.2 from central in [default]
+	com.ibm.icu#icu4j;69.1 from central in [default]
+	com.thoughtworks.paranamer#paranamer;2.8 from central in [default]
+	commons-logging#commons-logging;1.2 from central in [default]
+	io.delta#delta-spark_2.12;3.2.1 from central in [default]
+	io.delta#delta-storage;3.2.1 from central in [default]
+	io.unitycatalog#unitycatalog-client;0.2.0 from central in [default]
+	io.unitycatalog#unitycatalog-spark_2.12;0.2.0 from central in [default]
+	org.abego.treelayout#org.abego.treelayout.core;1.0.3 from central in [default]
+	org.antlr#ST4;4.3.1 from central in [default]
+	org.antlr#antlr-runtime;3.5.2 from central in [default]
+	org.antlr#antlr4;4.9.3 from central in [default]
+	org.antlr#antlr4-runtime;4.9.3 from central in [default]
+	org.apache.hadoop#hadoop-client-api;3.4.0 from central in [default]
+	org.apache.hadoop#hadoop-client-runtime;3.4.0 from central in [default]
+	org.apache.logging.log4j#log4j-api;2.23.1 from central in [default]
+	org.apache.logging.log4j#log4j-core;2.23.1 from central in [default]
+	org.apache.logging.log4j#log4j-slf4j2-impl;2.23.1 from central in [default]
+	org.codehaus.woodstox#stax2-api;4.2.1 from central in [default]
+	org.glassfish#javax.json;1.0.4 from central in [default]
+	org.openapitools#jackson-databind-nullable;0.2.6 from central in [default]
+	org.slf4j#slf4j-api;2.0.13 from central in [default]
+	org.xerial.snappy#snappy-java;1.1.10.4 from central in [default]
+	:: evicted modules:
+	org.slf4j#slf4j-api;2.0.9 by [org.slf4j#slf4j-api;2.0.13] in [default]
+	com.fasterxml.jackson.core#jackson-annotations;2.17.0 by [com.fasterxml.jackson.core#jackson-annotations;2.15.0] in [default]
+	com.fasterxml.jackson.core#jackson-core;2.17.0 by [com.fasterxml.jackson.core#jackson-core;2.15.0] in [default]
+	com.fasterxml.jackson.core#jackson-databind;2.17.0 by [com.fasterxml.jackson.core#jackson-databind;2.15.0] in [default]
+	com.fasterxml.jackson.core#jackson-databind;2.14.0-rc2 by [com.fasterxml.jackson.core#jackson-databind;2.15.0] in [default]
+	org.slf4j#slf4j-api;1.7.36 by [org.slf4j#slf4j-api;2.0.13] in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   36  |   30  |   30  |   6   ||   30  |   30  |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-545bcfaf-f51f-442a-9fce-4f44c593a220
+	confs: [default]
+	30 artifacts copied, 0 already retrieved (81345kB/228ms)
+25/01/07 10:29:32 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[W 2025-01-07 10:29:32.512 ServerApp] Nudge: attempt 50 on kernel 49ee43d2-de22-4574-a8d5-054f87ee0484
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+Exception in callback _chain_future.<locals>._set_state(<Future finished result={}>, <Future at 0x...returned dict>) at /usr/local/lib/python3.11/asyncio/futures.py:381
+handle: <Handle _chain_future.<locals>._set_state(<Future finished result={}>, <Future at 0x...returned dict>) at /usr/local/lib/python3.11/asyncio/futures.py:381>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/asyncio/events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "/usr/local/lib/python3.11/asyncio/futures.py", line 383, in _set_state
+    _copy_future_state(other, future)
+  File "/usr/local/lib/python3.11/asyncio/futures.py", line 353, in _copy_future_state
+    assert not dest.done()
+           ^^^^^^^^^^^^^^^
+AssertionError
+Exception in callback _chain_future.<locals>._set_state(<Future finished result={}>, <Future at 0x...returned dict>) at /usr/local/lib/python3.11/asyncio/futures.py:381
+handle: <Handle _chain_future.<locals>._set_state(<Future finished result={}>, <Future at 0x...returned dict>) at /usr/local/lib/python3.11/asyncio/futures.py:381>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/asyncio/events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "/usr/local/lib/python3.11/asyncio/futures.py", line 383, in _set_state
+    _copy_future_state(other, future)
+  File "/usr/local/lib/python3.11/asyncio/futures.py", line 353, in _copy_future_state
+    assert not dest.done()
+           ^^^^^^^^^^^^^^^
+AssertionError
+Exception in callback _chain_future.<locals>._set_state(<Future finished result={}>, <Future at 0x...returned dict>) at /usr/local/lib/python3.11/asyncio/futures.py:381
+handle: <Handle _chain_future.<locals>._set_state(<Future finished result={}>, <Future at 0x...returned dict>) at /usr/local/lib/python3.11/asyncio/futures.py:381>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/asyncio/events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "/usr/local/lib/python3.11/asyncio/futures.py", line 383, in _set_state
+    _copy_future_state(other, future)
+  File "/usr/local/lib/python3.11/asyncio/futures.py", line 353, in _copy_future_state
+    assert not dest.done()
+           ^^^^^^^^^^^^^^^
+AssertionError
+Exception in callback _chain_future.<locals>._set_state(<Future finished result={}>, <Future at 0x...returned dict>) at /usr/local/lib/python3.11/asyncio/futures.py:381
+handle: <Handle _chain_future.<locals>._set_state(<Future finished result={}>, <Future at 0x...returned dict>) at /usr/local/lib/python3.11/asyncio/futures.py:381>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/asyncio/events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "/usr/local/lib/python3.11/asyncio/futures.py", line 383, in _set_state
+    _copy_future_state(other, future)
+  File "/usr/local/lib/python3.11/asyncio/futures.py", line 353, in _copy_future_state
+    assert not dest.done()
+           ^^^^^^^^^^^^^^^
+AssertionError
+Exception in callback _chain_future.<locals>._set_state(<Future finished result={}>, <Future at 0x...returned dict>) at /usr/local/lib/python3.11/asyncio/futures.py:381
+handle: <Handle _chain_future.<locals>._set_state(<Future finished result={}>, <Future at 0x...returned dict>) at /usr/local/lib/python3.11/asyncio/futures.py:381>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/asyncio/events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "/usr/local/lib/python3.11/asyncio/futures.py", line 383, in _set_state
+    _copy_future_state(other, future)
+  File "/usr/local/lib/python3.11/asyncio/futures.py", line 353, in _copy_future_state
+    assert not dest.done()
+           ^^^^^^^^^^^^^^^
+AssertionError
+Exception in callback _chain_future.<locals>._set_state(<Future finished result={}>, <Future at 0x...returned dict>) at /usr/local/lib/python3.11/asyncio/futures.py:381
+handle: <Handle _chain_future.<locals>._set_state(<Future finished result={}>, <Future at 0x...returned dict>) at /usr/local/lib/python3.11/asyncio/futures.py:381>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/asyncio/events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "/usr/local/lib/python3.11/asyncio/futures.py", line 383, in _set_state
+    _copy_future_state(other, future)
+  File "/usr/local/lib/python3.11/asyncio/futures.py", line 353, in _copy_future_state
+    assert not dest.done()
+           ^^^^^^^^^^^^^^^
+AssertionError
+[I 2025-01-07 10:29:36.297 ServerApp] Connecting to kernel 49ee43d2-de22-4574-a8d5-054f87ee0484.
+[W 2025-01-07 10:29:36.378 ServerApp] Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x7fdf79f1a650>
+[W 2025-01-07 10:29:37.172 ServerApp] Got events for closed stream <zmq.eventloop.zmqstream.ZMQStream object at 0x7fdf79b7bb90>
+[W 2025-01-07 10:30:07.444 ServerApp] Replacing stale connection: 49ee43d2-de22-4574-a8d5-054f87ee0484:fd00d529-342f-4a25-81f8-5bd62263e062
+[I 2025-01-07 10:30:07.445 ServerApp] Connecting to kernel 49ee43d2-de22-4574-a8d5-054f87ee0484.
+[Stage 0:>                                                          (0 + 1) / 1]                                                                                [I 2025-01-07 10:43:00.229 ServerApp] Saving file at /spark-apps/3-unity-calatog-config.ipynb
+[W 2025-01-07 10:43:00.235 ServerApp] Notebook spark-apps/3-unity-calatog-config.ipynb is not trusted
+25/01/07 10:43:02 WARN HiveConf: HiveConf of name hive.stats.jdbc.timeout does not exist
+25/01/07 10:43:02 WARN HiveConf: HiveConf of name hive.stats.retries.wait does not exist
+25/01/07 10:43:06 WARN ObjectStore: Version information not found in metastore. hive.metastore.schema.verification is not enabled so recording the schema version 2.3.0
+25/01/07 10:43:06 WARN ObjectStore: setMetaStoreSchemaVersion called but recording version is disabled: version = 2.3.0, comment = Set by MetaStore UNKNOWN@172.19.0.3
+25/01/07 10:43:06 WARN ObjectStore: Failed to get database default, returning NoSuchObjectException
+[Stage 3:>                                                          (0 + 1) / 1]                                                                                [I 2025-01-07 10:43:16.665 ServerApp] Saving file at /spark-apps/3-unity-calatog-config.ipynb
+[W 2025-01-07 10:43:16.667 ServerApp] Notebook spark-apps/3-unity-calatog-config.ipynb is not trusted
+[W 2025-01-07 10:43:38.019 ServerApp] delete /spark-apps/3-unity-calatog-config-local-spark.ipynb
+25/01/07 10:44:14 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+[Stage 4:>                                                          (0 + 1) / 1][Stage 6:>                                                         (0 + 2) / 50][Stage 6:==>                                                       (2 + 2) / 50][Stage 6:===>                                                      (3 + 2) / 50][Stage 6:====>                                                     (4 + 2) / 50][Stage 6:======>                                                   (6 + 2) / 50][Stage 6:========>                                                 (7 + 2) / 50][Stage 6:=========>                                                (8 + 2) / 50][Stage 6:===========>                                             (10 + 2) / 50][Stage 6:=============>                                           (12 + 2) / 50][Stage 6:===============>                                         (14 + 2) / 50][Stage 6:==================>                                      (16 + 2) / 50][Stage 6:====================>                                    (18 + 2) / 50][Stage 6:======================>                                  (20 + 2) / 50][Stage 6:=========================>                               (22 + 2) / 50][Stage 6:==========================>                              (23 + 2) / 50][Stage 6:=============================>                           (26 + 2) / 50][Stage 6:=================================>                       (29 + 2) / 50][Stage 6:===================================>                     (31 + 2) / 50][Stage 6:======================================>                  (34 + 2) / 50][Stage 6:==========================================>              (37 + 2) / 50][Stage 6:===========================================>             (38 + 2) / 50][Stage 6:=============================================>           (40 + 2) / 50][Stage 6:=================================================>       (43 + 2) / 50][Stage 6:=====================================================>   (47 + 2) / 50]                                                                                [Stage 8:>                                                         (0 + 2) / 50][Stage 8:==>                                                       (2 + 2) / 50][Stage 8:=========>                                                (8 + 2) / 50][Stage 8:===============>                                         (14 + 2) / 50][Stage 8:======================>                                  (20 + 2) / 50][Stage 8:===============================>                         (28 + 2) / 50][Stage 8:=========================================>               (36 + 2) / 50][Stage 8:===============================================>         (42 + 2) / 50][Stage 8:=======================================================> (49 + 1) / 50]                                                                                25/01/07 10:44:47 WARN TaskSetManager: Lost task 1.0 in stage 12.0 (TID 107) (172.19.0.4 executor 0): org.apache.spark.SparkFileNotFoundException: File file:/usr/unitycatalog/unitycatalog/etc/data/managed/unity/default/tables/marksheet/_delta_log/00000000000000000001.json does not exist
+It is possible the underlying files have been updated. You can explicitly invalidate the cache in Spark by running 'REFRESH TABLE tableName' command in SQL or by recreating the Dataset/DataFrame involved.
+	at org.apache.spark.sql.errors.QueryExecutionErrors$.readCurrentFileNotFoundError(QueryExecutionErrors.scala:781)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.org$apache$spark$sql$execution$datasources$FileScanRDD$$anon$$readCurrentFile(FileScanRDD.scala:222)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.nextIterator(FileScanRDD.scala:282)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:131)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:388)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:893)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:893)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+25/01/07 10:44:47 WARN TaskSetManager: Lost task 0.0 in stage 12.0 (TID 106) (172.19.0.4 executor 0): org.apache.spark.SparkFileNotFoundException: File file:/usr/unitycatalog/unitycatalog/etc/data/managed/unity/default/tables/marksheet/_delta_log/00000000000000000000.json does not exist
+It is possible the underlying files have been updated. You can explicitly invalidate the cache in Spark by running 'REFRESH TABLE tableName' command in SQL or by recreating the Dataset/DataFrame involved.
+	at org.apache.spark.sql.errors.QueryExecutionErrors$.readCurrentFileNotFoundError(QueryExecutionErrors.scala:781)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.org$apache$spark$sql$execution$datasources$FileScanRDD$$anon$$readCurrentFile(FileScanRDD.scala:222)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.nextIterator(FileScanRDD.scala:282)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:131)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:388)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:893)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:893)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+[Stage 12:>                                                         (0 + 2) / 2]25/01/07 10:44:47 ERROR TaskSetManager: Task 1 in stage 12.0 failed 4 times; aborting job
+25/01/07 10:44:47 WARN TaskSetManager: Lost task 0.3 in stage 12.0 (TID 113) (172.19.0.4 executor 0): TaskKilled (Stage cancelled: Job aborted due to stage failure: Task 1 in stage 12.0 failed 4 times, most recent failure: Lost task 1.3 in stage 12.0 (TID 112) (172.19.0.4 executor 0): org.apache.spark.SparkFileNotFoundException: File file:/usr/unitycatalog/unitycatalog/etc/data/managed/unity/default/tables/marksheet/_delta_log/00000000000000000001.json does not exist
+It is possible the underlying files have been updated. You can explicitly invalidate the cache in Spark by running 'REFRESH TABLE tableName' command in SQL or by recreating the Dataset/DataFrame involved.
+	at org.apache.spark.sql.errors.QueryExecutionErrors$.readCurrentFileNotFoundError(QueryExecutionErrors.scala:781)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.org$apache$spark$sql$execution$datasources$FileScanRDD$$anon$$readCurrentFile(FileScanRDD.scala:222)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.nextIterator(FileScanRDD.scala:282)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:131)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:388)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:893)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:893)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Driver stacktrace:)
+[W 2025-01-07 10:45:07.643 ServerApp] Notebook spark-apps/2-delta-lake-config.ipynb is not trusted
+[I 2025-01-07 10:45:08.007 ServerApp] Kernel started: 4ec04785-f0fd-4673-af46-ad2917ffc795
+ps: unrecognized option: p
+BusyBox v1.37.0 (2024-12-13 21:18:49 UTC) multi-call binary.
+
+Usage: ps [-o COL1,COL2=HEADER] [-T]
+
+Show list of processes
+
+	-o COL1,COL2=HEADER	Select columns for display
+	-T			Show threads
+:: loading settings :: url = jar:file:/opt/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /root/.ivy2/cache
+The jars for the packages stored in: /root/.ivy2/jars
+io.delta#delta-spark_2.12 added as a dependency
+io.unitycatalog#unitycatalog-spark_2.12 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-42cd9e4b-98ae-4f68-af2d-a8c14732f47b;1.0
+	confs: [default]
+	found io.delta#delta-spark_2.12;3.2.1 in central
+	found io.delta#delta-storage;3.2.1 in central
+	found org.antlr#antlr4-runtime;4.9.3 in central
+	found io.unitycatalog#unitycatalog-spark_2.12;0.2.0 in central
+	found io.unitycatalog#unitycatalog-client;0.2.0 in central
+	found org.slf4j#slf4j-api;2.0.13 in central
+	found org.apache.logging.log4j#log4j-slf4j2-impl;2.23.1 in central
+	found org.apache.logging.log4j#log4j-api;2.23.1 in central
+	found org.apache.logging.log4j#log4j-core;2.23.1 in central
+	found com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.17.0 in central
+	found org.openapitools#jackson-databind-nullable;0.2.6 in central
+	found com.google.code.findbugs#jsr305;3.0.2 in central
+	found com.fasterxml.jackson.core#jackson-databind;2.15.0 in central
+	found com.fasterxml.jackson.core#jackson-annotations;2.15.0 in central
+	found com.fasterxml.jackson.core#jackson-core;2.15.0 in central
+	found com.fasterxml.jackson.module#jackson-module-scala_2.12;2.15.0 in central
+	found com.thoughtworks.paranamer#paranamer;2.8 in central
+	found com.fasterxml.jackson.dataformat#jackson-dataformat-xml;2.15.0 in central
+	found org.codehaus.woodstox#stax2-api;4.2.1 in central
+	found com.fasterxml.woodstox#woodstox-core;6.5.1 in central
+	found org.antlr#antlr4;4.9.3 in central
+	found org.antlr#antlr-runtime;3.5.2 in central
+	found org.antlr#ST4;4.3.1 in central
+	found org.abego.treelayout#org.abego.treelayout.core;1.0.3 in central
+	found org.glassfish#javax.json;1.0.4 in central
+	found com.ibm.icu#icu4j;69.1 in central
+	found org.apache.hadoop#hadoop-client-runtime;3.4.0 in central
+	found org.apache.hadoop#hadoop-client-api;3.4.0 in central
+	found org.xerial.snappy#snappy-java;1.1.10.4 in central
+	found commons-logging#commons-logging;1.2 in central
+:: resolution report :: resolve 1179ms :: artifacts dl 35ms
+	:: modules in use:
+	com.fasterxml.jackson.core#jackson-annotations;2.15.0 from central in [default]
+	com.fasterxml.jackson.core#jackson-core;2.15.0 from central in [default]
+	com.fasterxml.jackson.core#jackson-databind;2.15.0 from central in [default]
+	com.fasterxml.jackson.dataformat#jackson-dataformat-xml;2.15.0 from central in [default]
+	com.fasterxml.jackson.datatype#jackson-datatype-jsr310;2.17.0 from central in [default]
+	com.fasterxml.jackson.module#jackson-module-scala_2.12;2.15.0 from central in [default]
+	com.fasterxml.woodstox#woodstox-core;6.5.1 from central in [default]
+	com.google.code.findbugs#jsr305;3.0.2 from central in [default]
+	com.ibm.icu#icu4j;69.1 from central in [default]
+	com.thoughtworks.paranamer#paranamer;2.8 from central in [default]
+	commons-logging#commons-logging;1.2 from central in [default]
+	io.delta#delta-spark_2.12;3.2.1 from central in [default]
+	io.delta#delta-storage;3.2.1 from central in [default]
+	io.unitycatalog#unitycatalog-client;0.2.0 from central in [default]
+	io.unitycatalog#unitycatalog-spark_2.12;0.2.0 from central in [default]
+	org.abego.treelayout#org.abego.treelayout.core;1.0.3 from central in [default]
+	org.antlr#ST4;4.3.1 from central in [default]
+	org.antlr#antlr-runtime;3.5.2 from central in [default]
+	org.antlr#antlr4;4.9.3 from central in [default]
+	org.antlr#antlr4-runtime;4.9.3 from central in [default]
+	org.apache.hadoop#hadoop-client-api;3.4.0 from central in [default]
+	org.apache.hadoop#hadoop-client-runtime;3.4.0 from central in [default]
+	org.apache.logging.log4j#log4j-api;2.23.1 from central in [default]
+	org.apache.logging.log4j#log4j-core;2.23.1 from central in [default]
+	org.apache.logging.log4j#log4j-slf4j2-impl;2.23.1 from central in [default]
+	org.codehaus.woodstox#stax2-api;4.2.1 from central in [default]
+	org.glassfish#javax.json;1.0.4 from central in [default]
+	org.openapitools#jackson-databind-nullable;0.2.6 from central in [default]
+	org.slf4j#slf4j-api;2.0.13 from central in [default]
+	org.xerial.snappy#snappy-java;1.1.10.4 from central in [default]
+	:: evicted modules:
+	org.slf4j#slf4j-api;2.0.9 by [org.slf4j#slf4j-api;2.0.13] in [default]
+	com.fasterxml.jackson.core#jackson-annotations;2.17.0 by [com.fasterxml.jackson.core#jackson-annotations;2.15.0] in [default]
+	com.fasterxml.jackson.core#jackson-core;2.17.0 by [com.fasterxml.jackson.core#jackson-core;2.15.0] in [default]
+	com.fasterxml.jackson.core#jackson-databind;2.17.0 by [com.fasterxml.jackson.core#jackson-databind;2.15.0] in [default]
+	com.fasterxml.jackson.core#jackson-databind;2.14.0-rc2 by [com.fasterxml.jackson.core#jackson-databind;2.15.0] in [default]
+	org.slf4j#slf4j-api;1.7.36 by [org.slf4j#slf4j-api;2.0.13] in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   36  |   0   |   0   |   6   ||   30  |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-42cd9e4b-98ae-4f68-af2d-a8c14732f47b
+	confs: [default]
+	0 artifacts copied, 30 already retrieved (0kB/11ms)
+25/01/07 10:45:12 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+25/01/07 10:45:14 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[I 2025-01-07 10:45:16.699 ServerApp] Connecting to kernel 4ec04785-f0fd-4673-af46-ad2917ffc795.
+[I 2025-01-07 10:45:17.499 ServerApp] Saving file at /spark-apps/3-unity-calatog-config.ipynb
+[W 2025-01-07 10:45:17.548 ServerApp] Notebook spark-apps/3-unity-calatog-config.ipynb is not trusted
+[I 2025-01-07 10:54:12.882 ServerApp] Starting buffering for 4ec04785-f0fd-4673-af46-ad2917ffc795:ba93694b-0883-4247-a3ec-657bea59e6df
+25/01/07 10:58:04 WARN TaskSetManager: Lost task 0.0 in stage 13.0 (TID 114) (172.19.0.4 executor 0): org.apache.spark.SparkFileNotFoundException: File file:/usr/unitycatalog/unitycatalog/etc/data/managed/unity/default/tables/marksheet/_delta_log/00000000000000000000.json does not exist
+It is possible the underlying files have been updated. You can explicitly invalidate the cache in Spark by running 'REFRESH TABLE tableName' command in SQL or by recreating the Dataset/DataFrame involved.
+	at org.apache.spark.sql.errors.QueryExecutionErrors$.readCurrentFileNotFoundError(QueryExecutionErrors.scala:781)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.org$apache$spark$sql$execution$datasources$FileScanRDD$$anon$$readCurrentFile(FileScanRDD.scala:222)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.nextIterator(FileScanRDD.scala:282)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:131)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:388)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:893)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:893)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+25/01/07 10:58:04 WARN TaskSetManager: Lost task 1.0 in stage 13.0 (TID 115) (172.19.0.4 executor 0): org.apache.spark.SparkFileNotFoundException: File file:/usr/unitycatalog/unitycatalog/etc/data/managed/unity/default/tables/marksheet/_delta_log/00000000000000000001.json does not exist
+It is possible the underlying files have been updated. You can explicitly invalidate the cache in Spark by running 'REFRESH TABLE tableName' command in SQL or by recreating the Dataset/DataFrame involved.
+	at org.apache.spark.sql.errors.QueryExecutionErrors$.readCurrentFileNotFoundError(QueryExecutionErrors.scala:781)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.org$apache$spark$sql$execution$datasources$FileScanRDD$$anon$$readCurrentFile(FileScanRDD.scala:222)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.nextIterator(FileScanRDD.scala:282)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:131)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:388)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:893)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:893)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+25/01/07 10:58:04 ERROR TaskSetManager: Task 0 in stage 13.0 failed 4 times; aborting job
+25/01/07 10:58:51 WARN TaskSetManager: Lost task 0.0 in stage 14.0 (TID 122) (172.19.0.4 executor 0): org.apache.spark.SparkFileNotFoundException: File file:/usr/unitycatalog/unitycatalog/etc/data/managed/unity/default/tables/marksheet/_delta_log/00000000000000000000.json does not exist
+It is possible the underlying files have been updated. You can explicitly invalidate the cache in Spark by running 'REFRESH TABLE tableName' command in SQL or by recreating the Dataset/DataFrame involved.
+	at org.apache.spark.sql.errors.QueryExecutionErrors$.readCurrentFileNotFoundError(QueryExecutionErrors.scala:781)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.org$apache$spark$sql$execution$datasources$FileScanRDD$$anon$$readCurrentFile(FileScanRDD.scala:222)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.nextIterator(FileScanRDD.scala:282)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:131)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:388)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:893)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:893)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+25/01/07 10:58:51 WARN TaskSetManager: Lost task 1.0 in stage 14.0 (TID 123) (172.19.0.4 executor 0): org.apache.spark.SparkFileNotFoundException: File file:/usr/unitycatalog/unitycatalog/etc/data/managed/unity/default/tables/marksheet/_delta_log/00000000000000000001.json does not exist
+It is possible the underlying files have been updated. You can explicitly invalidate the cache in Spark by running 'REFRESH TABLE tableName' command in SQL or by recreating the Dataset/DataFrame involved.
+	at org.apache.spark.sql.errors.QueryExecutionErrors$.readCurrentFileNotFoundError(QueryExecutionErrors.scala:781)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.org$apache$spark$sql$execution$datasources$FileScanRDD$$anon$$readCurrentFile(FileScanRDD.scala:222)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.nextIterator(FileScanRDD.scala:282)
+	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:131)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+	at org.apache.spark.sql.execution.SparkPlan.$anonfun$getByteArrayRdd$1(SparkPlan.scala:388)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2(RDD.scala:893)
+	at org.apache.spark.rdd.RDD.$anonfun$mapPartitionsInternal$2$adapted(RDD.scala:893)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+25/01/07 10:58:51 ERROR TaskSetManager: Task 1 in stage 14.0 failed 4 times; aborting job
+[Stage 15:>                                                         (0 + 1) / 1]                                                                                [I 2025-01-07 10:59:36.637 ServerApp] Saving file at /spark-apps/3-unity-calatog-config.ipynb
+[W 2025-01-07 10:59:36.640 ServerApp] Notebook spark-apps/3-unity-calatog-config.ipynb is not trusted
+[Stage 19:===>                                                     (3 + 2) / 50][Stage 19:======>                                                  (6 + 2) / 50][Stage 19:=======>                                                 (7 + 2) / 50][Stage 19:==========>                                              (9 + 2) / 50][Stage 19:============>                                           (11 + 2) / 50][Stage 19:===============>                                        (14 + 2) / 50][Stage 19:====================>                                   (18 + 2) / 50][Stage 19:========================>                               (22 + 2) / 50][Stage 19:============================>                           (25 + 2) / 50][Stage 19:===============================>                        (28 + 2) / 50][Stage 19:===================================>                    (32 + 2) / 50][Stage 19:=======================================>                (35 + 2) / 50][Stage 19:==========================================>             (38 + 2) / 50][Stage 19:================================================>       (43 + 2) / 50][Stage 19:===================================================>    (46 + 2) / 50]                                                                                [Stage 21:============>                                           (11 + 2) / 50][Stage 21:=====================>                                  (19 + 2) / 50][Stage 21:=========================>                              (23 + 2) / 50][Stage 21:===================================>                    (32 + 2) / 50][Stage 21:========================================>               (36 + 2) / 50][Stage 21:===============================================>        (42 + 2) / 50]                                                                                [I 2025-01-07 11:00:17.316 ServerApp] Saving file at /spark-apps/3-unity-calatog-config.ipynb
+[W 2025-01-07 11:00:17.318 ServerApp] Notebook spark-apps/3-unity-calatog-config.ipynb is not trusted
+[Stage 32:=========>                                               (8 + 2) / 50][Stage 32:=============>                                          (12 + 2) / 50][Stage 32:===================>                                    (17 + 2) / 50][Stage 32:=======================>                                (21 + 2) / 50][Stage 32:=========================>                              (23 + 2) / 50][Stage 32:==============================>                         (27 + 2) / 50][Stage 32:=================================>                      (30 + 2) / 50][Stage 32:=======================================>                (35 + 2) / 50][I 2025-01-07 11:01:36.215 ServerApp] Saving file at /spark-apps/3-unity-calatog-config.ipynb
+[W 2025-01-07 11:01:36.217 ServerApp] Notebook spark-apps/3-unity-calatog-config.ipynb is not trusted
+[Stage 32:=========================================>              (37 + 2) / 50][Stage 32:============================================>           (40 + 2) / 50][Stage 32:================================================>       (43 + 2) / 50][Stage 32:=================================================>      (44 + 2) / 50][Stage 32:=====================================================>  (48 + 2) / 50]                                                                                [Stage 34:===================>                                    (17 + 2) / 50][Stage 34:==========================>                             (24 + 2) / 50][Stage 34:=================================>                      (30 + 2) / 50][Stage 34:========================================>               (36 + 2) / 50][Stage 34:==================================================>     (45 + 2) / 50]                                                                                [I 2025-01-07 11:02:17.027 ServerApp] Saving file at /spark-apps/3-unity-calatog-config.ipynb
+[W 2025-01-07 11:02:17.028 ServerApp] Notebook spark-apps/3-unity-calatog-config.ipynb is not trusted
+[W 2025-01-07 11:02:38.708 ServerApp] Notebook spark-apps/2-delta-lake-config.ipynb is not trusted
+[I 2025-01-07 11:02:38.949 ServerApp] Connecting to kernel 4ec04785-f0fd-4673-af46-ad2917ffc795.
+[W 2025-01-07 11:02:40.637 ServerApp] Notebook spark-apps/3-unity-calatog-config.ipynb is not trusted
+[I 2025-01-07 11:02:40.777 ServerApp] Connecting to kernel 49ee43d2-de22-4574-a8d5-054f87ee0484.
+[I 2025-01-07 11:04:37.001 ServerApp] Starting buffering for 4ec04785-f0fd-4673-af46-ad2917ffc795:855c5794-3417-4dcc-970c-2820afc9bdfd

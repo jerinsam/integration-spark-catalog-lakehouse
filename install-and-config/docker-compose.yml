@@ -14,8 +14,8 @@ services:
       timeout: 3s
       retries: 3
     volumes:
-      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/data:/opt/spark/data"
-      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/spark_apps:/opt/spark/apps"
+      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/data:/usr/unitycatalog/unity-catalog-dev/data"
+      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/spark_apps:/usr/unitycatalog/unity-catalog-dev/spark-apps"
       - "spark-logs:/opt/spark/spark-events"
     env_file:
       - .env.spark
@@ -49,9 +49,12 @@ services:
     env_file:
       - .env.spark
     volumes:
-      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/data:/opt/spark/data"
-      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/spark_apps:/opt/spark/apps"
+      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/data:/usr/unitycatalog/unity-catalog-dev/data"
+      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/spark_apps:/usr/unitycatalog/unity-catalog-dev/spark-apps"
       - "spark-logs:/opt/spark/spark-events"
+      # - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/data:/opt/spark/data"
+      # - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/spark_apps:/opt/spark/apps"
+      
 
   # pyspark-jupyter:
   #   container_name: container-pyspark-jupyter
@@ -83,11 +86,12 @@ services:
       - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/data:/usr/unitycatalog/unity-catalog-dev/data"
       - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/spark_apps:/usr/unitycatalog/unity-catalog-dev/spark-apps"
       - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/uc-logs:/usr/unitycatalog/unity-catalog-dev/uc-logs" 
+      - "spark-logs:/opt/spark/spark-events"
     ports:
-      - '3030:8080'
-      - '3000:3000'
-      - '9999:8888' # Used for Jupyter Lab
-      - '9998:8889' # Used for Jupyter Lab
+      - '3030:8080' # Used for Unity Catalog API
+      - '3000:3000' # Used for Unity Catalog Web UI
+      - '8888:8888' # Used for Jupyter Lab
+      - '8889:8889' # Used for Jupyter Lab
 
 volumes:
   spark-logs:
