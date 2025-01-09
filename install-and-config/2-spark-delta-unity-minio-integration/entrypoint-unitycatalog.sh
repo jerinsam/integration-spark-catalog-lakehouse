@@ -2,10 +2,10 @@
 set -e  # Exit immediately if a command exits with a non-zero status
 
 # Start Unity Catalog UI
-cd /usr/unitycatalog/unitycatalog/ui && yarn install && yarn start > /usr/unitycatalog/unity-catalog-dev/uc-logs/ui.log 2>&1 &
+cd /usr/unitycatalog/unitycatalog/ui && yarn install && yarn start > /usr/unitycatalog/unity-catalog-dev/logs/ui.log 2>&1 &
 
 # Start Unity Catalog Server
-cd /usr/unitycatalog/unitycatalog && ./bin/start-uc-server > /usr/unitycatalog/unity-catalog-dev/uc-logs/uc-server.log 2>&1 &
+cd /usr/unitycatalog/unitycatalog && ./bin/start-uc-server > /usr/unitycatalog/unity-catalog-dev/logs/uc-server.log 2>&1 &
 
 # Start Pyspark with delta lake, minio and unity catalog and Jupyter Lab as Pyspark environment
 pyspark --name "jupyter-unity-catalog-minio-pyspark-session" \
@@ -21,7 +21,7 @@ pyspark --name "jupyter-unity-catalog-minio-pyspark-session" \
     --conf "spark.hadoop.fs.s3a.access.key=root" \
     --conf "spark.hadoop.fs.s3a.secret.key=jerinminioserver" \
     --conf "spark.hadoop.fs.s3a.path.style.access=true" \
-    --conf "spark.hadoop.fs.s3a.impl=org.apache.hadoop.fs.s3a.S3AFileSystem" > /usr/unitycatalog/unity-catalog-dev/uc-logs/pyspark.log 2>&1 &
+    --conf "spark.hadoop.fs.s3a.impl=org.apache.hadoop.fs.s3a.S3AFileSystem" > /usr/unitycatalog/unity-catalog-dev/logs/pyspark.log 2>&1 &
 
 # Keep the script running
 wait

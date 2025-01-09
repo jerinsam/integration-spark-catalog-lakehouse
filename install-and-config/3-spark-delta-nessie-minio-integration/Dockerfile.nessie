@@ -1,0 +1,14 @@
+# Nessie Catalog
+FROM quay.io/projectnessie/nessie:0.101.3
+ 
+# Set root access
+USER root
+
+# Create working folder 
+RUN mkdir /usr/nessie
+RUN mkdir /usr/nessie/nessie-dev
+
+# Run YARN for Unity Catalog UI
+WORKDIR /usr/nessie/nessie-dev
+
+CMD [ "tail","-f","/dev/null" ]

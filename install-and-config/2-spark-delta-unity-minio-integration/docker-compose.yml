@@ -64,7 +64,7 @@ services:
     volumes:
       # - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/data:/usr/unitycatalog/unity-catalog-dev/data"
       - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/spark_apps:/usr/unitycatalog/unity-catalog-dev/spark-apps"
-      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/uc-logs:/usr/unitycatalog/unity-catalog-dev/uc-logs" 
+      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/logs:/usr/unitycatalog/unity-catalog-dev/logs" 
       - "spark-logs:/opt/spark/spark-events"
     ports:
       - '3030:8080' # Used for Unity Catalog API
@@ -84,7 +84,7 @@ services:
     volumes:
       - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/data:/usr/unitycatalog/unity-catalog-dev/data"
       - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/spark_apps:/usr/unitycatalog/unity-catalog-dev/spark-apps"
-      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/uc-logs:/usr/unitycatalog/unity-catalog-dev/uc-logs" 
+      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/logs:/usr/unitycatalog/unity-catalog-dev/logs" 
 
 volumes:
   spark-logs:
