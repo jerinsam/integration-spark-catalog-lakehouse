@@ -3,7 +3,7 @@ set -e  # Exit immediately if a command exits with a non-zero status
 
 
 # Start Jupyter Lab
-jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root > /usr/nessie/nessie-dev/logs/pyspark.log 2>&1 &
+jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root > /usr/nessie/nessie-dev/logs/jupyter.log 2>&1 &
 
 # # Start Pyspark with delta lake, iceberg, minio and unity catalog and Jupyter Lab as Pyspark environment
 # pyspark --name "jupyter-unity-catalog-minio-pyspark-session" \

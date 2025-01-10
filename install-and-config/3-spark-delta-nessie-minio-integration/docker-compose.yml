@@ -67,10 +67,7 @@ services:
 
   nessie:
     container_name: container-nessie
-    build: 
-      context: .
-      dockerfile: Dockerfile.nessie
-    image: nessie-image
+    image: quay.io/projectnessie/nessie:0.101.3
     depends_on:
       - spark-master 
     volumes:

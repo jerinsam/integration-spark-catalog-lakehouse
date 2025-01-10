@@ -11,4 +11,10 @@ RUN mkdir /usr/nessie/nessie-dev
 # Run YARN for Unity Catalog UI
 WORKDIR /usr/nessie/nessie-dev
 
-CMD [ "tail","-f","/dev/null" ]
+
+# Start Nessie Server
+COPY entrypoint-nessie.sh .
+
+ENTRYPOINT ["./entrypoint-nessie.sh"]
+
+# CMD [ "tail","-f","/dev/null" ]
