@@ -1,0 +1,1982 @@
+[I 2025-01-14 08:04:37.579 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-01-14 08:04:37.586 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-01-14 08:04:37.595 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-01-14 08:04:37.600 ServerApp] Writing Jupyter server cookie secret to /root/.local/share/jupyter/runtime/jupyter_cookie_secret
+[I 2025-01-14 08:04:39.110 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-01-14 08:04:39.171 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-01-14 08:04:39.175 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-01-14 08:04:39.176 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-01-14 08:04:39.186 LabApp] JupyterLab extension loaded from /usr/local/lib/python3.11/site-packages/jupyterlab
+[I 2025-01-14 08:04:39.186 LabApp] JupyterLab application directory is /usr/local/share/jupyter/lab
+[I 2025-01-14 08:04:39.188 LabApp] Extension Manager is 'pypi'.
+[I 2025-01-14 08:04:39.425 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-01-14 08:04:39.433 ServerApp] Serving notebooks from local directory: /usr/spark/delta-lake
+[I 2025-01-14 08:04:39.435 ServerApp] Jupyter Server 2.15.0 is running at:
+[I 2025-01-14 08:04:39.437 ServerApp] http://b051b103842b:8888/lab?token=33e43206559854453041ccef2d2443e92229fe79373c7f6c
+[I 2025-01-14 08:04:39.438 ServerApp]     http://127.0.0.1:8888/lab?token=33e43206559854453041ccef2d2443e92229fe79373c7f6c
+[I 2025-01-14 08:04:39.439 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2025-01-14 08:04:39.480 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///root/.local/share/jupyter/runtime/jpserver-8-open.html
+    Or copy and paste one of these URLs:
+        http://b051b103842b:8888/lab?token=33e43206559854453041ccef2d2443e92229fe79373c7f6c
+        http://127.0.0.1:8888/lab?token=33e43206559854453041ccef2d2443e92229fe79373c7f6c
+[I 2025-01-14 08:04:39.520 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2025-01-14 08:04:47.890 ServerApp] Clearing invalid/expired login cookie username-127-0-0-1-8888
+[W 2025-01-14 08:04:47.891 ServerApp] Couldn't authenticate WebSocket connection
+[W 2025-01-14 08:04:47.940 ServerApp] 403 GET /api/events/subscribe (@172.20.0.1) 50.28ms referer=None
+[W 2025-01-14 08:04:47.947 ServerApp] Clearing invalid/expired login cookie username-127-0-0-1-8888
+[W 2025-01-14 08:04:47.948 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-01-14 08:04:47.952 ServerApp] 403 GET /api/contents/spark-apps?content=1&hash=0&1736841887916 (@172.20.0.1) 10.09ms referer=http://127.0.0.1:8888/lab/tree/spark-apps/4-iceberg-and-minio-config.ipynb
+[W 2025-01-14 08:04:47.953 ServerApp] Clearing invalid/expired login cookie username-127-0-0-1-8888
+[W 2025-01-14 08:04:47.953 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-01-14 08:04:47.955 ServerApp] 403 GET /api/sessions?1736841887917 (@172.20.0.1) 11.71ms referer=http://127.0.0.1:8888/lab/tree/spark-apps/4-iceberg-and-minio-config.ipynb
+[W 2025-01-14 08:04:47.956 ServerApp] Clearing invalid/expired login cookie username-127-0-0-1-8888
+[W 2025-01-14 08:04:47.957 TerminalsExtensionApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-01-14 08:04:47.958 TerminalsExtensionApp] 403 GET /api/terminals?1736841887920 (@172.20.0.1) 14.47ms referer=http://127.0.0.1:8888/lab/tree/spark-apps/4-iceberg-and-minio-config.ipynb
+[W 2025-01-14 08:04:47.959 ServerApp] Clearing invalid/expired login cookie username-127-0-0-1-8888
+[W 2025-01-14 08:04:47.960 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-01-14 08:04:47.963 ServerApp] 403 GET /api/kernels?1736841887921 (@172.20.0.1) 18.11ms referer=http://127.0.0.1:8888/lab/tree/spark-apps/4-iceberg-and-minio-config.ipynb
+[W 2025-01-14 08:04:47.967 ServerApp] Clearing invalid/expired login cookie username-127-0-0-1-8888
+[W 2025-01-14 08:04:47.968 LabApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-01-14 08:04:47.969 LabApp] 403 GET /lab/api/workspaces?1736841887921 (@172.20.0.1) 23.56ms referer=http://127.0.0.1:8888/lab/tree/spark-apps/4-iceberg-and-minio-config.ipynb
+[W 2025-01-14 08:04:50.034 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-01-14 08:04:50.035 ServerApp] 403 GET /api/kernels/7662bac3-0221-4132-bd70-a114b4b60931?1736841890030 (@172.20.0.1) 1.29ms referer=http://127.0.0.1:8888/lab/tree/spark-apps/4-iceberg-and-minio-config.ipynb
+[W 2025-01-14 08:04:50.093 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-01-14 08:04:50.094 ServerApp] 403 GET /api/kernels?1736841890080 (@172.20.0.1) 1.88ms referer=http://127.0.0.1:8888/lab/tree/spark-apps/4-iceberg-and-minio-config.ipynb
+[W 2025-01-14 08:04:50.262 ServerApp] Couldn't authenticate WebSocket connection
+[W 2025-01-14 08:04:50.264 ServerApp] 403 GET /api/events/subscribe (@172.20.0.1) 2.41ms referer=None
+[W 2025-01-14 08:04:53.984 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-01-14 08:04:59.321 ServerApp] Writing notebook-signing key to /root/.local/share/jupyter/notebook_secret
+[W 2025-01-14 08:04:59.326 ServerApp] Notebook spark-apps/4-iceberg-and-minio-config.ipynb is not trusted
+[I 2025-01-14 08:04:59.654 ServerApp] Kernel started: 9d3dbab7-b6b3-473b-ad6e-d690c9683915
+[I 2025-01-14 08:05:01.839 ServerApp] Connecting to kernel 9d3dbab7-b6b3-473b-ad6e-d690c9683915.
+[I 2025-01-14 08:05:01.866 ServerApp] Connecting to kernel 9d3dbab7-b6b3-473b-ad6e-d690c9683915.
+[I 2025-01-14 08:05:01.901 ServerApp] Connecting to kernel 9d3dbab7-b6b3-473b-ad6e-d690c9683915.
+Warning: Ignoring non-Spark config property: hive.metastore.schema.verification
+Warning: Ignoring non-Spark config property: hive.metastore.schema.verification.record.version
+:: loading settings :: url = jar:file:/opt/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /root/.ivy2/cache
+The jars for the packages stored in: /root/.ivy2/jars
+org.apache.iceberg#iceberg-spark-runtime-3.5_2.12 added as a dependency
+org.apache.hive#hive-exec added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-5c6943e7-45c8-4013-83e8-b13f689897c6;1.0
+	confs: [default]
+	found org.apache.iceberg#iceberg-spark-runtime-3.5_2.12;1.7.1 in central
+	found org.apache.hive#hive-exec;3.1.3 in central
+	found org.apache.hive#hive-vector-code-gen;3.1.3 in central
+	found commons-lang#commons-lang;2.6 in central
+	found com.google.guava#guava;19.0 in central
+	found org.apache.ant#ant;1.9.1 in central
+	found org.apache.ant#ant-launcher;1.9.1 in central
+	found org.slf4j#slf4j-api;1.7.10 in central
+	found org.apache.hive#hive-upgrade-acid;3.1.3 in central
+	found org.apache.hive#hive-llap-tez;3.1.3 in central
+	found org.apache.hive#hive-common;3.1.3 in central
+	found org.apache.hive#hive-classification;3.1.3 in central
+	found org.apache.hive#hive-shims;3.1.3 in central
+	found org.apache.hive.shims#hive-shims-common;3.1.3 in central
+	found org.apache.logging.log4j#log4j-slf4j-impl;2.17.1 in central
+	found org.apache.logging.log4j#log4j-core;2.17.1 in central
+	found org.apache.thrift#libthrift;0.9.3 in central
+	found org.apache.httpcomponents#httpclient;4.5.13 in central
+	found org.apache.httpcomponents#httpcore;4.4.13 in central
+	found commons-logging#commons-logging;1.2 in central
+	found commons-codec#commons-codec;1.15 in central
+	found org.apache.curator#curator-framework;2.12.0 in central
+	found org.apache.curator#curator-client;2.12.0 in central
+	found org.apache.zookeeper#zookeeper;3.4.6 in central
+	found org.slf4j#slf4j-log4j12;1.7.6 in central
+	found log4j#log4j;1.2.16 in central
+	found jline#jline;2.12 in central
+	found io.netty#netty;3.7.0.Final in central
+	found org.apache.hive.shims#hive-shims-0.23;3.1.3 in central
+	found org.apache.hadoop#hadoop-yarn-server-resourcemanager;3.1.0 in central
+	found javax.servlet#javax.servlet-api;3.1.0 in central
+	found org.apache.hadoop#hadoop-annotations;3.1.0 in central
+	found com.google.inject.extensions#guice-servlet;4.0 in central
+	found com.google.inject#guice;4.0 in central
+	found javax.inject#javax.inject;1 in central
+	found aopalliance#aopalliance;1.0 in central
+	found com.google.protobuf#protobuf-java;2.5.0 in central
+	found commons-io#commons-io;2.6 in central
+	found com.sun.jersey#jersey-json;1.19 in central
+	found org.codehaus.jettison#jettison;1.1 in central
+	found com.sun.xml.bind#jaxb-impl;2.2.3-1 in central
+	found javax.xml.bind#jaxb-api;2.2.11 in central
+	found org.codehaus.jackson#jackson-core-asl;1.9.13 in central
+	found org.codehaus.jackson#jackson-mapper-asl;1.9.13 in central
+	found org.codehaus.jackson#jackson-jaxrs;1.9.13 in central
+	found org.codehaus.jackson#jackson-xc;1.9.13 in central
+	found com.sun.jersey#jersey-core;1.19 in central
+	found javax.ws.rs#jsr311-api;1.1.1 in central
+	found com.sun.jersey.contribs#jersey-guice;1.19 in central
+	found com.sun.jersey#jersey-servlet;1.19 in central
+	found com.sun.jersey#jersey-server;1.19 in central
+	found org.apache.hadoop#hadoop-yarn-common;3.1.0 in central
+	found org.apache.hadoop#hadoop-yarn-api;3.1.0 in central
+	found com.fasterxml.jackson.core#jackson-annotations;2.12.0 in central
+	found org.apache.hadoop#hadoop-auth;3.1.0 in central
+	found com.nimbusds#nimbus-jose-jwt;4.41.1 in central
+	found com.github.stephenc.jcip#jcip-annotations;1.0-1 in central
+	found net.minidev#json-smart;2.3 in central
+	found net.minidev#accessors-smart;1.2 in central
+	found org.ow2.asm#asm;5.0.4 in central
+	found org.apache.kerby#kerb-simplekdc;1.0.1 in central
+	found org.apache.kerby#kerb-client;1.0.1 in central
+[I 2025-01-14 08:06:59.439 ServerApp] Saving file at /spark-apps/4-iceberg-and-minio-config.ipynb
+	found org.apache.kerby#kerby-config;1.0.1 in central
+	found org.apache.kerby#kerb-core;1.0.1 in central
+	found org.apache.kerby#kerby-pkix;1.0.1 in central
+	found org.apache.kerby#kerby-asn1;1.0.1 in central
+	found org.apache.kerby#kerby-util;1.0.1 in central
+	found org.apache.kerby#kerb-common;1.0.1 in central
+	found org.apache.kerby#kerb-crypto;1.0.1 in central
+	found org.apache.kerby#kerb-util;1.0.1 in central
+	found org.apache.kerby#token-provider;1.0.1 in central
+	found org.apache.kerby#kerb-admin;1.0.1 in central
+	found org.apache.kerby#kerb-server;1.0.1 in central
+	found org.apache.kerby#kerb-identity;1.0.1 in central
+	found org.apache.kerby#kerby-xdr;1.0.1 in central
+	found org.apache.commons#commons-compress;1.19 in central
+	found org.eclipse.jetty#jetty-util;9.3.19.v20170502 in central
+	found com.sun.jersey#jersey-client;1.19 in central
+	found commons-cli#commons-cli;1.2 in central
+	found com.fasterxml.jackson.core#jackson-core;2.12.0 in central
+	found com.fasterxml.jackson.core#jackson-databind;2.12.0 in central
+	found com.fasterxml.jackson.module#jackson-module-jaxb-annotations;2.12.0 in central
+	found jakarta.xml.bind#jakarta.xml.bind-api;2.3.2 in central
+	found jakarta.activation#jakarta.activation-api;1.2.1 in central
+	found com.fasterxml.jackson.jaxrs#jackson-jaxrs-json-provider;2.12.0 in central
+	found com.fasterxml.jackson.jaxrs#jackson-jaxrs-base;2.12.0 in central
+	found org.eclipse.jetty#jetty-util-ajax;9.3.19.v20170502 in central
+	found org.apache.hadoop#hadoop-yarn-server-common;3.1.0 in central
+	found org.apache.hadoop#hadoop-yarn-registry;3.1.0 in central
+	found org.apache.hadoop#hadoop-common;3.1.0 in central
+	found org.apache.commons#commons-math3;3.1.1 in central
+	found commons-net#commons-net;3.6 in central
+	found commons-collections#commons-collections;3.2.2 in central
+	found org.eclipse.jetty#jetty-server;9.3.20.v20170531 in central
+	found org.eclipse.jetty#jetty-http;9.3.20.v20170531 in central
+	found org.eclipse.jetty#jetty-io;9.3.20.v20170531 in central
+	found org.eclipse.jetty#jetty-servlet;9.3.20.v20170531 in central
+	found org.eclipse.jetty#jetty-security;9.3.20.v20170531 in central
+	found org.eclipse.jetty#jetty-webapp;9.3.20.v20170531 in central
+	found org.eclipse.jetty#jetty-xml;9.3.20.v20170531 in central
+	found commons-beanutils#commons-beanutils;1.9.3 in central
+	found org.apache.commons#commons-configuration2;2.1.1 in central
+	found org.slf4j#slf4j-log4j12;1.7.25 in central
+	found org.apache.avro#avro;1.8.2 in central
+	found com.thoughtworks.paranamer#paranamer;2.7 in central
+	found org.xerial.snappy#snappy-java;1.1.4 in central
+	found org.tukaani#xz;1.5 in central
+	found com.google.re2j#re2j;1.1 in central
+	found com.google.code.gson#gson;2.2.4 in central
+	found com.jcraft#jsch;0.1.54 in central
+	found org.apache.curator#curator-recipes;2.12.0 in central
+	found com.google.code.findbugs#jsr305;3.0.0 in central
+	found org.apache.htrace#htrace-core4;4.1.0-incubating in central
+	found org.codehaus.woodstox#stax2-api;3.1.4 in central
+	found com.fasterxml.woodstox#woodstox-core;5.0.3 in central
+	found commons-daemon#commons-daemon;1.0.13 in central
+	found dnsjava#dnsjava;2.1.7 in central
+	found javax.servlet.jsp#jsp-api;2.1 in central
+	found org.fusesource.leveldbjni#leveldbjni-all;1.8 in central
+	found org.apache.geronimo.specs#geronimo-jcache_1.0_spec;1.0-alpha-1 in central
+	found org.ehcache#ehcache;3.3.1 in central
+	found com.zaxxer#HikariCP-java7;2.4.12 in central
+	found org.apache.hadoop#hadoop-yarn-server-applicationhistoryservice;3.1.0 in central
+	found de.ruedigermoeller#fst;2.50 in central
+	found com.cedarsoftware#java-util;1.9.0 in central
+	found com.cedarsoftware#json-io;2.5.1 in central
+	found org.apache.hadoop#hadoop-yarn-server-web-proxy;3.1.0 in central
+	found com.microsoft.sqlserver#mssql-jdbc;6.2.1.jre7 in central
+	found org.apache.hive.shims#hive-shims-scheduler;3.1.3 in central
+	found org.apache.hive#hive-storage-api;2.7.0 in central
+	found org.apache.commons#commons-lang3;3.9 in central
+	found org.apache.orc#orc-core;1.5.8 in central
+	found org.apache.orc#orc-shims;1.5.8 in central
+	found io.airlift#aircompressor;0.10 in central
+	found org.eclipse.jetty#jetty-rewrite;9.3.20.v20170531 in central
+	found org.eclipse.jetty#jetty-client;9.3.20.v20170531 in central
+	found joda-time#joda-time;2.9.9 in central
+	found org.apache.logging.log4j#log4j-1.2-api;2.17.1 in central
+	found org.apache.logging.log4j#log4j-web;2.17.1 in central
+	found net.sf.jpam#jpam;1.1 in central
+	found com.tdunning#json;1.8 in central
+	found io.dropwizard.metrics#metrics-core;3.1.0 in central
+	found io.dropwizard.metrics#metrics-jvm;3.1.0 in central
+	found io.dropwizard.metrics#metrics-json;3.1.0 in central
+	found com.github.joshelser#dropwizard-metrics-hadoop-metrics2-reporter;0.1.2 in central
+	found javolution#javolution;5.5.1 in central
+	found org.apache.hive#hive-llap-client;3.1.3 in central
+	found org.apache.hive#hive-llap-common;3.1.3 in central
+	found org.apache.hive#hive-serde;3.1.3 in central
+	found org.apache.hive#hive-service-rpc;3.1.3 in central
+	found org.apache.thrift#libfb303;0.9.3 in central
+	found org.apache.arrow#arrow-vector;0.8.0 in central
+	found org.apache.arrow#arrow-format;0.8.0 in central
+	found com.vlkan#flatbuffers;1.2.0-3f79e055 in central
+	found org.apache.arrow#arrow-memory;0.8.0 in central
+	found io.netty#netty-buffer;4.1.17.Final in central
+	found io.netty#netty-common;4.1.17.Final in central
+	found com.carrotsearch#hppc;0.7.2 in central
+	found net.sf.opencsv#opencsv;2.3 in central
+	found org.apache.parquet#parquet-hadoop-bundle;1.10.0 in central
+	found org.apache.curator#apache-curator;2.12.0 in central
+	found org.antlr#antlr-runtime;3.5.2 in central
+	found org.antlr#ST4;4.0.4 in central
+	found org.apache.ivy#ivy;2.4.0 in central
+	found org.codehaus.groovy#groovy-all;2.4.11 in central
+	found org.datanucleus#datanucleus-core;4.1.17 in central
+	found org.apache.calcite#calcite-core;1.16.0 in central
+	found org.apache.calcite#calcite-linq4j;1.16.0 in central
+	found commons-dbcp#commons-dbcp;1.4 in central
+	found commons-pool#commons-pool;1.5.4 in central
+	found com.esri.geometry#esri-geometry-api;2.0.0 in central
+	found com.google.code.findbugs#jsr305;3.0.1 in central
+	found com.yahoo.datasketches#sketches-core;0.9.0 in central
+	found com.yahoo.datasketches#memory;0.9.0 in central
+	found org.codehaus.janino#janino;2.7.6 in central
+	found org.codehaus.janino#commons-compiler;2.7.6 in central
+	found org.apache.calcite#calcite-druid;1.16.0 in central
+	found org.apache.calcite.avatica#avatica;1.11.0 in central
+	found stax#stax-api;1.0.1 in central
+downloading https://repo1.maven.org/maven2/org/apache/iceberg/iceberg-spark-runtime-3.5_2.12/1.7.1/iceberg-spark-runtime-3.5_2.12-1.7.1.jar ...
+	[SUCCESSFUL ] org.apache.iceberg#iceberg-spark-runtime-3.5_2.12;1.7.1!iceberg-spark-runtime-3.5_2.12.jar (16569ms)
+downloading https://repo1.maven.org/maven2/org/apache/hive/hive-exec/3.1.3/hive-exec-3.1.3.jar ...
+	[SUCCESSFUL ] org.apache.hive#hive-exec;3.1.3!hive-exec.jar (4791ms)
+downloading https://repo1.maven.org/maven2/org/apache/hive/hive-vector-code-gen/3.1.3/hive-vector-code-gen-3.1.3.jar ...
+	[SUCCESSFUL ] org.apache.hive#hive-vector-code-gen;3.1.3!hive-vector-code-gen.jar (572ms)
+downloading https://repo1.maven.org/maven2/org/apache/hive/hive-llap-tez/3.1.3/hive-llap-tez-3.1.3.jar ...
+	[SUCCESSFUL ] org.apache.hive#hive-llap-tez;3.1.3!hive-llap-tez.jar (647ms)
+downloading https://repo1.maven.org/maven2/org/apache/hive/hive-shims/3.1.3/hive-shims-3.1.3.jar ...
+	[SUCCESSFUL ] org.apache.hive#hive-shims;3.1.3!hive-shims.jar (645ms)
+downloading https://repo1.maven.org/maven2/commons-codec/commons-codec/1.15/commons-codec-1.15.jar ...
+	[SUCCESSFUL ] commons-codec#commons-codec;1.15!commons-codec.jar (1631ms)
+downloading https://repo1.maven.org/maven2/commons-io/commons-io/2.6/commons-io-2.6.jar ...
+	[SUCCESSFUL ] commons-io#commons-io;2.6!commons-io.jar (602ms)
+downloading https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-1.2-api/2.17.1/log4j-1.2-api-2.17.1.jar ...
+	[SUCCESSFUL ] org.apache.logging.log4j#log4j-1.2-api;2.17.1!log4j-1.2-api.jar (575ms)
+downloading https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-slf4j-impl/2.17.1/log4j-slf4j-impl-2.17.1.jar ...
+	[SUCCESSFUL ] org.apache.logging.log4j#log4j-slf4j-impl;2.17.1!log4j-slf4j-impl.jar (730ms)
+downloading https://repo1.maven.org/maven2/org/antlr/antlr-runtime/3.5.2/antlr-runtime-3.5.2.jar ...
+	[SUCCESSFUL ] org.antlr#antlr-runtime;3.5.2!antlr-runtime.jar (820ms)
+downloading https://repo1.maven.org/maven2/org/antlr/ST4/4.0.4/ST4-4.0.4.jar ...
+	[SUCCESSFUL ] org.antlr#ST4;4.0.4!ST4.jar (696ms)
+downloading https://repo1.maven.org/maven2/org/apache/ant/ant/1.9.1/ant-1.9.1.jar ...
+	[SUCCESSFUL ] org.apache.ant#ant;1.9.1!ant.jar (697ms)
+downloading https://repo1.maven.org/maven2/org/apache/commons/commons-compress/1.19/commons-compress-1.19.jar ...
+	[SUCCESSFUL ] org.apache.commons#commons-compress;1.19!commons-compress.jar (587ms)
+downloading https://repo1.maven.org/maven2/org/apache/thrift/libfb303/0.9.3/libfb303-0.9.3.jar ...
+	[SUCCESSFUL ] org.apache.thrift#libfb303;0.9.3!libfb303.jar (362ms)
+downloading https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-registry/3.1.0/hadoop-yarn-registry-3.1.0.jar ...
+	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-registry;3.1.0!hadoop-yarn-registry.jar (568ms)
+downloading https://repo1.maven.org/maven2/org/apache/ivy/ivy/2.4.0/ivy-2.4.0.jar ...
+	[SUCCESSFUL ] org.apache.ivy#ivy;2.4.0!ivy.jar (639ms)
+downloading https://repo1.maven.org/maven2/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar ...
+	[SUCCESSFUL ] org.apache.zookeeper#zookeeper;3.4.6!zookeeper.jar (397ms)
+downloading https://repo1.maven.org/maven2/org/apache/curator/curator-framework/2.12.0/curator-framework-2.12.0.jar ...
+	[SUCCESSFUL ] org.apache.curator#curator-framework;2.12.0!curator-framework.jar(bundle) (858ms)
+downloading https://repo1.maven.org/maven2/org/apache/curator/apache-curator/2.12.0/apache-curator-2.12.0.pom ...
+	[SUCCESSFUL ] org.apache.curator#apache-curator;2.12.0!apache-curator.pom (363ms)
+downloading https://repo1.maven.org/maven2/org/codehaus/groovy/groovy-all/2.4.11/groovy-all-2.4.11.jar ...
+	[SUCCESSFUL ] org.codehaus.groovy#groovy-all;2.4.11!groovy-all.jar (1928ms)
+downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.12.0/jackson-annotations-2.12.0.jar ...
+	[SUCCESSFUL ] com.fasterxml.jackson.core#jackson-annotations;2.12.0!jackson-annotations.jar(bundle) (770ms)
+downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.12.0/jackson-core-2.12.0.jar ...
+	[SUCCESSFUL ] com.fasterxml.jackson.core#jackson-core;2.12.0!jackson-core.jar(bundle) (915ms)
+downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.12.0/jackson-databind-2.12.0.jar ...
+	[SUCCESSFUL ] com.fasterxml.jackson.core#jackson-databind;2.12.0!jackson-databind.jar(bundle) (1167ms)
+downloading https://repo1.maven.org/maven2/org/datanucleus/datanucleus-core/4.1.17/datanucleus-core-4.1.17.jar ...
+	[SUCCESSFUL ] org.datanucleus#datanucleus-core;4.1.17!datanucleus-core.jar (849ms)
+downloading https://repo1.maven.org/maven2/org/apache/calcite/calcite-core/1.16.0/calcite-core-1.16.0.jar ...
+	[SUCCESSFUL ] org.apache.calcite#calcite-core;1.16.0!calcite-core.jar (1345ms)
+downloading https://repo1.maven.org/maven2/org/apache/calcite/calcite-druid/1.16.0/calcite-druid-1.16.0.jar ...
+	[SUCCESSFUL ] org.apache.calcite#calcite-druid;1.16.0!calcite-druid.jar (750ms)
+downloading https://repo1.maven.org/maven2/org/apache/calcite/avatica/avatica/1.11.0/avatica-1.11.0.jar ...
+	[SUCCESSFUL ] org.apache.calcite.avatica#avatica;1.11.0!avatica.jar (1320ms)
+downloading https://repo1.maven.org/maven2/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar ...
+	[SUCCESSFUL ] com.google.code.gson#gson;2.2.4!gson.jar (774ms)
+downloading https://repo1.maven.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.jar ...
+	[SUCCESSFUL ] stax#stax-api;1.0.1!stax-api.jar (741ms)
+downloading https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.jar ...
+	[SUCCESSFUL ] org.slf4j#slf4j-api;1.7.10!slf4j-api.jar (744ms)
+downloading https://repo1.maven.org/maven2/org/apache/hive/hive-upgrade-acid/3.1.3/hive-upgrade-acid-3.1.3.jar ...
+	[SUCCESSFUL ] org.apache.hive#hive-upgrade-acid;3.1.3!hive-upgrade-acid.jar (922ms)
+downloading https://repo1.maven.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.jar ...
+	[SUCCESSFUL ] commons-lang#commons-lang;2.6!commons-lang.jar (1157ms)
+downloading https://repo1.maven.org/maven2/com/google/guava/guava/19.0/guava-19.0.jar ...
+	[SUCCESSFUL ] com.google.guava#guava;19.0!guava.jar(bundle) (787ms)
+downloading https://repo1.maven.org/maven2/org/apache/ant/ant-launcher/1.9.1/ant-launcher-1.9.1.jar ...
+	[SUCCESSFUL ] org.apache.ant#ant-launcher;1.9.1!ant-launcher.jar (547ms)
+downloading https://repo1.maven.org/maven2/org/apache/hive/hive-common/3.1.3/hive-common-3.1.3.jar ...
+	[SUCCESSFUL ] org.apache.hive#hive-common;3.1.3!hive-common.jar (590ms)
+downloading https://repo1.maven.org/maven2/org/apache/hive/hive-llap-client/3.1.3/hive-llap-client-3.1.3.jar ...
+	[SUCCESSFUL ] org.apache.hive#hive-llap-client;3.1.3!hive-llap-client.jar (551ms)
+downloading https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.jar ...
+	[SUCCESSFUL ] org.apache.commons#commons-lang3;3.9!commons-lang3.jar (603ms)
+downloading https://repo1.maven.org/maven2/org/apache/hive/hive-classification/3.1.3/hive-classification-3.1.3.jar ...
+	[SUCCESSFUL ] org.apache.hive#hive-classification;3.1.3!hive-classification.jar (539ms)
+downloading https://repo1.maven.org/maven2/org/apache/hive/hive-storage-api/2.7.0/hive-storage-api-2.7.0.jar ...
+	[SUCCESSFUL ] org.apache.hive#hive-storage-api;2.7.0!hive-storage-api.jar (559ms)
+downloading https://repo1.maven.org/maven2/commons-cli/commons-cli/1.2/commons-cli-1.2.jar ...
+	[SUCCESSFUL ] commons-cli#commons-cli;1.2!commons-cli.jar (553ms)
+downloading https://repo1.maven.org/maven2/org/apache/orc/orc-core/1.5.8/orc-core-1.5.8.jar ...
+	[SUCCESSFUL ] org.apache.orc#orc-core;1.5.8!orc-core.jar (611ms)
+downloading https://repo1.maven.org/maven2/jline/jline/2.12/jline-2.12.jar ...
+	[SUCCESSFUL ] jline#jline;2.12!jline.jar (567ms)
+downloading https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar ...
+	[SUCCESSFUL ] javax.servlet#javax.servlet-api;3.1.0!javax.servlet-api.jar (569ms)
+downloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-http/9.3.20.v20170531/jetty-http-9.3.20.v20170531.jar ...
+	[SUCCESSFUL ] org.eclipse.jetty#jetty-http;9.3.20.v20170531!jetty-http.jar (555ms)
+downloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-rewrite/9.3.20.v20170531/jetty-rewrite-9.3.20.v20170531.jar ...
+	[SUCCESSFUL ] org.eclipse.jetty#jetty-rewrite;9.3.20.v20170531!jetty-rewrite.jar (584ms)
+downloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-server/9.3.20.v20170531/jetty-server-9.3.20.v20170531.jar ...
+	[SUCCESSFUL ] org.eclipse.jetty#jetty-server;9.3.20.v20170531!jetty-server.jar (598ms)
+downloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-servlet/9.3.20.v20170531/jetty-servlet-9.3.20.v20170531.jar ...
+	[SUCCESSFUL ] org.eclipse.jetty#jetty-servlet;9.3.20.v20170531!jetty-servlet.jar (553ms)
+downloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-webapp/9.3.20.v20170531/jetty-webapp-9.3.20.v20170531.jar ...
+	[SUCCESSFUL ] org.eclipse.jetty#jetty-webapp;9.3.20.v20170531!jetty-webapp.jar (556ms)
+downloading https://repo1.maven.org/maven2/joda-time/joda-time/2.9.9/joda-time-2.9.9.jar ...
+	[SUCCESSFUL ] joda-time#joda-time;2.9.9!joda-time.jar (590ms)
+downloading https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-web/2.17.1/log4j-web-2.17.1.jar ...
+	[SUCCESSFUL ] org.apache.logging.log4j#log4j-web;2.17.1!log4j-web.jar (571ms)
+downloading https://repo1.maven.org/maven2/net/sf/jpam/jpam/1.1/jpam-1.1.jar ...
+	[SUCCESSFUL ] net.sf.jpam#jpam;1.1!jpam.jar (542ms)
+downloading https://repo1.maven.org/maven2/com/tdunning/json/1.8/json-1.8.jar ...
+	[SUCCESSFUL ] com.tdunning#json;1.8!json.jar (540ms)
+downloading https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-core/3.1.0/metrics-core-3.1.0.jar ...
+	[SUCCESSFUL ] io.dropwizard.metrics#metrics-core;3.1.0!metrics-core.jar(bundle) (548ms)
+downloading https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-jvm/3.1.0/metrics-jvm-3.1.0.jar ...
+	[SUCCESSFUL ] io.dropwizard.metrics#metrics-jvm;3.1.0!metrics-jvm.jar(bundle) (571ms)
+downloading https://repo1.maven.org/maven2/io/dropwizard/metrics/metrics-json/3.1.0/metrics-json-3.1.0.jar ...
+	[SUCCESSFUL ] io.dropwizard.metrics#metrics-json;3.1.0!metrics-json.jar(bundle) (545ms)
+downloading https://repo1.maven.org/maven2/com/github/joshelser/dropwizard-metrics-hadoop-metrics2-reporter/0.1.2/dropwizard-metrics-hadoop-metrics2-reporter-0.1.2.jar ...
+	[SUCCESSFUL ] com.github.joshelser#dropwizard-metrics-hadoop-metrics2-reporter;0.1.2!dropwizard-metrics-hadoop-metrics2-reporter.jar (558ms)
+downloading https://repo1.maven.org/maven2/javolution/javolution/5.5.1/javolution-5.5.1.jar ...
+	[SUCCESSFUL ] javolution#javolution;5.5.1!javolution.jar(bundle) (597ms)
+downloading https://repo1.maven.org/maven2/org/apache/hive/shims/hive-shims-common/3.1.3/hive-shims-common-3.1.3.jar ...
+	[SUCCESSFUL ] org.apache.hive.shims#hive-shims-common;3.1.3!hive-shims-common.jar (559ms)
+downloading https://repo1.maven.org/maven2/org/apache/thrift/libthrift/0.9.3/libthrift-0.9.3.jar ...
+	[SUCCESSFUL ] org.apache.thrift#libthrift;0.9.3!libthrift.jar (289ms)
+downloading https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.17.1/log4j-core-2.17.1.jar ...
+	[SUCCESSFUL ] org.apache.logging.log4j#log4j-core;2.17.1!log4j-core.jar (677ms)
+downloading https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar ...
+	[SUCCESSFUL ] org.apache.httpcomponents#httpclient;4.5.13!httpclient.jar (601ms)
+downloading https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar ...
+	[SUCCESSFUL ] org.apache.httpcomponents#httpcore;4.4.13!httpcore.jar (560ms)
+downloading https://repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2.jar ...
+	[SUCCESSFUL ] commons-logging#commons-logging;1.2!commons-logging.jar (541ms)
+downloading https://repo1.maven.org/maven2/org/apache/curator/curator-client/2.12.0/curator-client-2.12.0.jar ...
+	[SUCCESSFUL ] org.apache.curator#curator-client;2.12.0!curator-client.jar(bundle) (765ms)
+downloading https://repo1.maven.org/maven2/log4j/log4j/1.2.16/log4j-1.2.16.jar ...
+	[SUCCESSFUL ] log4j#log4j;1.2.16!log4j.jar(bundle) (576ms)
+downloading https://repo1.maven.org/maven2/io/netty/netty/3.7.0.Final/netty-3.7.0.Final.jar ...
+	[SUCCESSFUL ] io.netty#netty;3.7.0.Final!netty.jar(bundle) (630ms)
+downloading https://repo1.maven.org/maven2/org/apache/hive/shims/hive-shims-0.23/3.1.3/hive-shims-0.23-3.1.3.jar ...
+	[SUCCESSFUL ] org.apache.hive.shims#hive-shims-0.23;3.1.3!hive-shims-0.23.jar (559ms)
+downloading https://repo1.maven.org/maven2/org/apache/hive/shims/hive-shims-scheduler/3.1.3/hive-shims-scheduler-3.1.3.jar ...
+	[SUCCESSFUL ] org.apache.hive.shims#hive-shims-scheduler;3.1.3!hive-shims-scheduler.jar (600ms)
+downloading https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server-resourcemanager/3.1.0/hadoop-yarn-server-resourcemanager-3.1.0.jar ...
+	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-server-resourcemanager;3.1.0!hadoop-yarn-server-resourcemanager.jar (786ms)
+downloading https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-annotations/3.1.0/hadoop-annotations-3.1.0.jar ...
+	[SUCCESSFUL ] org.apache.hadoop#hadoop-annotations;3.1.0!hadoop-annotations.jar (549ms)
+downloading https://repo1.maven.org/maven2/com/google/inject/extensions/guice-servlet/4.0/guice-servlet-4.0.jar ...
+	[SUCCESSFUL ] com.google.inject.extensions#guice-servlet;4.0!guice-servlet.jar (548ms)
+downloading https://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar ...
+	[SUCCESSFUL ] com.google.protobuf#protobuf-java;2.5.0!protobuf-java.jar(bundle) (580ms)
+downloading https://repo1.maven.org/maven2/com/google/inject/guice/4.0/guice-4.0.jar ...
+	[SUCCESSFUL ] com.google.inject#guice;4.0!guice.jar (592ms)
+downloading https://repo1.maven.org/maven2/com/sun/jersey/jersey-json/1.19/jersey-json-1.19.jar ...
+	[SUCCESSFUL ] com.sun.jersey#jersey-json;1.19!jersey-json.jar (568ms)
+downloading https://repo1.maven.org/maven2/com/sun/jersey/contribs/jersey-guice/1.19/jersey-guice-1.19.jar ...
+	[SUCCESSFUL ] com.sun.jersey.contribs#jersey-guice;1.19!jersey-guice.jar (552ms)
+downloading https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-common/3.1.0/hadoop-yarn-common-3.1.0.jar ...
+	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-common;3.1.0!hadoop-yarn-common.jar (747ms)
+downloading https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-api/3.1.0/hadoop-yarn-api-3.1.0.jar ...
+	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-api;3.1.0!hadoop-yarn-api.jar (810ms)
+downloading https://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.2.11/jaxb-api-2.2.11.jar ...
+	[SUCCESSFUL ] javax.xml.bind#jaxb-api;2.2.11!jaxb-api.jar (550ms)
+downloading https://repo1.maven.org/maven2/org/codehaus/jettison/jettison/1.1/jettison-1.1.jar ...
+	[SUCCESSFUL ] org.codehaus.jettison#jettison;1.1!jettison.jar(bundle) (553ms)
+downloading https://repo1.maven.org/maven2/com/sun/jersey/jersey-core/1.19/jersey-core-1.19.jar ...
+	[SUCCESSFUL ] com.sun.jersey#jersey-core;1.19!jersey-core.jar (579ms)
+downloading https://repo1.maven.org/maven2/com/sun/jersey/jersey-client/1.19/jersey-client-1.19.jar ...
+	[SUCCESSFUL ] com.sun.jersey#jersey-client;1.19!jersey-client.jar (552ms)
+downloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util/9.3.19.v20170502/jetty-util-9.3.19.v20170502.jar ...
+	[SUCCESSFUL ] org.eclipse.jetty#jetty-util;9.3.19.v20170502!jetty-util.jar (577ms)
+downloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-util-ajax/9.3.19.v20170502/jetty-util-ajax-9.3.19.v20170502.jar ...
+	[SUCCESSFUL ] org.eclipse.jetty#jetty-util-ajax;9.3.19.v20170502!jetty-util-ajax.jar (560ms)
+downloading https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server-common/3.1.0/hadoop-yarn-server-common-3.1.0.jar ...
+	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-server-common;3.1.0!hadoop-yarn-server-common.jar (668ms)
+downloading https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server-applicationhistoryservice/3.1.0/hadoop-yarn-server-applicationhistoryservice-3.1.0.jar ...
+	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-server-applicationhistoryservice;3.1.0!hadoop-yarn-server-applicationhistoryservice.jar (576ms)
+downloading https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-yarn-server-web-proxy/3.1.0/hadoop-yarn-server-web-proxy-3.1.0.jar ...
+	[SUCCESSFUL ] org.apache.hadoop#hadoop-yarn-server-web-proxy;3.1.0!hadoop-yarn-server-web-proxy.jar (576ms)
+downloading https://repo1.maven.org/maven2/org/fusesource/leveldbjni/leveldbjni-all/1.8/leveldbjni-all-1.8.jar ...
+	[SUCCESSFUL ] org.fusesource.leveldbjni#leveldbjni-all;1.8!leveldbjni-all.jar(bundle) (635ms)
+downloading https://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar ...
+	[SUCCESSFUL ] javax.inject#javax.inject;1!javax.inject.jar (546ms)
+downloading https://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.jar ...
+	[SUCCESSFUL ] aopalliance#aopalliance;1.0!aopalliance.jar (544ms)
+downloading https://repo1.maven.org/maven2/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.jar ...
+	[SUCCESSFUL ] com.sun.xml.bind#jaxb-impl;2.2.3-1!jaxb-impl.jar (620ms)
+downloading https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar ...
+	[SUCCESSFUL ] org.codehaus.jackson#jackson-core-asl;1.9.13!jackson-core-asl.jar (581ms)
+downloading https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar ...
+	[SUCCESSFUL ] org.codehaus.jackson#jackson-mapper-asl;1.9.13!jackson-mapper-asl.jar (610ms)
+downloading https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-jaxrs/1.9.13/jackson-jaxrs-1.9.13.jar ...
+	[SUCCESSFUL ] org.codehaus.jackson#jackson-jaxrs;1.9.13!jackson-jaxrs.jar (541ms)
+downloading https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-xc/1.9.13/jackson-xc-1.9.13.jar ...
+	[SUCCESSFUL ] org.codehaus.jackson#jackson-xc;1.9.13!jackson-xc.jar (563ms)
+downloading https://repo1.maven.org/maven2/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar ...
+	[SUCCESSFUL ] javax.ws.rs#jsr311-api;1.1.1!jsr311-api.jar (547ms)
+downloading https://repo1.maven.org/maven2/com/sun/jersey/jersey-servlet/1.19/jersey-servlet-1.19.jar ...
+	[SUCCESSFUL ] com.sun.jersey#jersey-servlet;1.19!jersey-servlet.jar (559ms)
+downloading https://repo1.maven.org/maven2/com/sun/jersey/jersey-server/1.19/jersey-server-1.19.jar ...
+	[SUCCESSFUL ] com.sun.jersey#jersey-server;1.19!jersey-server.jar (598ms)
+downloading https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-auth/3.1.0/hadoop-auth-3.1.0.jar ...
+	[SUCCESSFUL ] org.apache.hadoop#hadoop-auth;3.1.0!hadoop-auth.jar (556ms)
+downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.12.0/jackson-module-jaxb-annotations-2.12.0.jar ...
+	[SUCCESSFUL ] com.fasterxml.jackson.module#jackson-module-jaxb-annotations;2.12.0!jackson-module-jaxb-annotations.jar(bundle) (556ms)
+downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.12.0/jackson-jaxrs-json-provider-2.12.0.jar ...
+	[SUCCESSFUL ] com.fasterxml.jackson.jaxrs#jackson-jaxrs-json-provider;2.12.0!jackson-jaxrs-json-provider.jar(bundle) (552ms)
+downloading https://repo1.maven.org/maven2/com/nimbusds/nimbus-jose-jwt/4.41.1/nimbus-jose-jwt-4.41.1.jar ...
+	[SUCCESSFUL ] com.nimbusds#nimbus-jose-jwt;4.41.1!nimbus-jose-jwt.jar (573ms)
+downloading https://repo1.maven.org/maven2/net/minidev/json-smart/2.3/json-smart-2.3.jar ...
+	[SUCCESSFUL ] net.minidev#json-smart;2.3!json-smart.jar(bundle) (547ms)
+downloading https://repo1.maven.org/maven2/org/apache/kerby/kerb-simplekdc/1.0.1/kerb-simplekdc-1.0.1.jar ...
+	[SUCCESSFUL ] org.apache.kerby#kerb-simplekdc;1.0.1!kerb-simplekdc.jar (547ms)
+downloading https://repo1.maven.org/maven2/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.jar ...
+	[SUCCESSFUL ] com.github.stephenc.jcip#jcip-annotations;1.0-1!jcip-annotations.jar (554ms)
+downloading https://repo1.maven.org/maven2/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar ...
+	[SUCCESSFUL ] net.minidev#accessors-smart;1.2!accessors-smart.jar(bundle) (546ms)
+downloading https://repo1.maven.org/maven2/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar ...
+	[SUCCESSFUL ] org.ow2.asm#asm;5.0.4!asm.jar (540ms)
+downloading https://repo1.maven.org/maven2/org/apache/kerby/kerb-client/1.0.1/kerb-client-1.0.1.jar ...
+	[SUCCESSFUL ] org.apache.kerby#kerb-client;1.0.1!kerb-client.jar (550ms)
+downloading https://repo1.maven.org/maven2/org/apache/kerby/kerb-admin/1.0.1/kerb-admin-1.0.1.jar ...
+	[SUCCESSFUL ] org.apache.kerby#kerb-admin;1.0.1!kerb-admin.jar (570ms)
+downloading https://repo1.maven.org/maven2/org/apache/kerby/kerby-config/1.0.1/kerby-config-1.0.1.jar ...
+	[SUCCESSFUL ] org.apache.kerby#kerby-config;1.0.1!kerby-config.jar (568ms)
+downloading https://repo1.maven.org/maven2/org/apache/kerby/kerb-core/1.0.1/kerb-core-1.0.1.jar ...
+	[SUCCESSFUL ] org.apache.kerby#kerb-core;1.0.1!kerb-core.jar (583ms)
+downloading https://repo1.maven.org/maven2/org/apache/kerby/kerb-common/1.0.1/kerb-common-1.0.1.jar ...
+	[SUCCESSFUL ] org.apache.kerby#kerb-common;1.0.1!kerb-common.jar (564ms)
+downloading https://repo1.maven.org/maven2/org/apache/kerby/kerb-util/1.0.1/kerb-util-1.0.1.jar ...
+	[SUCCESSFUL ] org.apache.kerby#kerb-util;1.0.1!kerb-util.jar (542ms)
+downloading https://repo1.maven.org/maven2/org/apache/kerby/token-provider/1.0.1/token-provider-1.0.1.jar ...
+	[SUCCESSFUL ] org.apache.kerby#token-provider;1.0.1!token-provider.jar (554ms)
+downloading https://repo1.maven.org/maven2/org/apache/kerby/kerby-pkix/1.0.1/kerby-pkix-1.0.1.jar ...
+	[SUCCESSFUL ] org.apache.kerby#kerby-pkix;1.0.1!kerby-pkix.jar (590ms)
+downloading https://repo1.maven.org/maven2/org/apache/kerby/kerby-asn1/1.0.1/kerby-asn1-1.0.1.jar ...
+	[SUCCESSFUL ] org.apache.kerby#kerby-asn1;1.0.1!kerby-asn1.jar (579ms)
+downloading https://repo1.maven.org/maven2/org/apache/kerby/kerby-util/1.0.1/kerby-util-1.0.1.jar ...
+	[SUCCESSFUL ] org.apache.kerby#kerby-util;1.0.1!kerby-util.jar (573ms)
+downloading https://repo1.maven.org/maven2/org/apache/kerby/kerb-crypto/1.0.1/kerb-crypto-1.0.1.jar ...
+	[SUCCESSFUL ] org.apache.kerby#kerb-crypto;1.0.1!kerb-crypto.jar (598ms)
+downloading https://repo1.maven.org/maven2/org/apache/kerby/kerb-server/1.0.1/kerb-server-1.0.1.jar ...
+	[SUCCESSFUL ] org.apache.kerby#kerb-server;1.0.1!kerb-server.jar (614ms)
+downloading https://repo1.maven.org/maven2/org/apache/kerby/kerby-xdr/1.0.1/kerby-xdr-1.0.1.jar ...
+	[SUCCESSFUL ] org.apache.kerby#kerby-xdr;1.0.1!kerby-xdr.jar (543ms)
+downloading https://repo1.maven.org/maven2/org/apache/kerby/kerb-identity/1.0.1/kerb-identity-1.0.1.jar ...
+	[SUCCESSFUL ] org.apache.kerby#kerb-identity;1.0.1!kerb-identity.jar (550ms)
+downloading https://repo1.maven.org/maven2/jakarta/xml/bind/jakarta.xml.bind-api/2.3.2/jakarta.xml.bind-api-2.3.2.jar ...
+	[SUCCESSFUL ] jakarta.xml.bind#jakarta.xml.bind-api;2.3.2!jakarta.xml.bind-api.jar (601ms)
+downloading https://repo1.maven.org/maven2/jakarta/activation/jakarta.activation-api/1.2.1/jakarta.activation-api-1.2.1.jar ...
+	[SUCCESSFUL ] jakarta.activation#jakarta.activation-api;1.2.1!jakarta.activation-api.jar (558ms)
+downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.12.0/jackson-jaxrs-base-2.12.0.jar ...
+	[SUCCESSFUL ] com.fasterxml.jackson.jaxrs#jackson-jaxrs-base;2.12.0!jackson-jaxrs-base.jar(bundle) (556ms)
+downloading https://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-jcache_1.0_spec/1.0-alpha-1/geronimo-jcache_1.0_spec-1.0-alpha-1.jar ...
+	[SUCCESSFUL ] org.apache.geronimo.specs#geronimo-jcache_1.0_spec;1.0-alpha-1!geronimo-jcache_1.0_spec.jar(bundle) (547ms)
+downloading https://repo1.maven.org/maven2/org/ehcache/ehcache/3.3.1/ehcache-3.3.1.jar ...
+	[SUCCESSFUL ] org.ehcache#ehcache;3.3.1!ehcache.jar (664ms)
+downloading https://repo1.maven.org/maven2/com/zaxxer/HikariCP-java7/2.4.12/HikariCP-java7-2.4.12.jar ...
+	[SUCCESSFUL ] com.zaxxer#HikariCP-java7;2.4.12!HikariCP-java7.jar(bundle) (556ms)
+downloading https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-common/3.1.0/hadoop-common-3.1.0.jar ...
+	[SUCCESSFUL ] org.apache.hadoop#hadoop-common;3.1.0!hadoop-common.jar (1012ms)
+downloading https://repo1.maven.org/maven2/org/apache/curator/curator-recipes/2.12.0/curator-recipes-2.12.0.jar ...
+	[SUCCESSFUL ] org.apache.curator#curator-recipes;2.12.0!curator-recipes.jar(bundle) (575ms)
+downloading https://repo1.maven.org/maven2/commons-daemon/commons-daemon/1.0.13/commons-daemon-1.0.13.jar ...
+	[SUCCESSFUL ] commons-daemon#commons-daemon;1.0.13!commons-daemon.jar (546ms)
+downloading https://repo1.maven.org/maven2/commons-net/commons-net/3.6/commons-net-3.6.jar ...
+	[SUCCESSFUL ] commons-net#commons-net;3.6!commons-net.jar (572ms)
+downloading https://repo1.maven.org/maven2/dnsjava/dnsjava/2.1.7/dnsjava-2.1.7.jar ...
+	[SUCCESSFUL ] dnsjava#dnsjava;2.1.7!dnsjava.jar (575ms)
+downloading https://repo1.maven.org/maven2/org/apache/commons/commons-math3/3.1.1/commons-math3-3.1.1.jar ...
+	[SUCCESSFUL ] org.apache.commons#commons-math3;3.1.1!commons-math3.jar (659ms)
+downloading https://repo1.maven.org/maven2/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar ...
+	[SUCCESSFUL ] commons-collections#commons-collections;3.2.2!commons-collections.jar (586ms)
+downloading https://repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar ...
+	[SUCCESSFUL ] commons-beanutils#commons-beanutils;1.9.3!commons-beanutils.jar (579ms)
+downloading https://repo1.maven.org/maven2/org/apache/commons/commons-configuration2/2.1.1/commons-configuration2-2.1.1.jar ...
+	[SUCCESSFUL ] org.apache.commons#commons-configuration2;2.1.1!commons-configuration2.jar (593ms)
+downloading https://repo1.maven.org/maven2/org/slf4j/slf4j-log4j12/1.7.25/slf4j-log4j12-1.7.25.jar ...
+	[SUCCESSFUL ] org.slf4j#slf4j-log4j12;1.7.25!slf4j-log4j12.jar (541ms)
+downloading https://repo1.maven.org/maven2/org/apache/avro/avro/1.8.2/avro-1.8.2.jar ...
+	[SUCCESSFUL ] org.apache.avro#avro;1.8.2!avro.jar(bundle) (663ms)
+downloading https://repo1.maven.org/maven2/com/google/re2j/re2j/1.1/re2j-1.1.jar ...
+	[SUCCESSFUL ] com.google.re2j#re2j;1.1!re2j.jar (658ms)
+downloading https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.54/jsch-0.1.54.jar ...
+	[SUCCESSFUL ] com.jcraft#jsch;0.1.54!jsch.jar (570ms)
+downloading https://repo1.maven.org/maven2/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar ...
+	[SUCCESSFUL ] org.apache.htrace#htrace-core4;4.1.0-incubating!htrace-core4.jar (660ms)
+downloading https://repo1.maven.org/maven2/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar ...
+	[SUCCESSFUL ] org.codehaus.woodstox#stax2-api;3.1.4!stax2-api.jar(bundle) (560ms)
+downloading https://repo1.maven.org/maven2/com/fasterxml/woodstox/woodstox-core/5.0.3/woodstox-core-5.0.3.jar ...
+	[SUCCESSFUL ] com.fasterxml.woodstox#woodstox-core;5.0.3!woodstox-core.jar(bundle) (597ms)
+downloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-io/9.3.20.v20170531/jetty-io-9.3.20.v20170531.jar ...
+	[SUCCESSFUL ] org.eclipse.jetty#jetty-io;9.3.20.v20170531!jetty-io.jar (552ms)
+downloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-security/9.3.20.v20170531/jetty-security-9.3.20.v20170531.jar ...
+	[SUCCESSFUL ] org.eclipse.jetty#jetty-security;9.3.20.v20170531!jetty-security.jar (718ms)
+downloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-xml/9.3.20.v20170531/jetty-xml-9.3.20.v20170531.jar ...
+	[SUCCESSFUL ] org.eclipse.jetty#jetty-xml;9.3.20.v20170531!jetty-xml.jar (569ms)
+downloading https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.7/paranamer-2.7.jar ...
+	[SUCCESSFUL ] com.thoughtworks.paranamer#paranamer;2.7!paranamer.jar(bundle) (619ms)
+downloading https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.4/snappy-java-1.1.4.jar ...
+	[SUCCESSFUL ] org.xerial.snappy#snappy-java;1.1.4!snappy-java.jar(bundle) (662ms)
+downloading https://repo1.maven.org/maven2/org/tukaani/xz/1.5/xz-1.5.jar ...
+	[SUCCESSFUL ] org.tukaani#xz;1.5!xz.jar (543ms)
+downloading https://repo1.maven.org/maven2/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.jar ...
+	[SUCCESSFUL ] javax.servlet.jsp#jsp-api;2.1!jsp-api.jar (544ms)
+downloading https://repo1.maven.org/maven2/de/ruedigermoeller/fst/2.50/fst-2.50.jar ...
+	[SUCCESSFUL ] de.ruedigermoeller#fst;2.50!fst.jar(bundle) (571ms)
+downloading https://repo1.maven.org/maven2/com/cedarsoftware/java-util/1.9.0/java-util-1.9.0.jar ...
+	[SUCCESSFUL ] com.cedarsoftware#java-util;1.9.0!java-util.jar (554ms)
+downloading https://repo1.maven.org/maven2/com/cedarsoftware/json-io/2.5.1/json-io-2.5.1.jar ...
+	[SUCCESSFUL ] com.cedarsoftware#json-io;2.5.1!json-io.jar (545ms)
+downloading https://repo1.maven.org/maven2/com/microsoft/sqlserver/mssql-jdbc/6.2.1.jre7/mssql-jdbc-6.2.1.jre7.jar ...
+	[SUCCESSFUL ] com.microsoft.sqlserver#mssql-jdbc;6.2.1.jre7!mssql-jdbc.jar (610ms)
+downloading https://repo1.maven.org/maven2/org/apache/orc/orc-shims/1.5.8/orc-shims-1.5.8.jar ...
+	[SUCCESSFUL ] org.apache.orc#orc-shims;1.5.8!orc-shims.jar (544ms)
+downloading https://repo1.maven.org/maven2/io/airlift/aircompressor/0.10/aircompressor-0.10.jar ...
+	[SUCCESSFUL ] io.airlift#aircompressor;0.10!aircompressor.jar (550ms)
+downloading https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-client/9.3.20.v20170531/jetty-client-9.3.20.v20170531.jar ...
+	[SUCCESSFUL ] org.eclipse.jetty#jetty-client;9.3.20.v20170531!jetty-client.jar (566ms)
+downloading https://repo1.maven.org/maven2/org/apache/hive/hive-llap-common/3.1.3/hive-llap-common-3.1.3.jar ...
+	[SUCCESSFUL ] org.apache.hive#hive-llap-common;3.1.3!hive-llap-common.jar (578ms)
+downloading https://repo1.maven.org/maven2/org/apache/hive/hive-serde/3.1.3/hive-serde-3.1.3.jar ...
+	[SUCCESSFUL ] org.apache.hive#hive-serde;3.1.3!hive-serde.jar (630ms)
+downloading https://repo1.maven.org/maven2/org/apache/hive/hive-service-rpc/3.1.3/hive-service-rpc-3.1.3.jar ...
+	[SUCCESSFUL ] org.apache.hive#hive-service-rpc;3.1.3!hive-service-rpc.jar (694ms)
+downloading https://repo1.maven.org/maven2/org/apache/arrow/arrow-vector/0.8.0/arrow-vector-0.8.0.jar ...
+	[SUCCESSFUL ] org.apache.arrow#arrow-vector;0.8.0!arrow-vector.jar (642ms)
+downloading https://repo1.maven.org/maven2/com/carrotsearch/hppc/0.7.2/hppc-0.7.2.jar ...
+	[SUCCESSFUL ] com.carrotsearch#hppc;0.7.2!hppc.jar(bundle) (664ms)
+downloading https://repo1.maven.org/maven2/com/vlkan/flatbuffers/1.2.0-3f79e055/flatbuffers-1.2.0-3f79e055.jar ...
+	[SUCCESSFUL ] com.vlkan#flatbuffers;1.2.0-3f79e055!flatbuffers.jar (548ms)
+downloading https://repo1.maven.org/maven2/net/sf/opencsv/opencsv/2.3/opencsv-2.3.jar ...
+	[SUCCESSFUL ] net.sf.opencsv#opencsv;2.3!opencsv.jar (544ms)
+downloading https://repo1.maven.org/maven2/org/apache/parquet/parquet-hadoop-bundle/1.10.0/parquet-hadoop-bundle-1.10.0.jar ...
+	[SUCCESSFUL ] org.apache.parquet#parquet-hadoop-bundle;1.10.0!parquet-hadoop-bundle.jar (929ms)
+downloading https://repo1.maven.org/maven2/org/apache/arrow/arrow-format/0.8.0/arrow-format-0.8.0.jar ...
+	[SUCCESSFUL ] org.apache.arrow#arrow-format;0.8.0!arrow-format.jar (581ms)
+downloading https://repo1.maven.org/maven2/org/apache/arrow/arrow-memory/0.8.0/arrow-memory-0.8.0.jar ...
+	[SUCCESSFUL ] org.apache.arrow#arrow-memory;0.8.0!arrow-memory.jar (565ms)
+downloading https://repo1.maven.org/maven2/io/netty/netty-buffer/4.1.17.Final/netty-buffer-4.1.17.Final.jar ...
+	[SUCCESSFUL ] io.netty#netty-buffer;4.1.17.Final!netty-buffer.jar (570ms)
+downloading https://repo1.maven.org/maven2/io/netty/netty-common/4.1.17.Final/netty-common-4.1.17.Final.jar ...
+	[SUCCESSFUL ] io.netty#netty-common;4.1.17.Final!netty-common.jar (616ms)
+downloading https://repo1.maven.org/maven2/org/apache/calcite/calcite-linq4j/1.16.0/calcite-linq4j-1.16.0.jar ...
+	[SUCCESSFUL ] org.apache.calcite#calcite-linq4j;1.16.0!calcite-linq4j.jar (605ms)
+downloading https://repo1.maven.org/maven2/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4.jar ...
+	[SUCCESSFUL ] commons-dbcp#commons-dbcp;1.4!commons-dbcp.jar (554ms)
+downloading https://repo1.maven.org/maven2/com/esri/geometry/esri-geometry-api/2.0.0/esri-geometry-api-2.0.0.jar ...
+	[SUCCESSFUL ] com.esri.geometry#esri-geometry-api;2.0.0!esri-geometry-api.jar (611ms)
+downloading https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.jar ...
+	[SUCCESSFUL ] com.google.code.findbugs#jsr305;3.0.1!jsr305.jar (540ms)
+downloading https://repo1.maven.org/maven2/com/yahoo/datasketches/sketches-core/0.9.0/sketches-core-0.9.0.jar ...
+	[SUCCESSFUL ] com.yahoo.datasketches#sketches-core;0.9.0!sketches-core.jar (586ms)
+downloading https://repo1.maven.org/maven2/org/codehaus/janino/janino/2.7.6/janino-2.7.6.jar ...
+	[SUCCESSFUL ] org.codehaus.janino#janino;2.7.6!janino.jar (581ms)
+downloading https://repo1.maven.org/maven2/org/codehaus/janino/commons-compiler/2.7.6/commons-compiler-2.7.6.jar ...
+	[SUCCESSFUL ] org.codehaus.janino#commons-compiler;2.7.6!commons-compiler.jar (559ms)
+downloading https://repo1.maven.org/maven2/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar ...
+	[SUCCESSFUL ] commons-pool#commons-pool;1.5.4!commons-pool.jar (559ms)
+downloading https://repo1.maven.org/maven2/com/yahoo/datasketches/memory/0.9.0/memory-0.9.0.jar ...
+	[SUCCESSFUL ] com.yahoo.datasketches#memory;0.9.0!memory.jar (538ms)
+:: resolution report :: resolve 261464ms :: artifacts dl 131487ms
+	:: modules in use:
+	aopalliance#aopalliance;1.0 from central in [default]
+	com.carrotsearch#hppc;0.7.2 from central in [default]
+	com.cedarsoftware#java-util;1.9.0 from central in [default]
+	com.cedarsoftware#json-io;2.5.1 from central in [default]
+	com.esri.geometry#esri-geometry-api;2.0.0 from central in [default]
+	com.fasterxml.jackson.core#jackson-annotations;2.12.0 from central in [default]
+	com.fasterxml.jackson.core#jackson-core;2.12.0 from central in [default]
+	com.fasterxml.jackson.core#jackson-databind;2.12.0 from central in [default]
+	com.fasterxml.jackson.jaxrs#jackson-jaxrs-base;2.12.0 from central in [default]
+	com.fasterxml.jackson.jaxrs#jackson-jaxrs-json-provider;2.12.0 from central in [default]
+	com.fasterxml.jackson.module#jackson-module-jaxb-annotations;2.12.0 from central in [default]
+	com.fasterxml.woodstox#woodstox-core;5.0.3 from central in [default]
+	com.github.joshelser#dropwizard-metrics-hadoop-metrics2-reporter;0.1.2 from central in [default]
+	com.github.stephenc.jcip#jcip-annotations;1.0-1 from central in [default]
+	com.google.code.findbugs#jsr305;3.0.1 from central in [default]
+	com.google.code.gson#gson;2.2.4 from central in [default]
+	com.google.guava#guava;19.0 from central in [default]
+	com.google.inject#guice;4.0 from central in [default]
+	com.google.inject.extensions#guice-servlet;4.0 from central in [default]
+	com.google.protobuf#protobuf-java;2.5.0 from central in [default]
+	com.google.re2j#re2j;1.1 from central in [default]
+	com.jcraft#jsch;0.1.54 from central in [default]
+	com.microsoft.sqlserver#mssql-jdbc;6.2.1.jre7 from central in [default]
+	com.nimbusds#nimbus-jose-jwt;4.41.1 from central in [default]
+	com.sun.jersey#jersey-client;1.19 from central in [default]
+	com.sun.jersey#jersey-core;1.19 from central in [default]
+	com.sun.jersey#jersey-json;1.19 from central in [default]
+	com.sun.jersey#jersey-server;1.19 from central in [default]
+	com.sun.jersey#jersey-servlet;1.19 from central in [default]
+	com.sun.jersey.contribs#jersey-guice;1.19 from central in [default]
+	com.sun.xml.bind#jaxb-impl;2.2.3-1 from central in [default]
+	com.tdunning#json;1.8 from central in [default]
+	com.thoughtworks.paranamer#paranamer;2.7 from central in [default]
+	com.vlkan#flatbuffers;1.2.0-3f79e055 from central in [default]
+	com.yahoo.datasketches#memory;0.9.0 from central in [default]
+	com.yahoo.datasketches#sketches-core;0.9.0 from central in [default]
+	com.zaxxer#HikariCP-java7;2.4.12 from central in [default]
+	commons-beanutils#commons-beanutils;1.9.3 from central in [default]
+	commons-cli#commons-cli;1.2 from central in [default]
+	commons-codec#commons-codec;1.15 from central in [default]
+	commons-collections#commons-collections;3.2.2 from central in [default]
+	commons-daemon#commons-daemon;1.0.13 from central in [default]
+	commons-dbcp#commons-dbcp;1.4 from central in [default]
+	commons-io#commons-io;2.6 from central in [default]
+	commons-lang#commons-lang;2.6 from central in [default]
+	commons-logging#commons-logging;1.2 from central in [default]
+	commons-net#commons-net;3.6 from central in [default]
+	commons-pool#commons-pool;1.5.4 from central in [default]
+	de.ruedigermoeller#fst;2.50 from central in [default]
+	dnsjava#dnsjava;2.1.7 from central in [default]
+	io.airlift#aircompressor;0.10 from central in [default]
+	io.dropwizard.metrics#metrics-core;3.1.0 from central in [default]
+	io.dropwizard.metrics#metrics-json;3.1.0 from central in [default]
+	io.dropwizard.metrics#metrics-jvm;3.1.0 from central in [default]
+	io.netty#netty;3.7.0.Final from central in [default]
+	io.netty#netty-buffer;4.1.17.Final from central in [default]
+	io.netty#netty-common;4.1.17.Final from central in [default]
+	jakarta.activation#jakarta.activation-api;1.2.1 from central in [default]
+	jakarta.xml.bind#jakarta.xml.bind-api;2.3.2 from central in [default]
+	javax.inject#javax.inject;1 from central in [default]
+	javax.servlet#javax.servlet-api;3.1.0 from central in [default]
+	javax.servlet.jsp#jsp-api;2.1 from central in [default]
+	javax.ws.rs#jsr311-api;1.1.1 from central in [default]
+	javax.xml.bind#jaxb-api;2.2.11 from central in [default]
+	javolution#javolution;5.5.1 from central in [default]
+	jline#jline;2.12 from central in [default]
+	joda-time#joda-time;2.9.9 from central in [default]
+	log4j#log4j;1.2.16 from central in [default]
+	net.minidev#accessors-smart;1.2 from central in [default]
+	net.minidev#json-smart;2.3 from central in [default]
+	net.sf.jpam#jpam;1.1 from central in [default]
+	net.sf.opencsv#opencsv;2.3 from central in [default]
+	org.antlr#ST4;4.0.4 from central in [default]
+	org.antlr#antlr-runtime;3.5.2 from central in [default]
+	org.apache.ant#ant;1.9.1 from central in [default]
+	org.apache.ant#ant-launcher;1.9.1 from central in [default]
+	org.apache.arrow#arrow-format;0.8.0 from central in [default]
+	org.apache.arrow#arrow-memory;0.8.0 from central in [default]
+	org.apache.arrow#arrow-vector;0.8.0 from central in [default]
+	org.apache.avro#avro;1.8.2 from central in [default]
+	org.apache.calcite#calcite-core;1.16.0 from central in [default]
+	org.apache.calcite#calcite-druid;1.16.0 from central in [default]
+	org.apache.calcite#calcite-linq4j;1.16.0 from central in [default]
+	org.apache.calcite.avatica#avatica;1.11.0 from central in [default]
+	org.apache.commons#commons-compress;1.19 from central in [default]
+	org.apache.commons#commons-configuration2;2.1.1 from central in [default]
+	org.apache.commons#commons-lang3;3.9 from central in [default]
+	org.apache.commons#commons-math3;3.1.1 from central in [default]
+	org.apache.curator#apache-curator;2.12.0 from central in [default]
+	org.apache.curator#curator-client;2.12.0 from central in [default]
+	org.apache.curator#curator-framework;2.12.0 from central in [default]
+	org.apache.curator#curator-recipes;2.12.0 from central in [default]
+	org.apache.geronimo.specs#geronimo-jcache_1.0_spec;1.0-alpha-1 from central in [default]
+	org.apache.hadoop#hadoop-annotations;3.1.0 from central in [default]
+	org.apache.hadoop#hadoop-auth;3.1.0 from central in [default]
+	org.apache.hadoop#hadoop-common;3.1.0 from central in [default]
+	org.apache.hadoop#hadoop-yarn-api;3.1.0 from central in [default]
+	org.apache.hadoop#hadoop-yarn-common;3.1.0 from central in [default]
+	org.apache.hadoop#hadoop-yarn-registry;3.1.0 from central in [default]
+	org.apache.hadoop#hadoop-yarn-server-applicationhistoryservice;3.1.0 from central in [default]
+	org.apache.hadoop#hadoop-yarn-server-common;3.1.0 from central in [default]
+	org.apache.hadoop#hadoop-yarn-server-resourcemanager;3.1.0 from central in [default]
+	org.apache.hadoop#hadoop-yarn-server-web-proxy;3.1.0 from central in [default]
+	org.apache.hive#hive-classification;3.1.3 from central in [default]
+	org.apache.hive#hive-common;3.1.3 from central in [default]
+	org.apache.hive#hive-exec;3.1.3 from central in [default]
+	org.apache.hive#hive-llap-client;3.1.3 from central in [default]
+	org.apache.hive#hive-llap-common;3.1.3 from central in [default]
+	org.apache.hive#hive-llap-tez;3.1.3 from central in [default]
+	org.apache.hive#hive-serde;3.1.3 from central in [default]
+	org.apache.hive#hive-service-rpc;3.1.3 from central in [default]
+	org.apache.hive#hive-shims;3.1.3 from central in [default]
+	org.apache.hive#hive-storage-api;2.7.0 from central in [default]
+	org.apache.hive#hive-upgrade-acid;3.1.3 from central in [default]
+	org.apache.hive#hive-vector-code-gen;3.1.3 from central in [default]
+	org.apache.hive.shims#hive-shims-0.23;3.1.3 from central in [default]
+	org.apache.hive.shims#hive-shims-common;3.1.3 from central in [default]
+	org.apache.hive.shims#hive-shims-scheduler;3.1.3 from central in [default]
+	org.apache.htrace#htrace-core4;4.1.0-incubating from central in [default]
+	org.apache.httpcomponents#httpclient;4.5.13 from central in [default]
+	org.apache.httpcomponents#httpcore;4.4.13 from central in [default]
+	org.apache.iceberg#iceberg-spark-runtime-3.5_2.12;1.7.1 from central in [default]
+	org.apache.ivy#ivy;2.4.0 from central in [default]
+	org.apache.kerby#kerb-admin;1.0.1 from central in [default]
+	org.apache.kerby#kerb-client;1.0.1 from central in [default]
+	org.apache.kerby#kerb-common;1.0.1 from central in [default]
+	org.apache.kerby#kerb-core;1.0.1 from central in [default]
+	org.apache.kerby#kerb-crypto;1.0.1 from central in [default]
+	org.apache.kerby#kerb-identity;1.0.1 from central in [default]
+	org.apache.kerby#kerb-server;1.0.1 from central in [default]
+	org.apache.kerby#kerb-simplekdc;1.0.1 from central in [default]
+	org.apache.kerby#kerb-util;1.0.1 from central in [default]
+	org.apache.kerby#kerby-asn1;1.0.1 from central in [default]
+	org.apache.kerby#kerby-config;1.0.1 from central in [default]
+	org.apache.kerby#kerby-pkix;1.0.1 from central in [default]
+	org.apache.kerby#kerby-util;1.0.1 from central in [default]
+	org.apache.kerby#kerby-xdr;1.0.1 from central in [default]
+	org.apache.kerby#token-provider;1.0.1 from central in [default]
+	org.apache.logging.log4j#log4j-1.2-api;2.17.1 from central in [default]
+	org.apache.logging.log4j#log4j-core;2.17.1 from central in [default]
+	org.apache.logging.log4j#log4j-slf4j-impl;2.17.1 from central in [default]
+	org.apache.logging.log4j#log4j-web;2.17.1 from central in [default]
+	org.apache.orc#orc-core;1.5.8 from central in [default]
+	org.apache.orc#orc-shims;1.5.8 from central in [default]
+	org.apache.parquet#parquet-hadoop-bundle;1.10.0 from central in [default]
+	org.apache.thrift#libfb303;0.9.3 from central in [default]
+	org.apache.thrift#libthrift;0.9.3 from central in [default]
+	org.apache.zookeeper#zookeeper;3.4.6 from central in [default]
+	org.codehaus.groovy#groovy-all;2.4.11 from central in [default]
+	org.codehaus.jackson#jackson-core-asl;1.9.13 from central in [default]
+	org.codehaus.jackson#jackson-jaxrs;1.9.13 from central in [default]
+	org.codehaus.jackson#jackson-mapper-asl;1.9.13 from central in [default]
+	org.codehaus.jackson#jackson-xc;1.9.13 from central in [default]
+	org.codehaus.janino#commons-compiler;2.7.6 from central in [default]
+	org.codehaus.janino#janino;2.7.6 from central in [default]
+	org.codehaus.jettison#jettison;1.1 from central in [default]
+	org.codehaus.woodstox#stax2-api;3.1.4 from central in [default]
+	org.datanucleus#datanucleus-core;4.1.17 from central in [default]
+	org.eclipse.jetty#jetty-client;9.3.20.v20170531 from central in [default]
+	org.eclipse.jetty#jetty-http;9.3.20.v20170531 from central in [default]
+	org.eclipse.jetty#jetty-io;9.3.20.v20170531 from central in [default]
+	org.eclipse.jetty#jetty-rewrite;9.3.20.v20170531 from central in [default]
+	org.eclipse.jetty#jetty-security;9.3.20.v20170531 from central in [default]
+	org.eclipse.jetty#jetty-server;9.3.20.v20170531 from central in [default]
+	org.eclipse.jetty#jetty-servlet;9.3.20.v20170531 from central in [default]
+	org.eclipse.jetty#jetty-util;9.3.19.v20170502 from central in [default]
+	org.eclipse.jetty#jetty-util-ajax;9.3.19.v20170502 from central in [default]
+	org.eclipse.jetty#jetty-webapp;9.3.20.v20170531 from central in [default]
+	org.eclipse.jetty#jetty-xml;9.3.20.v20170531 from central in [default]
+	org.ehcache#ehcache;3.3.1 from central in [default]
+	org.fusesource.leveldbjni#leveldbjni-all;1.8 from central in [default]
+	org.ow2.asm#asm;5.0.4 from central in [default]
+	org.slf4j#slf4j-api;1.7.10 from central in [default]
+	org.slf4j#slf4j-log4j12;1.7.25 from central in [default]
+	org.tukaani#xz;1.5 from central in [default]
+	org.xerial.snappy#snappy-java;1.1.4 from central in [default]
+	stax#stax-api;1.0.1 from central in [default]
+	:: evicted modules:
+	org.slf4j#slf4j-log4j12;1.7.6 by [org.slf4j#slf4j-log4j12;1.7.25] in [default]
+	log4j#log4j;1.2.17 by [log4j#log4j;1.2.16] in [default]
+	commons-logging#commons-logging;1.1.3 by [commons-logging#commons-logging;1.2] in [default]
+	org.apache.commons#commons-lang3;3.4 by [org.apache.commons#commons-lang3;3.9] in [default]
+	com.google.code.findbugs#jsr305;3.0.0 by [com.google.code.findbugs#jsr305;3.0.1] in [default]
+	commons-logging#commons-logging;1.0.4 by [commons-logging#commons-logging;1.2] in [default]
+	io.dropwizard.metrics#metrics-core;3.1.2 by [io.dropwizard.metrics#metrics-core;3.1.0] in [default]
+	com.google.code.findbugs#jsr305;3.0.2 by [com.google.code.findbugs#jsr305;3.0.0] in [default]
+	org.apache.commons#commons-lang3;3.2 by [org.apache.commons#commons-lang3;3.9] in [default]
+	joda-time#joda-time;2.8.1 by [joda-time#joda-time;2.9.9] in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |  187  |  178  |  178  |   10  ||  177  |  177  |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-5c6943e7-45c8-4013-83e8-b13f689897c6
+	confs: [default]
+	177 artifacts copied, 0 already retrieved (174628kB/360ms)
+25/01/14 08:11:44 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[Stage 0:>                                                          (0 + 0) / 1][Stage 0:>                                                          (0 + 1) / 1]                                                                                [Stage 2:>                                                          (0 + 2) / 2]                                                                                25/01/14 08:12:34 WARN HadoopTableOperations: Error reading version hint file /opt/spark/data/test_iceberg_table/metadata/version-hint.text
+java.io.FileNotFoundException: File /opt/spark/data/test_iceberg_table/metadata/version-hint.text does not exist
+	at org.apache.hadoop.fs.RawLocalFileSystem.deprecatedGetFileStatus(RawLocalFileSystem.java:779)
+	at org.apache.hadoop.fs.RawLocalFileSystem.getFileLinkStatusInternal(RawLocalFileSystem.java:1100)
+	at org.apache.hadoop.fs.RawLocalFileSystem.getFileStatus(RawLocalFileSystem.java:769)
+	at org.apache.hadoop.fs.FilterFileSystem.getFileStatus(FilterFileSystem.java:462)
+	at org.apache.hadoop.fs.ChecksumFileSystem$ChecksumFSInputChecker.<init>(ChecksumFileSystem.java:160)
+	at org.apache.hadoop.fs.ChecksumFileSystem.open(ChecksumFileSystem.java:372)
+	at org.apache.hadoop.fs.FileSystem.open(FileSystem.java:976)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.findVersion(HadoopTableOperations.java:317)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.refresh(HadoopTableOperations.java:103)
+	at org.apache.iceberg.BaseTransaction.lambda$commitReplaceTransaction$1(BaseTransaction.java:368)
+	at org.apache.iceberg.util.Tasks$Builder.runTaskWithRetry(Tasks.java:413)
+	at org.apache.iceberg.util.Tasks$Builder.runSingleThreaded(Tasks.java:219)
+	at org.apache.iceberg.util.Tasks$Builder.run(Tasks.java:203)
+	at org.apache.iceberg.util.Tasks$Builder.run(Tasks.java:196)
+	at org.apache.iceberg.BaseTransaction.commitReplaceTransaction(BaseTransaction.java:365)
+	at org.apache.iceberg.BaseTransaction.commitTransaction(BaseTransaction.java:314)
+	at org.apache.iceberg.CommitCallbackTransaction.commitTransaction(CommitCallbackTransaction.java:126)
+	at org.apache.iceberg.spark.source.StagedSparkTable.commitStagedChanges(StagedSparkTable.java:34)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.$anonfun$writeToTable$1(WriteToDataSourceV2Exec.scala:585)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1397)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.writeToTable(WriteToDataSourceV2Exec.scala:578)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.writeToTable$(WriteToDataSourceV2Exec.scala:572)
+	at org.apache.spark.sql.execution.datasources.v2.AtomicReplaceTableAsSelectExec.writeToTable(WriteToDataSourceV2Exec.scala:186)
+	at org.apache.spark.sql.execution.datasources.v2.AtomicReplaceTableAsSelectExec.run(WriteToDataSourceV2Exec.scala:221)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result$lzycompute(V2CommandExec.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result(V2CommandExec.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.executeCollect(V2CommandExec.scala:49)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)
+	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)
+	at org.apache.spark.sql.DataFrameWriterV2.runCommand(DataFrameWriterV2.scala:201)
+	at org.apache.spark.sql.DataFrameWriterV2.internalReplace(DataFrameWriterV2.scala:213)
+	at org.apache.spark.sql.DataFrameWriterV2.createOrReplace(DataFrameWriterV2.scala:135)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+25/01/14 08:12:34 WARN HadoopTableOperations: Error reading version hint file /opt/spark/data/test_iceberg_table/metadata/version-hint.text
+java.io.FileNotFoundException: File /opt/spark/data/test_iceberg_table/metadata/version-hint.text does not exist
+	at org.apache.hadoop.fs.RawLocalFileSystem.deprecatedGetFileStatus(RawLocalFileSystem.java:779)
+	at org.apache.hadoop.fs.RawLocalFileSystem.getFileLinkStatusInternal(RawLocalFileSystem.java:1100)
+	at org.apache.hadoop.fs.RawLocalFileSystem.getFileStatus(RawLocalFileSystem.java:769)
+	at org.apache.hadoop.fs.FilterFileSystem.getFileStatus(FilterFileSystem.java:462)
+	at org.apache.hadoop.fs.ChecksumFileSystem$ChecksumFSInputChecker.<init>(ChecksumFileSystem.java:160)
+	at org.apache.hadoop.fs.ChecksumFileSystem.open(ChecksumFileSystem.java:372)
+	at org.apache.hadoop.fs.FileSystem.open(FileSystem.java:976)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.findVersion(HadoopTableOperations.java:317)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.refresh(HadoopTableOperations.java:103)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.current(HadoopTableOperations.java:83)
+	at org.apache.iceberg.BaseTransaction.lambda$commitReplaceTransaction$1(BaseTransaction.java:377)
+	at org.apache.iceberg.util.Tasks$Builder.runTaskWithRetry(Tasks.java:413)
+	at org.apache.iceberg.util.Tasks$Builder.runSingleThreaded(Tasks.java:219)
+	at org.apache.iceberg.util.Tasks$Builder.run(Tasks.java:203)
+	at org.apache.iceberg.util.Tasks$Builder.run(Tasks.java:196)
+	at org.apache.iceberg.BaseTransaction.commitReplaceTransaction(BaseTransaction.java:365)
+	at org.apache.iceberg.BaseTransaction.commitTransaction(BaseTransaction.java:314)
+	at org.apache.iceberg.CommitCallbackTransaction.commitTransaction(CommitCallbackTransaction.java:126)
+	at org.apache.iceberg.spark.source.StagedSparkTable.commitStagedChanges(StagedSparkTable.java:34)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.$anonfun$writeToTable$1(WriteToDataSourceV2Exec.scala:585)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1397)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.writeToTable(WriteToDataSourceV2Exec.scala:578)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.writeToTable$(WriteToDataSourceV2Exec.scala:572)
+	at org.apache.spark.sql.execution.datasources.v2.AtomicReplaceTableAsSelectExec.writeToTable(WriteToDataSourceV2Exec.scala:186)
+	at org.apache.spark.sql.execution.datasources.v2.AtomicReplaceTableAsSelectExec.run(WriteToDataSourceV2Exec.scala:221)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result$lzycompute(V2CommandExec.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result(V2CommandExec.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.executeCollect(V2CommandExec.scala:49)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)
+	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)
+	at org.apache.spark.sql.DataFrameWriterV2.runCommand(DataFrameWriterV2.scala:201)
+	at org.apache.spark.sql.DataFrameWriterV2.internalReplace(DataFrameWriterV2.scala:213)
+	at org.apache.spark.sql.DataFrameWriterV2.createOrReplace(DataFrameWriterV2.scala:135)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[I 2025-01-14 08:13:01.094 ServerApp] Saving file at /spark-apps/4-iceberg-and-minio-config.ipynb
+[I 2025-01-14 08:14:37.120 ServerApp] Saving file at /spark-apps/4-iceberg-and-minio-config.ipynb
+[I 2025-01-14 08:15:18.761 ServerApp] Saving file at /spark-apps/4-iceberg-and-minio-config.ipynb
+[I 2025-01-14 08:15:26.479 ServerApp] Saving file at /spark-apps/4-iceberg-and-minio-config.ipynb
+[Stage 0:>                                                          (0 + 0) / 1][Stage 0:>                                                          (0 + 1) / 1]                                                                                [Stage 2:>                                                          (0 + 2) / 2]                                                                                25/01/14 08:15:58 WARN HadoopTableOperations: Error reading version hint file /usr/spark/delta-lake/data/test_iceberg_table/metadata/version-hint.text
+java.io.FileNotFoundException: File /usr/spark/delta-lake/data/test_iceberg_table/metadata/version-hint.text does not exist
+	at org.apache.hadoop.fs.RawLocalFileSystem.deprecatedGetFileStatus(RawLocalFileSystem.java:779)
+	at org.apache.hadoop.fs.RawLocalFileSystem.getFileLinkStatusInternal(RawLocalFileSystem.java:1100)
+	at org.apache.hadoop.fs.RawLocalFileSystem.getFileStatus(RawLocalFileSystem.java:769)
+	at org.apache.hadoop.fs.FilterFileSystem.getFileStatus(FilterFileSystem.java:462)
+	at org.apache.hadoop.fs.ChecksumFileSystem$ChecksumFSInputChecker.<init>(ChecksumFileSystem.java:160)
+	at org.apache.hadoop.fs.ChecksumFileSystem.open(ChecksumFileSystem.java:372)
+	at org.apache.hadoop.fs.FileSystem.open(FileSystem.java:976)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.findVersion(HadoopTableOperations.java:317)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.refresh(HadoopTableOperations.java:103)
+	at org.apache.iceberg.BaseTransaction.lambda$commitReplaceTransaction$1(BaseTransaction.java:368)
+	at org.apache.iceberg.util.Tasks$Builder.runTaskWithRetry(Tasks.java:413)
+	at org.apache.iceberg.util.Tasks$Builder.runSingleThreaded(Tasks.java:219)
+	at org.apache.iceberg.util.Tasks$Builder.run(Tasks.java:203)
+	at org.apache.iceberg.util.Tasks$Builder.run(Tasks.java:196)
+	at org.apache.iceberg.BaseTransaction.commitReplaceTransaction(BaseTransaction.java:365)
+	at org.apache.iceberg.BaseTransaction.commitTransaction(BaseTransaction.java:314)
+	at org.apache.iceberg.CommitCallbackTransaction.commitTransaction(CommitCallbackTransaction.java:126)
+	at org.apache.iceberg.spark.source.StagedSparkTable.commitStagedChanges(StagedSparkTable.java:34)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.$anonfun$writeToTable$1(WriteToDataSourceV2Exec.scala:585)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1397)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.writeToTable(WriteToDataSourceV2Exec.scala:578)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.writeToTable$(WriteToDataSourceV2Exec.scala:572)
+	at org.apache.spark.sql.execution.datasources.v2.AtomicReplaceTableAsSelectExec.writeToTable(WriteToDataSourceV2Exec.scala:186)
+	at org.apache.spark.sql.execution.datasources.v2.AtomicReplaceTableAsSelectExec.run(WriteToDataSourceV2Exec.scala:221)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result$lzycompute(V2CommandExec.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result(V2CommandExec.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.executeCollect(V2CommandExec.scala:49)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)
+	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)
+	at org.apache.spark.sql.DataFrameWriterV2.runCommand(DataFrameWriterV2.scala:201)
+	at org.apache.spark.sql.DataFrameWriterV2.internalReplace(DataFrameWriterV2.scala:213)
+	at org.apache.spark.sql.DataFrameWriterV2.createOrReplace(DataFrameWriterV2.scala:135)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+25/01/14 08:15:58 WARN HadoopTableOperations: Error reading version hint file /usr/spark/delta-lake/data/test_iceberg_table/metadata/version-hint.text
+java.io.FileNotFoundException: File /usr/spark/delta-lake/data/test_iceberg_table/metadata/version-hint.text does not exist
+	at org.apache.hadoop.fs.RawLocalFileSystem.deprecatedGetFileStatus(RawLocalFileSystem.java:779)
+	at org.apache.hadoop.fs.RawLocalFileSystem.getFileLinkStatusInternal(RawLocalFileSystem.java:1100)
+	at org.apache.hadoop.fs.RawLocalFileSystem.getFileStatus(RawLocalFileSystem.java:769)
+	at org.apache.hadoop.fs.FilterFileSystem.getFileStatus(FilterFileSystem.java:462)
+	at org.apache.hadoop.fs.ChecksumFileSystem$ChecksumFSInputChecker.<init>(ChecksumFileSystem.java:160)
+	at org.apache.hadoop.fs.ChecksumFileSystem.open(ChecksumFileSystem.java:372)
+	at org.apache.hadoop.fs.FileSystem.open(FileSystem.java:976)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.findVersion(HadoopTableOperations.java:317)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.refresh(HadoopTableOperations.java:103)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.current(HadoopTableOperations.java:83)
+	at org.apache.iceberg.BaseTransaction.lambda$commitReplaceTransaction$1(BaseTransaction.java:377)
+	at org.apache.iceberg.util.Tasks$Builder.runTaskWithRetry(Tasks.java:413)
+	at org.apache.iceberg.util.Tasks$Builder.runSingleThreaded(Tasks.java:219)
+	at org.apache.iceberg.util.Tasks$Builder.run(Tasks.java:203)
+	at org.apache.iceberg.util.Tasks$Builder.run(Tasks.java:196)
+	at org.apache.iceberg.BaseTransaction.commitReplaceTransaction(BaseTransaction.java:365)
+	at org.apache.iceberg.BaseTransaction.commitTransaction(BaseTransaction.java:314)
+	at org.apache.iceberg.CommitCallbackTransaction.commitTransaction(CommitCallbackTransaction.java:126)
+	at org.apache.iceberg.spark.source.StagedSparkTable.commitStagedChanges(StagedSparkTable.java:34)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.$anonfun$writeToTable$1(WriteToDataSourceV2Exec.scala:585)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1397)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.writeToTable(WriteToDataSourceV2Exec.scala:578)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.writeToTable$(WriteToDataSourceV2Exec.scala:572)
+	at org.apache.spark.sql.execution.datasources.v2.AtomicReplaceTableAsSelectExec.writeToTable(WriteToDataSourceV2Exec.scala:186)
+	at org.apache.spark.sql.execution.datasources.v2.AtomicReplaceTableAsSelectExec.run(WriteToDataSourceV2Exec.scala:221)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result$lzycompute(V2CommandExec.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result(V2CommandExec.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.executeCollect(V2CommandExec.scala:49)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)
+	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)
+	at org.apache.spark.sql.DataFrameWriterV2.runCommand(DataFrameWriterV2.scala:201)
+	at org.apache.spark.sql.DataFrameWriterV2.internalReplace(DataFrameWriterV2.scala:213)
+	at org.apache.spark.sql.DataFrameWriterV2.createOrReplace(DataFrameWriterV2.scala:135)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[I 2025-01-14 08:16:58.830 ServerApp] Saving file at /spark-apps/4-iceberg-and-minio-config.ipynb
+25/01/14 08:17:10 ERROR Utils: Aborting task
+java.lang.IllegalStateException: Cannot call methods on a stopped SparkContext.
+This stopped SparkContext was created at:
+
+org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:58)
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:247)
+py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+py4j.Gateway.invoke(Gateway.java:238)
+py4j.commands.ConstructorCommand.invokeConstructor(ConstructorCommand.java:80)
+py4j.commands.ConstructorCommand.execute(ConstructorCommand.java:69)
+py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+java.base/java.lang.Thread.run(Thread.java:829)
+
+The currently active SparkContext was created at:
+
+(No active SparkContext.)
+         
+	at org.apache.spark.SparkContext.assertNotStopped(SparkContext.scala:122)
+	at org.apache.spark.SparkContext.broadcastInternal(SparkContext.scala:1654)
+	at org.apache.spark.SparkContext.broadcast(SparkContext.scala:1639)
+	at org.apache.spark.api.java.JavaSparkContext.broadcast(JavaSparkContext.scala:546)
+	at org.apache.iceberg.spark.source.SparkWrite.createWriterFactory(SparkWrite.java:193)
+	at org.apache.iceberg.spark.source.SparkWrite$BaseBatchWrite.createBatchWriterFactory(SparkWrite.java:271)
+	at org.apache.spark.sql.execution.datasources.v2.V2TableWriteExec.writeWithV2(WriteToDataSourceV2Exec.scala:378)
+	at org.apache.spark.sql.execution.datasources.v2.V2TableWriteExec.writeWithV2$(WriteToDataSourceV2Exec.scala:364)
+	at org.apache.spark.sql.execution.datasources.v2.AppendDataExec.writeWithV2(WriteToDataSourceV2Exec.scala:230)
+	at org.apache.spark.sql.execution.datasources.v2.V2ExistingTableWriteExec.run(WriteToDataSourceV2Exec.scala:342)
+	at org.apache.spark.sql.execution.datasources.v2.V2ExistingTableWriteExec.run$(WriteToDataSourceV2Exec.scala:341)
+	at org.apache.spark.sql.execution.datasources.v2.AppendDataExec.run(WriteToDataSourceV2Exec.scala:230)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result$lzycompute(V2CommandExec.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result(V2CommandExec.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.executeCollect(V2CommandExec.scala:49)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)
+	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.$anonfun$writeToTable$1(WriteToDataSourceV2Exec.scala:582)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1397)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.writeToTable(WriteToDataSourceV2Exec.scala:578)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.writeToTable$(WriteToDataSourceV2Exec.scala:572)
+	at org.apache.spark.sql.execution.datasources.v2.AtomicReplaceTableAsSelectExec.writeToTable(WriteToDataSourceV2Exec.scala:186)
+	at org.apache.spark.sql.execution.datasources.v2.AtomicReplaceTableAsSelectExec.run(WriteToDataSourceV2Exec.scala:221)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result$lzycompute(V2CommandExec.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result(V2CommandExec.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.executeCollect(V2CommandExec.scala:49)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)
+	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)
+	at org.apache.spark.sql.DataFrameWriterV2.runCommand(DataFrameWriterV2.scala:201)
+	at org.apache.spark.sql.DataFrameWriterV2.internalReplace(DataFrameWriterV2.scala:213)
+	at org.apache.spark.sql.DataFrameWriterV2.createOrReplace(DataFrameWriterV2.scala:135)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[Stage 0:>                                                          (0 + 0) / 1][Stage 0:>                                                          (0 + 1) / 1]                                                                                [Stage 1:>                                                          (0 + 1) / 1]                                                                                [Stage 2:>                                                          (0 + 2) / 2][Stage 2:=============================>                             (1 + 1) / 2]                                                                                25/01/14 08:17:44 WARN HadoopTableOperations: Error reading version hint file /usr/spark/delta-lake/data/test_iceberg_table_qqq/metadata/version-hint.text
+java.io.FileNotFoundException: File /usr/spark/delta-lake/data/test_iceberg_table_qqq/metadata/version-hint.text does not exist
+	at org.apache.hadoop.fs.RawLocalFileSystem.deprecatedGetFileStatus(RawLocalFileSystem.java:779)
+	at org.apache.hadoop.fs.RawLocalFileSystem.getFileLinkStatusInternal(RawLocalFileSystem.java:1100)
+	at org.apache.hadoop.fs.RawLocalFileSystem.getFileStatus(RawLocalFileSystem.java:769)
+	at org.apache.hadoop.fs.FilterFileSystem.getFileStatus(FilterFileSystem.java:462)
+	at org.apache.hadoop.fs.ChecksumFileSystem$ChecksumFSInputChecker.<init>(ChecksumFileSystem.java:160)
+	at org.apache.hadoop.fs.ChecksumFileSystem.open(ChecksumFileSystem.java:372)
+	at org.apache.hadoop.fs.FileSystem.open(FileSystem.java:976)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.findVersion(HadoopTableOperations.java:317)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.refresh(HadoopTableOperations.java:103)
+	at org.apache.iceberg.BaseTransaction.lambda$commitReplaceTransaction$1(BaseTransaction.java:368)
+	at org.apache.iceberg.util.Tasks$Builder.runTaskWithRetry(Tasks.java:413)
+	at org.apache.iceberg.util.Tasks$Builder.runSingleThreaded(Tasks.java:219)
+	at org.apache.iceberg.util.Tasks$Builder.run(Tasks.java:203)
+	at org.apache.iceberg.util.Tasks$Builder.run(Tasks.java:196)
+	at org.apache.iceberg.BaseTransaction.commitReplaceTransaction(BaseTransaction.java:365)
+	at org.apache.iceberg.BaseTransaction.commitTransaction(BaseTransaction.java:314)
+	at org.apache.iceberg.CommitCallbackTransaction.commitTransaction(CommitCallbackTransaction.java:126)
+	at org.apache.iceberg.spark.source.StagedSparkTable.commitStagedChanges(StagedSparkTable.java:34)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.$anonfun$writeToTable$1(WriteToDataSourceV2Exec.scala:585)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1397)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.writeToTable(WriteToDataSourceV2Exec.scala:578)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.writeToTable$(WriteToDataSourceV2Exec.scala:572)
+	at org.apache.spark.sql.execution.datasources.v2.AtomicReplaceTableAsSelectExec.writeToTable(WriteToDataSourceV2Exec.scala:186)
+	at org.apache.spark.sql.execution.datasources.v2.AtomicReplaceTableAsSelectExec.run(WriteToDataSourceV2Exec.scala:221)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result$lzycompute(V2CommandExec.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result(V2CommandExec.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.executeCollect(V2CommandExec.scala:49)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)
+	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)
+	at org.apache.spark.sql.DataFrameWriterV2.runCommand(DataFrameWriterV2.scala:201)
+	at org.apache.spark.sql.DataFrameWriterV2.internalReplace(DataFrameWriterV2.scala:213)
+	at org.apache.spark.sql.DataFrameWriterV2.createOrReplace(DataFrameWriterV2.scala:135)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+25/01/14 08:17:44 WARN HadoopTableOperations: Error reading version hint file /usr/spark/delta-lake/data/test_iceberg_table_qqq/metadata/version-hint.text
+java.io.FileNotFoundException: File /usr/spark/delta-lake/data/test_iceberg_table_qqq/metadata/version-hint.text does not exist
+	at org.apache.hadoop.fs.RawLocalFileSystem.deprecatedGetFileStatus(RawLocalFileSystem.java:779)
+	at org.apache.hadoop.fs.RawLocalFileSystem.getFileLinkStatusInternal(RawLocalFileSystem.java:1100)
+	at org.apache.hadoop.fs.RawLocalFileSystem.getFileStatus(RawLocalFileSystem.java:769)
+	at org.apache.hadoop.fs.FilterFileSystem.getFileStatus(FilterFileSystem.java:462)
+	at org.apache.hadoop.fs.ChecksumFileSystem$ChecksumFSInputChecker.<init>(ChecksumFileSystem.java:160)
+	at org.apache.hadoop.fs.ChecksumFileSystem.open(ChecksumFileSystem.java:372)
+	at org.apache.hadoop.fs.FileSystem.open(FileSystem.java:976)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.findVersion(HadoopTableOperations.java:317)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.refresh(HadoopTableOperations.java:103)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.current(HadoopTableOperations.java:83)
+	at org.apache.iceberg.BaseTransaction.lambda$commitReplaceTransaction$1(BaseTransaction.java:377)
+	at org.apache.iceberg.util.Tasks$Builder.runTaskWithRetry(Tasks.java:413)
+	at org.apache.iceberg.util.Tasks$Builder.runSingleThreaded(Tasks.java:219)
+	at org.apache.iceberg.util.Tasks$Builder.run(Tasks.java:203)
+	at org.apache.iceberg.util.Tasks$Builder.run(Tasks.java:196)
+	at org.apache.iceberg.BaseTransaction.commitReplaceTransaction(BaseTransaction.java:365)
+	at org.apache.iceberg.BaseTransaction.commitTransaction(BaseTransaction.java:314)
+	at org.apache.iceberg.CommitCallbackTransaction.commitTransaction(CommitCallbackTransaction.java:126)
+	at org.apache.iceberg.spark.source.StagedSparkTable.commitStagedChanges(StagedSparkTable.java:34)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.$anonfun$writeToTable$1(WriteToDataSourceV2Exec.scala:585)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1397)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.writeToTable(WriteToDataSourceV2Exec.scala:578)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.writeToTable$(WriteToDataSourceV2Exec.scala:572)
+	at org.apache.spark.sql.execution.datasources.v2.AtomicReplaceTableAsSelectExec.writeToTable(WriteToDataSourceV2Exec.scala:186)
+	at org.apache.spark.sql.execution.datasources.v2.AtomicReplaceTableAsSelectExec.run(WriteToDataSourceV2Exec.scala:221)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result$lzycompute(V2CommandExec.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result(V2CommandExec.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.executeCollect(V2CommandExec.scala:49)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)
+	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)
+	at org.apache.spark.sql.DataFrameWriterV2.runCommand(DataFrameWriterV2.scala:201)
+	at org.apache.spark.sql.DataFrameWriterV2.internalReplace(DataFrameWriterV2.scala:213)
+	at org.apache.spark.sql.DataFrameWriterV2.createOrReplace(DataFrameWriterV2.scala:135)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[I 2025-01-14 08:18:59.031 ServerApp] Saving file at /spark-apps/4-iceberg-and-minio-config.ipynb
+[I 2025-01-14 08:20:59.298 ServerApp] Saving file at /spark-apps/4-iceberg-and-minio-config.ipynb
+[I 2025-01-14 08:22:59.490 ServerApp] Saving file at /spark-apps/4-iceberg-and-minio-config.ipynb
+[Stage 3:>                                                          (0 + 1) / 1]                                                                                [I 2025-01-14 08:23:10.979 ServerApp] Saving file at /spark-apps/4-iceberg-and-minio-config.ipynb
+[Stage 4:>                                                          (0 + 1) / 1]                                                                                [Stage 6:>                                                          (0 + 2) / 2][Stage 6:=============================>                             (1 + 1) / 2]                                                                                25/01/14 12:39:16 WARN HadoopTableOperations: Error reading version hint file /usr/spark/delta-lake/data/test_iceberg_table_qqqp/metadata/version-hint.text
+java.io.FileNotFoundException: File /usr/spark/delta-lake/data/test_iceberg_table_qqqp/metadata/version-hint.text does not exist
+	at org.apache.hadoop.fs.RawLocalFileSystem.deprecatedGetFileStatus(RawLocalFileSystem.java:779)
+	at org.apache.hadoop.fs.RawLocalFileSystem.getFileLinkStatusInternal(RawLocalFileSystem.java:1100)
+	at org.apache.hadoop.fs.RawLocalFileSystem.getFileStatus(RawLocalFileSystem.java:769)
+	at org.apache.hadoop.fs.FilterFileSystem.getFileStatus(FilterFileSystem.java:462)
+	at org.apache.hadoop.fs.ChecksumFileSystem$ChecksumFSInputChecker.<init>(ChecksumFileSystem.java:160)
+	at org.apache.hadoop.fs.ChecksumFileSystem.open(ChecksumFileSystem.java:372)
+	at org.apache.hadoop.fs.FileSystem.open(FileSystem.java:976)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.findVersion(HadoopTableOperations.java:317)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.refresh(HadoopTableOperations.java:103)
+	at org.apache.iceberg.BaseTransaction.lambda$commitReplaceTransaction$1(BaseTransaction.java:368)
+	at org.apache.iceberg.util.Tasks$Builder.runTaskWithRetry(Tasks.java:413)
+	at org.apache.iceberg.util.Tasks$Builder.runSingleThreaded(Tasks.java:219)
+	at org.apache.iceberg.util.Tasks$Builder.run(Tasks.java:203)
+	at org.apache.iceberg.util.Tasks$Builder.run(Tasks.java:196)
+	at org.apache.iceberg.BaseTransaction.commitReplaceTransaction(BaseTransaction.java:365)
+	at org.apache.iceberg.BaseTransaction.commitTransaction(BaseTransaction.java:314)
+	at org.apache.iceberg.CommitCallbackTransaction.commitTransaction(CommitCallbackTransaction.java:126)
+	at org.apache.iceberg.spark.source.StagedSparkTable.commitStagedChanges(StagedSparkTable.java:34)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.$anonfun$writeToTable$1(WriteToDataSourceV2Exec.scala:585)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1397)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.writeToTable(WriteToDataSourceV2Exec.scala:578)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.writeToTable$(WriteToDataSourceV2Exec.scala:572)
+	at org.apache.spark.sql.execution.datasources.v2.AtomicReplaceTableAsSelectExec.writeToTable(WriteToDataSourceV2Exec.scala:186)
+	at org.apache.spark.sql.execution.datasources.v2.AtomicReplaceTableAsSelectExec.run(WriteToDataSourceV2Exec.scala:221)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result$lzycompute(V2CommandExec.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result(V2CommandExec.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.executeCollect(V2CommandExec.scala:49)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)
+	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)
+	at org.apache.spark.sql.DataFrameWriterV2.runCommand(DataFrameWriterV2.scala:201)
+	at org.apache.spark.sql.DataFrameWriterV2.internalReplace(DataFrameWriterV2.scala:213)
+	at org.apache.spark.sql.DataFrameWriterV2.createOrReplace(DataFrameWriterV2.scala:135)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+25/01/14 12:39:16 WARN HadoopTableOperations: Error reading version hint file /usr/spark/delta-lake/data/test_iceberg_table_qqqp/metadata/version-hint.text
+java.io.FileNotFoundException: File /usr/spark/delta-lake/data/test_iceberg_table_qqqp/metadata/version-hint.text does not exist
+	at org.apache.hadoop.fs.RawLocalFileSystem.deprecatedGetFileStatus(RawLocalFileSystem.java:779)
+	at org.apache.hadoop.fs.RawLocalFileSystem.getFileLinkStatusInternal(RawLocalFileSystem.java:1100)
+	at org.apache.hadoop.fs.RawLocalFileSystem.getFileStatus(RawLocalFileSystem.java:769)
+	at org.apache.hadoop.fs.FilterFileSystem.getFileStatus(FilterFileSystem.java:462)
+	at org.apache.hadoop.fs.ChecksumFileSystem$ChecksumFSInputChecker.<init>(ChecksumFileSystem.java:160)
+	at org.apache.hadoop.fs.ChecksumFileSystem.open(ChecksumFileSystem.java:372)
+	at org.apache.hadoop.fs.FileSystem.open(FileSystem.java:976)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.findVersion(HadoopTableOperations.java:317)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.refresh(HadoopTableOperations.java:103)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.current(HadoopTableOperations.java:83)
+	at org.apache.iceberg.BaseTransaction.lambda$commitReplaceTransaction$1(BaseTransaction.java:377)
+	at org.apache.iceberg.util.Tasks$Builder.runTaskWithRetry(Tasks.java:413)
+	at org.apache.iceberg.util.Tasks$Builder.runSingleThreaded(Tasks.java:219)
+	at org.apache.iceberg.util.Tasks$Builder.run(Tasks.java:203)
+	at org.apache.iceberg.util.Tasks$Builder.run(Tasks.java:196)
+	at org.apache.iceberg.BaseTransaction.commitReplaceTransaction(BaseTransaction.java:365)
+	at org.apache.iceberg.BaseTransaction.commitTransaction(BaseTransaction.java:314)
+	at org.apache.iceberg.CommitCallbackTransaction.commitTransaction(CommitCallbackTransaction.java:126)
+	at org.apache.iceberg.spark.source.StagedSparkTable.commitStagedChanges(StagedSparkTable.java:34)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.$anonfun$writeToTable$1(WriteToDataSourceV2Exec.scala:585)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1397)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.writeToTable(WriteToDataSourceV2Exec.scala:578)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.writeToTable$(WriteToDataSourceV2Exec.scala:572)
+	at org.apache.spark.sql.execution.datasources.v2.AtomicReplaceTableAsSelectExec.writeToTable(WriteToDataSourceV2Exec.scala:186)
+	at org.apache.spark.sql.execution.datasources.v2.AtomicReplaceTableAsSelectExec.run(WriteToDataSourceV2Exec.scala:221)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result$lzycompute(V2CommandExec.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result(V2CommandExec.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.executeCollect(V2CommandExec.scala:49)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)
+	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)
+	at org.apache.spark.sql.DataFrameWriterV2.runCommand(DataFrameWriterV2.scala:201)
+	at org.apache.spark.sql.DataFrameWriterV2.internalReplace(DataFrameWriterV2.scala:213)
+	at org.apache.spark.sql.DataFrameWriterV2.createOrReplace(DataFrameWriterV2.scala:135)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+25/01/14 12:39:34 WARN HadoopTableOperations: Error reading version hint file /usr/spark/delta-lake/data/test_iceberg_table/metadata/version-hint.text
+java.io.FileNotFoundException: File /usr/spark/delta-lake/data/test_iceberg_table/metadata/version-hint.text does not exist
+	at org.apache.hadoop.fs.RawLocalFileSystem.deprecatedGetFileStatus(RawLocalFileSystem.java:779)
+	at org.apache.hadoop.fs.RawLocalFileSystem.getFileLinkStatusInternal(RawLocalFileSystem.java:1100)
+	at org.apache.hadoop.fs.RawLocalFileSystem.getFileStatus(RawLocalFileSystem.java:769)
+	at org.apache.hadoop.fs.FilterFileSystem.getFileStatus(FilterFileSystem.java:462)
+	at org.apache.hadoop.fs.ChecksumFileSystem$ChecksumFSInputChecker.<init>(ChecksumFileSystem.java:160)
+	at org.apache.hadoop.fs.ChecksumFileSystem.open(ChecksumFileSystem.java:372)
+	at org.apache.hadoop.fs.FileSystem.open(FileSystem.java:976)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.findVersion(HadoopTableOperations.java:317)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.refresh(HadoopTableOperations.java:103)
+	at org.apache.iceberg.BaseTransaction.lambda$commitReplaceTransaction$1(BaseTransaction.java:368)
+	at org.apache.iceberg.util.Tasks$Builder.runTaskWithRetry(Tasks.java:413)
+	at org.apache.iceberg.util.Tasks$Builder.runSingleThreaded(Tasks.java:219)
+	at org.apache.iceberg.util.Tasks$Builder.run(Tasks.java:203)
+	at org.apache.iceberg.util.Tasks$Builder.run(Tasks.java:196)
+	at org.apache.iceberg.BaseTransaction.commitReplaceTransaction(BaseTransaction.java:365)
+	at org.apache.iceberg.BaseTransaction.commitTransaction(BaseTransaction.java:314)
+	at org.apache.iceberg.CommitCallbackTransaction.commitTransaction(CommitCallbackTransaction.java:126)
+	at org.apache.iceberg.spark.source.StagedSparkTable.commitStagedChanges(StagedSparkTable.java:34)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.$anonfun$writeToTable$1(WriteToDataSourceV2Exec.scala:585)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1397)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.writeToTable(WriteToDataSourceV2Exec.scala:578)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.writeToTable$(WriteToDataSourceV2Exec.scala:572)
+	at org.apache.spark.sql.execution.datasources.v2.AtomicReplaceTableAsSelectExec.writeToTable(WriteToDataSourceV2Exec.scala:186)
+	at org.apache.spark.sql.execution.datasources.v2.AtomicReplaceTableAsSelectExec.run(WriteToDataSourceV2Exec.scala:221)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result$lzycompute(V2CommandExec.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result(V2CommandExec.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.executeCollect(V2CommandExec.scala:49)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)
+	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)
+	at org.apache.spark.sql.DataFrameWriterV2.runCommand(DataFrameWriterV2.scala:201)
+	at org.apache.spark.sql.DataFrameWriterV2.internalReplace(DataFrameWriterV2.scala:213)
+	at org.apache.spark.sql.DataFrameWriterV2.createOrReplace(DataFrameWriterV2.scala:135)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+25/01/14 12:39:34 WARN HadoopTableOperations: Error reading version hint file /usr/spark/delta-lake/data/test_iceberg_table/metadata/version-hint.text
+java.io.FileNotFoundException: File /usr/spark/delta-lake/data/test_iceberg_table/metadata/version-hint.text does not exist
+	at org.apache.hadoop.fs.RawLocalFileSystem.deprecatedGetFileStatus(RawLocalFileSystem.java:779)
+	at org.apache.hadoop.fs.RawLocalFileSystem.getFileLinkStatusInternal(RawLocalFileSystem.java:1100)
+	at org.apache.hadoop.fs.RawLocalFileSystem.getFileStatus(RawLocalFileSystem.java:769)
+	at org.apache.hadoop.fs.FilterFileSystem.getFileStatus(FilterFileSystem.java:462)
+	at org.apache.hadoop.fs.ChecksumFileSystem$ChecksumFSInputChecker.<init>(ChecksumFileSystem.java:160)
+	at org.apache.hadoop.fs.ChecksumFileSystem.open(ChecksumFileSystem.java:372)
+	at org.apache.hadoop.fs.FileSystem.open(FileSystem.java:976)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.findVersion(HadoopTableOperations.java:317)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.refresh(HadoopTableOperations.java:103)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.current(HadoopTableOperations.java:83)
+	at org.apache.iceberg.BaseTransaction.lambda$commitReplaceTransaction$1(BaseTransaction.java:377)
+	at org.apache.iceberg.util.Tasks$Builder.runTaskWithRetry(Tasks.java:413)
+	at org.apache.iceberg.util.Tasks$Builder.runSingleThreaded(Tasks.java:219)
+	at org.apache.iceberg.util.Tasks$Builder.run(Tasks.java:203)
+	at org.apache.iceberg.util.Tasks$Builder.run(Tasks.java:196)
+	at org.apache.iceberg.BaseTransaction.commitReplaceTransaction(BaseTransaction.java:365)
+	at org.apache.iceberg.BaseTransaction.commitTransaction(BaseTransaction.java:314)
+	at org.apache.iceberg.CommitCallbackTransaction.commitTransaction(CommitCallbackTransaction.java:126)
+	at org.apache.iceberg.spark.source.StagedSparkTable.commitStagedChanges(StagedSparkTable.java:34)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.$anonfun$writeToTable$1(WriteToDataSourceV2Exec.scala:585)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1397)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.writeToTable(WriteToDataSourceV2Exec.scala:578)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.writeToTable$(WriteToDataSourceV2Exec.scala:572)
+	at org.apache.spark.sql.execution.datasources.v2.AtomicReplaceTableAsSelectExec.writeToTable(WriteToDataSourceV2Exec.scala:186)
+	at org.apache.spark.sql.execution.datasources.v2.AtomicReplaceTableAsSelectExec.run(WriteToDataSourceV2Exec.scala:221)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result$lzycompute(V2CommandExec.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result(V2CommandExec.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.executeCollect(V2CommandExec.scala:49)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)
+	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)
+	at org.apache.spark.sql.DataFrameWriterV2.runCommand(DataFrameWriterV2.scala:201)
+	at org.apache.spark.sql.DataFrameWriterV2.internalReplace(DataFrameWriterV2.scala:213)
+	at org.apache.spark.sql.DataFrameWriterV2.createOrReplace(DataFrameWriterV2.scala:135)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[I 2025-01-14 12:40:06.365 ServerApp] Saving file at /spark-apps/4-iceberg-and-minio-config.ipynb
+25/01/14 12:40:09 WARN HadoopTableOperations: Error reading version hint file /usr/spark/delta-lake/data/test_iceberg_tablel/metadata/version-hint.text
+java.io.FileNotFoundException: File /usr/spark/delta-lake/data/test_iceberg_tablel/metadata/version-hint.text does not exist
+	at org.apache.hadoop.fs.RawLocalFileSystem.deprecatedGetFileStatus(RawLocalFileSystem.java:779)
+	at org.apache.hadoop.fs.RawLocalFileSystem.getFileLinkStatusInternal(RawLocalFileSystem.java:1100)
+	at org.apache.hadoop.fs.RawLocalFileSystem.getFileStatus(RawLocalFileSystem.java:769)
+	at org.apache.hadoop.fs.FilterFileSystem.getFileStatus(FilterFileSystem.java:462)
+	at org.apache.hadoop.fs.ChecksumFileSystem$ChecksumFSInputChecker.<init>(ChecksumFileSystem.java:160)
+	at org.apache.hadoop.fs.ChecksumFileSystem.open(ChecksumFileSystem.java:372)
+	at org.apache.hadoop.fs.FileSystem.open(FileSystem.java:976)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.findVersion(HadoopTableOperations.java:317)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.refresh(HadoopTableOperations.java:103)
+	at org.apache.iceberg.BaseTransaction.lambda$commitReplaceTransaction$1(BaseTransaction.java:368)
+	at org.apache.iceberg.util.Tasks$Builder.runTaskWithRetry(Tasks.java:413)
+	at org.apache.iceberg.util.Tasks$Builder.runSingleThreaded(Tasks.java:219)
+	at org.apache.iceberg.util.Tasks$Builder.run(Tasks.java:203)
+	at org.apache.iceberg.util.Tasks$Builder.run(Tasks.java:196)
+	at org.apache.iceberg.BaseTransaction.commitReplaceTransaction(BaseTransaction.java:365)
+	at org.apache.iceberg.BaseTransaction.commitTransaction(BaseTransaction.java:314)
+	at org.apache.iceberg.CommitCallbackTransaction.commitTransaction(CommitCallbackTransaction.java:126)
+	at org.apache.iceberg.spark.source.StagedSparkTable.commitStagedChanges(StagedSparkTable.java:34)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.$anonfun$writeToTable$1(WriteToDataSourceV2Exec.scala:585)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1397)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.writeToTable(WriteToDataSourceV2Exec.scala:578)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.writeToTable$(WriteToDataSourceV2Exec.scala:572)
+	at org.apache.spark.sql.execution.datasources.v2.AtomicReplaceTableAsSelectExec.writeToTable(WriteToDataSourceV2Exec.scala:186)
+	at org.apache.spark.sql.execution.datasources.v2.AtomicReplaceTableAsSelectExec.run(WriteToDataSourceV2Exec.scala:221)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result$lzycompute(V2CommandExec.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result(V2CommandExec.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.executeCollect(V2CommandExec.scala:49)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)
+	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)
+	at org.apache.spark.sql.DataFrameWriterV2.runCommand(DataFrameWriterV2.scala:201)
+	at org.apache.spark.sql.DataFrameWriterV2.internalReplace(DataFrameWriterV2.scala:213)
+	at org.apache.spark.sql.DataFrameWriterV2.createOrReplace(DataFrameWriterV2.scala:135)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+25/01/14 12:40:09 WARN HadoopTableOperations: Error reading version hint file /usr/spark/delta-lake/data/test_iceberg_tablel/metadata/version-hint.text
+java.io.FileNotFoundException: File /usr/spark/delta-lake/data/test_iceberg_tablel/metadata/version-hint.text does not exist
+	at org.apache.hadoop.fs.RawLocalFileSystem.deprecatedGetFileStatus(RawLocalFileSystem.java:779)
+	at org.apache.hadoop.fs.RawLocalFileSystem.getFileLinkStatusInternal(RawLocalFileSystem.java:1100)
+	at org.apache.hadoop.fs.RawLocalFileSystem.getFileStatus(RawLocalFileSystem.java:769)
+	at org.apache.hadoop.fs.FilterFileSystem.getFileStatus(FilterFileSystem.java:462)
+	at org.apache.hadoop.fs.ChecksumFileSystem$ChecksumFSInputChecker.<init>(ChecksumFileSystem.java:160)
+	at org.apache.hadoop.fs.ChecksumFileSystem.open(ChecksumFileSystem.java:372)
+	at org.apache.hadoop.fs.FileSystem.open(FileSystem.java:976)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.findVersion(HadoopTableOperations.java:317)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.refresh(HadoopTableOperations.java:103)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.current(HadoopTableOperations.java:83)
+	at org.apache.iceberg.BaseTransaction.lambda$commitReplaceTransaction$1(BaseTransaction.java:377)
+	at org.apache.iceberg.util.Tasks$Builder.runTaskWithRetry(Tasks.java:413)
+	at org.apache.iceberg.util.Tasks$Builder.runSingleThreaded(Tasks.java:219)
+	at org.apache.iceberg.util.Tasks$Builder.run(Tasks.java:203)
+	at org.apache.iceberg.util.Tasks$Builder.run(Tasks.java:196)
+	at org.apache.iceberg.BaseTransaction.commitReplaceTransaction(BaseTransaction.java:365)
+	at org.apache.iceberg.BaseTransaction.commitTransaction(BaseTransaction.java:314)
+	at org.apache.iceberg.CommitCallbackTransaction.commitTransaction(CommitCallbackTransaction.java:126)
+	at org.apache.iceberg.spark.source.StagedSparkTable.commitStagedChanges(StagedSparkTable.java:34)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.$anonfun$writeToTable$1(WriteToDataSourceV2Exec.scala:585)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1397)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.writeToTable(WriteToDataSourceV2Exec.scala:578)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.writeToTable$(WriteToDataSourceV2Exec.scala:572)
+	at org.apache.spark.sql.execution.datasources.v2.AtomicReplaceTableAsSelectExec.writeToTable(WriteToDataSourceV2Exec.scala:186)
+	at org.apache.spark.sql.execution.datasources.v2.AtomicReplaceTableAsSelectExec.run(WriteToDataSourceV2Exec.scala:221)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result$lzycompute(V2CommandExec.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result(V2CommandExec.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.executeCollect(V2CommandExec.scala:49)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)
+	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)
+	at org.apache.spark.sql.DataFrameWriterV2.runCommand(DataFrameWriterV2.scala:201)
+	at org.apache.spark.sql.DataFrameWriterV2.internalReplace(DataFrameWriterV2.scala:213)
+	at org.apache.spark.sql.DataFrameWriterV2.createOrReplace(DataFrameWriterV2.scala:135)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[I 2025-01-14 12:40:12.099 ServerApp] Saving file at /spark-apps/4-iceberg-and-minio-config.ipynb
+25/01/14 12:55:04 WARN HadoopTableOperations: Error reading version hint file /usr/spark/delta-lake/data/test_iceberg_table_qqq/metadata/version-hint.text
+java.io.FileNotFoundException: File /usr/spark/delta-lake/data/test_iceberg_table_qqq/metadata/version-hint.text does not exist
+	at org.apache.hadoop.fs.RawLocalFileSystem.deprecatedGetFileStatus(RawLocalFileSystem.java:779)
+	at org.apache.hadoop.fs.RawLocalFileSystem.getFileLinkStatusInternal(RawLocalFileSystem.java:1100)
+	at org.apache.hadoop.fs.RawLocalFileSystem.getFileStatus(RawLocalFileSystem.java:769)
+	at org.apache.hadoop.fs.FilterFileSystem.getFileStatus(FilterFileSystem.java:462)
+	at org.apache.hadoop.fs.ChecksumFileSystem$ChecksumFSInputChecker.<init>(ChecksumFileSystem.java:160)
+	at org.apache.hadoop.fs.ChecksumFileSystem.open(ChecksumFileSystem.java:372)
+	at org.apache.hadoop.fs.FileSystem.open(FileSystem.java:976)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.findVersion(HadoopTableOperations.java:317)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.refresh(HadoopTableOperations.java:103)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.current(HadoopTableOperations.java:83)
+	at org.apache.iceberg.BaseMetastoreCatalog.loadTable(BaseMetastoreCatalog.java:49)
+	at org.apache.iceberg.shaded.com.github.benmanes.caffeine.cache.BoundedLocalCache.lambda$doComputeIfAbsent$14(BoundedLocalCache.java:2406)
+	at java.base/java.util.concurrent.ConcurrentHashMap.compute(ConcurrentHashMap.java:1908)
+	at org.apache.iceberg.shaded.com.github.benmanes.caffeine.cache.BoundedLocalCache.doComputeIfAbsent(BoundedLocalCache.java:2404)
+	at org.apache.iceberg.shaded.com.github.benmanes.caffeine.cache.BoundedLocalCache.computeIfAbsent(BoundedLocalCache.java:2387)
+	at org.apache.iceberg.shaded.com.github.benmanes.caffeine.cache.LocalCache.computeIfAbsent(LocalCache.java:108)
+	at org.apache.iceberg.shaded.com.github.benmanes.caffeine.cache.LocalManualCache.get(LocalManualCache.java:62)
+	at org.apache.iceberg.CachingCatalog.loadTable(CachingCatalog.java:167)
+	at org.apache.iceberg.spark.SparkCatalog.load(SparkCatalog.java:845)
+	at org.apache.iceberg.spark.SparkCatalog.loadTable(SparkCatalog.java:170)
+	at org.apache.spark.sql.connector.catalog.TableCatalog.tableExists(TableCatalog.java:185)
+	at org.apache.spark.sql.execution.datasources.v2.DropTableExec.run(DropTableExec.scala:36)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result$lzycompute(V2CommandExec.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result(V2CommandExec.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.executeCollect(V2CommandExec.scala:49)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)
+	at org.apache.spark.sql.Dataset.<init>(Dataset.scala:220)
+	at org.apache.spark.sql.Dataset$.$anonfun$ofRows$2(Dataset.scala:100)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.Dataset$.ofRows(Dataset.scala:97)
+	at org.apache.spark.sql.SparkSession.$anonfun$sql$1(SparkSession.scala:638)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.SparkSession.sql(SparkSession.scala:629)
+	at org.apache.spark.sql.SparkSession.sql(SparkSession.scala:659)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[I 2025-01-14 12:55:06.080 ServerApp] Saving file at /spark-apps/4-iceberg-and-minio-config.ipynb
+[Stage 13:>                                                         (0 + 2) / 2]                                                                                25/01/14 12:55:27 WARN HadoopTableOperations: Error reading version hint file /usr/spark/delta-lake/data/test_iceberg_table/metadata/version-hint.text
+java.io.FileNotFoundException: File /usr/spark/delta-lake/data/test_iceberg_table/metadata/version-hint.text does not exist
+	at org.apache.hadoop.fs.RawLocalFileSystem.deprecatedGetFileStatus(RawLocalFileSystem.java:779)
+	at org.apache.hadoop.fs.RawLocalFileSystem.getFileLinkStatusInternal(RawLocalFileSystem.java:1100)
+	at org.apache.hadoop.fs.RawLocalFileSystem.getFileStatus(RawLocalFileSystem.java:769)
+	at org.apache.hadoop.fs.FilterFileSystem.getFileStatus(FilterFileSystem.java:462)
+	at org.apache.hadoop.fs.ChecksumFileSystem$ChecksumFSInputChecker.<init>(ChecksumFileSystem.java:160)
+	at org.apache.hadoop.fs.ChecksumFileSystem.open(ChecksumFileSystem.java:372)
+	at org.apache.hadoop.fs.FileSystem.open(FileSystem.java:976)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.findVersion(HadoopTableOperations.java:317)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.refresh(HadoopTableOperations.java:103)
+	at org.apache.iceberg.BaseTransaction.lambda$commitReplaceTransaction$1(BaseTransaction.java:368)
+	at org.apache.iceberg.util.Tasks$Builder.runTaskWithRetry(Tasks.java:413)
+	at org.apache.iceberg.util.Tasks$Builder.runSingleThreaded(Tasks.java:219)
+	at org.apache.iceberg.util.Tasks$Builder.run(Tasks.java:203)
+	at org.apache.iceberg.util.Tasks$Builder.run(Tasks.java:196)
+	at org.apache.iceberg.BaseTransaction.commitReplaceTransaction(BaseTransaction.java:365)
+	at org.apache.iceberg.BaseTransaction.commitTransaction(BaseTransaction.java:314)
+	at org.apache.iceberg.CommitCallbackTransaction.commitTransaction(CommitCallbackTransaction.java:126)
+	at org.apache.iceberg.spark.source.StagedSparkTable.commitStagedChanges(StagedSparkTable.java:34)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.$anonfun$writeToTable$1(WriteToDataSourceV2Exec.scala:585)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1397)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.writeToTable(WriteToDataSourceV2Exec.scala:578)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.writeToTable$(WriteToDataSourceV2Exec.scala:572)
+	at org.apache.spark.sql.execution.datasources.v2.AtomicReplaceTableAsSelectExec.writeToTable(WriteToDataSourceV2Exec.scala:186)
+	at org.apache.spark.sql.execution.datasources.v2.AtomicReplaceTableAsSelectExec.run(WriteToDataSourceV2Exec.scala:221)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result$lzycompute(V2CommandExec.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result(V2CommandExec.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.executeCollect(V2CommandExec.scala:49)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)
+	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)
+	at org.apache.spark.sql.DataFrameWriterV2.runCommand(DataFrameWriterV2.scala:201)
+	at org.apache.spark.sql.DataFrameWriterV2.internalReplace(DataFrameWriterV2.scala:213)
+	at org.apache.spark.sql.DataFrameWriterV2.createOrReplace(DataFrameWriterV2.scala:135)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+25/01/14 12:55:27 WARN HadoopTableOperations: Error reading version hint file /usr/spark/delta-lake/data/test_iceberg_table/metadata/version-hint.text
+java.io.FileNotFoundException: File /usr/spark/delta-lake/data/test_iceberg_table/metadata/version-hint.text does not exist
+	at org.apache.hadoop.fs.RawLocalFileSystem.deprecatedGetFileStatus(RawLocalFileSystem.java:779)
+	at org.apache.hadoop.fs.RawLocalFileSystem.getFileLinkStatusInternal(RawLocalFileSystem.java:1100)
+	at org.apache.hadoop.fs.RawLocalFileSystem.getFileStatus(RawLocalFileSystem.java:769)
+	at org.apache.hadoop.fs.FilterFileSystem.getFileStatus(FilterFileSystem.java:462)
+	at org.apache.hadoop.fs.ChecksumFileSystem$ChecksumFSInputChecker.<init>(ChecksumFileSystem.java:160)
+	at org.apache.hadoop.fs.ChecksumFileSystem.open(ChecksumFileSystem.java:372)
+	at org.apache.hadoop.fs.FileSystem.open(FileSystem.java:976)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.findVersion(HadoopTableOperations.java:317)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.refresh(HadoopTableOperations.java:103)
+	at org.apache.iceberg.hadoop.HadoopTableOperations.current(HadoopTableOperations.java:83)
+	at org.apache.iceberg.BaseTransaction.lambda$commitReplaceTransaction$1(BaseTransaction.java:377)
+	at org.apache.iceberg.util.Tasks$Builder.runTaskWithRetry(Tasks.java:413)
+	at org.apache.iceberg.util.Tasks$Builder.runSingleThreaded(Tasks.java:219)
+	at org.apache.iceberg.util.Tasks$Builder.run(Tasks.java:203)
+	at org.apache.iceberg.util.Tasks$Builder.run(Tasks.java:196)
+	at org.apache.iceberg.BaseTransaction.commitReplaceTransaction(BaseTransaction.java:365)
+	at org.apache.iceberg.BaseTransaction.commitTransaction(BaseTransaction.java:314)
+	at org.apache.iceberg.CommitCallbackTransaction.commitTransaction(CommitCallbackTransaction.java:126)
+	at org.apache.iceberg.spark.source.StagedSparkTable.commitStagedChanges(StagedSparkTable.java:34)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.$anonfun$writeToTable$1(WriteToDataSourceV2Exec.scala:585)
+	at org.apache.spark.util.Utils$.tryWithSafeFinallyAndFailureCallbacks(Utils.scala:1397)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.writeToTable(WriteToDataSourceV2Exec.scala:578)
+	at org.apache.spark.sql.execution.datasources.v2.V2CreateTableAsSelectBaseExec.writeToTable$(WriteToDataSourceV2Exec.scala:572)
+	at org.apache.spark.sql.execution.datasources.v2.AtomicReplaceTableAsSelectExec.writeToTable(WriteToDataSourceV2Exec.scala:186)
+	at org.apache.spark.sql.execution.datasources.v2.AtomicReplaceTableAsSelectExec.run(WriteToDataSourceV2Exec.scala:221)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result$lzycompute(V2CommandExec.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.result(V2CommandExec.scala:43)
+	at org.apache.spark.sql.execution.datasources.v2.V2CommandExec.executeCollect(V2CommandExec.scala:49)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)
+	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
+	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)
+	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)
+	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)
+	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)
+	at org.apache.spark.sql.DataFrameWriterV2.runCommand(DataFrameWriterV2.scala:201)
+	at org.apache.spark.sql.DataFrameWriterV2.internalReplace(DataFrameWriterV2.scala:213)
+	at org.apache.spark.sql.DataFrameWriterV2.createOrReplace(DataFrameWriterV2.scala:135)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[I 2025-01-14 12:56:48.894 ServerApp] Saving file at /spark-apps/4-iceberg-and-minio-config.ipynb
+[Stage 14:>                                                         (0 + 2) / 2]                                                                                [I 2025-01-14 12:57:47.889 ServerApp] Saving file at /spark-apps/4-iceberg-and-minio-config.ipynb
+[Stage 16:>                                                         (0 + 2) / 2]                                                                                [I 2025-01-14 13:01:48.094 ServerApp] Saving file at /spark-apps/4-iceberg-and-minio-config.ipynb
+[I 2025-01-14 13:01:53.759 ServerApp] Saving file at /spark-apps/4-iceberg-and-minio-config.ipynb
+[W 2025-01-14 13:02:07.512 ServerApp] Notebook spark-apps/2-delta-lake-config.ipynb is not trusted
+[I 2025-01-14 13:02:07.968 ServerApp] Kernel started: aabb214b-53b7-469c-b8f5-a9a151622fc2
+[I 2025-01-14 13:02:09.304 ServerApp] Connecting to kernel aabb214b-53b7-469c-b8f5-a9a151622fc2.
+[I 2025-01-14 13:03:53.921 ServerApp] Saving file at /spark-apps/4-iceberg-and-minio-config.ipynb
+[I 2025-01-14 13:25:09.892 ServerApp] Saving file at /spark-apps/4-iceberg-and-minio-config.ipynb
+[I 2025-01-14 13:25:35.139 ServerApp] Starting buffering for aabb214b-53b7-469c-b8f5-a9a151622fc2:7400202e-205c-4ed5-a47f-f0a31c06b3e7
+[I 2025-01-14 13:25:35.990 ServerApp] Starting buffering for 9d3dbab7-b6b3-473b-ad6e-d690c9683915:3bd9c712-5c70-4c7c-a61c-09c9977daf6d
+25/01/14 13:25:52 ERROR TaskSchedulerImpl: Lost executor 0 on 172.20.0.3: worker lost: 172.20.0.3:34603 got disassociated

@@ -1,0 +1,19 @@
+# Unity Catalog Openjdk 17 image
+FROM quay.io/minio/minio AS minio-base
+ 
+ENV MINIO_ROOT_USER="root" 
+ENV MINIO_ROOT_PASSWORD="jerinminioserver"
+ 
+RUN mkdir /usr/spark/
+RUN mkdir /usr/spark/delta-lake
+
+RUN chmod -R 777 /usr/unitycatalog
+
+WORKDIR /usr/spark/delta-lake
+
+# Start Minio Server
+COPY entrypoint-minio.sh .
+
+ENTRYPOINT ["./entrypoint-minio.sh"]
+
+# CMD [ "tail","-f","/dev/null" ]
