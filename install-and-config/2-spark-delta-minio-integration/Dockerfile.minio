@@ -4,12 +4,12 @@ FROM quay.io/minio/minio AS minio-base
 ENV MINIO_ROOT_USER="root" 
 ENV MINIO_ROOT_PASSWORD="jerinminioserver"
  
-RUN mkdir /usr/nessie/
-RUN mkdir /usr/nessie/nessie-dev
+RUN mkdir /usr/spark
+RUN mkdir /usr/spark/delta-lake
 
-RUN chmod -R 777 /usr/nessie/
+RUN chmod -R 777 /usr/spark/
 
-WORKDIR /usr/nessie/nessie-dev
+WORKDIR /usr/spark/delta-lake
 
 # Start Minio Server
 COPY entrypoint-minio.sh .

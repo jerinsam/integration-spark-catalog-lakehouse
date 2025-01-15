@@ -13,6 +13,7 @@ then
   # jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root &
 
   # Start Pyspark with delta lake and Jupyter Lab as Pyspark environment
+  # Use latest jars or compatible delta jars
   pyspark --name "jupyter-pyspark-session" \
       --master "spark://spark-master:7077" \
       --packages io.delta:delta-spark_2.12:3.2.0 \

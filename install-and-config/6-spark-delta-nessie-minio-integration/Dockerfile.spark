@@ -64,3 +64,16 @@ VOLUME ["/opt/spark/"]
 COPY entrypoint.sh .
 
 ENTRYPOINT ["./entrypoint.sh"]
+
+
+# Following Minio Environmental Variables are used by the nessie jars to access Minio
+# These environmental variables need to be created in the container from where Spark scripts will be fired. 
+# Since Minio is AWS S3 compatible therefore AWS S3 environmental variables are used here.
+# and Nessie access Minio through AWS S3 environmental variables.
+
+# AWS_REGION environment variable will store region of minio
+ENV AWS_REGION="us-east-1" 
+# Minio username
+ENV AWS_ACCESS_KEY_ID="root"  
+# Minio password
+ENV AWS_SECRET_ACCESS_KEY="jerinminioserver"  

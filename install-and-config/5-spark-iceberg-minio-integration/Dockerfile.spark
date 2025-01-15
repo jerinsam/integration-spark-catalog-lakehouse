@@ -64,12 +64,12 @@ VOLUME ["/opt/spark/"]
 
 # Create work directory
 RUN mkdir /usr/spark/
-RUN mkdir /usr/spark/delta-lake
-RUN mkdir /usr/spark/delta-lake/logs
+RUN mkdir /usr/spark/iceberg
+RUN mkdir /usr/spark/iceberg/logs
 
 RUN chmod -R 777 /usr/spark
 
-WORKDIR /usr/spark/delta-lake
+WORKDIR /usr/spark/iceberg
 
 
 # Entrypoint
