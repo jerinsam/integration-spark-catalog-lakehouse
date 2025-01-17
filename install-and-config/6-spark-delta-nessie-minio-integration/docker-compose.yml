@@ -1,4 +1,4 @@
-version: '3.9'
+version: '3'
 
 services:
   spark-master:
@@ -19,11 +19,11 @@ services:
       - "spark-logs:/opt/spark/spark-events"
     env_file:
       - ./spark-config/.env.spark
-
     ports:
       - '9090:8080' # Ued by the Spark Master Web UI
       - '7077:7077' # Used by Spark's cluster manager for accepting connections from workers and applications
-
+    networks:
+      nessie-network:
 
   spark-history-server:
     container_name: container-spark-history
@@ -37,6 +37,8 @@ services:
       - spark-logs:/opt/spark/spark-events
     ports:
       - '18080:18080'
+    networks:
+      nessie-network:
 
   spark-worker:
 #    container_name: da-spark-worker
@@ -50,31 +52,8 @@ services:
       # - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/data:/usr/nessie/nessie-dev/data"
       - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/spark_apps:/usr/nessie/nessie-dev/spark-apps"
       - "spark-logs:/opt/spark/spark-events"
-
-  minio:
-    container_name: container-minio-storage
-    build: 
-      context: .
-      dockerfile: Dockerfile.minio
-    image: minio_storage  
-    ports:
-      - "9000:9000"
-      - "9001:9001" 
-    volumes:
-      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/data:/usr/nessie/nessie-dev/data"
-      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/spark_apps:/usr/nessie/nessie-dev/spark-apps"
-      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/logs:/usr/nessie/nessie-dev/logs" 
-
-  nessie:
-    container_name: container-nessie
-    image: quay.io/projectnessie/nessie:0.101.3
-    depends_on:
-      - spark-master 
-    volumes:
-      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/spark_apps:/usr/nessie/nessie-dev/spark-apps" 
-    ports:
-      - '19120:19120' # Used for Nessie UI
-      - '19000:9000'
+    networks:
+      nessie-network:
 
   jupyter-pyspark:
     container_name: container-jupyter-pyspark
@@ -94,5 +73,40 @@ services:
     ports: 
       - '8888:8888' # Used for Jupyter Lab
       - '8889:8889' # Used for Jupyter Lab
+    networks:
+      nessie-network:
+
+    
+  minio:
+    container_name: container-minio-storage
+    build: 
+      context: .
+      dockerfile: Dockerfile.minio
+    image: minio_storage  
+    ports:
+      - "9000:9000"
+      - "9001:9001" 
+    volumes:
+      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/data:/usr/nessie/nessie-dev/data"
+      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/spark_apps:/usr/nessie/nessie-dev/spark-apps"
+      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/logs:/usr/nessie/nessie-dev/logs" 
+    networks:
+      nessie-network:
+
+  nessie:
+    container_name: container-nessie
+    image: quay.io/projectnessie/nessie:0.101.3
+    depends_on:
+      - spark-master 
+    volumes:
+      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/spark_apps:/usr/nessie/nessie-dev/spark-apps" 
+    ports:
+      - '19120:19120' # Used for Nessie UI
+      - '19000:9000'
+    networks:
+      nessie-network:
+      
 volumes:
   spark-logs:
+networks:
+      nessie-network:

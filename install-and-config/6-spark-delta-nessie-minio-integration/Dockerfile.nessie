@@ -4,6 +4,15 @@ FROM quay.io/projectnessie/nessie:0.101.3
 # Set root access
 USER root
 
+# ENV QUARKUS_PROFILE="prod"
+# ENV QUARKUS_HTTP_PORT="19120"
+# ENV QUARKUS_LOG_CONSOLE_FORMAT="%d{yyyy-MM-dd HH:mm:ss} %-5p [%c{1.}] (%t) %s%e%n"
+# ENV QUARKUS_LOG_LEVEL="INFO"
+# ENV QUARKUS_DATASOURCE_DB_KIND="rocksdb"
+# ENV QUARKUS_DATASOURCE_JDBC_URL="jdbc:rocksdb:file:///nessie/data"
+# ENV QUARKUS_DATASOURCE_USERNAME="nessie"
+# ENV QUARKUS_DATASOURCE_PASSWORD="nessie"
+
 # Create working folder 
 RUN mkdir /usr/nessie
 RUN mkdir /usr/nessie/nessie-dev

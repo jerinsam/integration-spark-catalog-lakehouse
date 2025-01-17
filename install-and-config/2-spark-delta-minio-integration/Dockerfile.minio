@@ -3,6 +3,9 @@ FROM quay.io/minio/minio AS minio-base
  
 ENV MINIO_ROOT_USER="root" 
 ENV MINIO_ROOT_PASSWORD="jerinminioserver"
+ENV MINIO_REGION_NAME="us-east-1"
+ENV MINIO_REGION="us-east-1"
+ENV MINIO_DOMAIN="minio"
  
 RUN mkdir /usr/spark
 RUN mkdir /usr/spark/delta-lake
