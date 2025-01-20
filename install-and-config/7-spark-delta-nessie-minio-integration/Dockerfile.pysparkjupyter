@@ -1,20 +1,28 @@
-FROM python:3.11.11-bullseye AS spark-base
+# Jupyter Pyspark Openjdk 17 image
+FROM python:3.11-alpine AS python-base
 
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
-      sudo \
-      curl \
-      vim \
-      unzip \
-      rsync \
-      openjdk-11-jdk \
-      build-essential \
-      software-properties-common \
-      ssh && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+RUN apk add --no-cache \
+    sudo \
+    curl \
+    vim \
+    unzip \
+    rsync \
+    openjdk17 \
+    build-base \
+    openssh \
+    git \ 
+    make \
+    g++ \
+    bash \
+    gcc \
+    g++ \
+    python3-dev \
+    musl-dev \
+    make \ 
+    linux-headers
 
-
+# Install Node
+RUN apk add --update nodejs npm yarn
 
 ## Download spark and hadoop dependencies and install
 
@@ -31,11 +39,12 @@ RUN curl https://dlcdn.apache.org/spark/spark-3.5.4/spark-3.5.4-bin-hadoop3.tgz 
  && rm -rf spark-3.5.4-bin-hadoop3.tgz
 
 
-FROM spark-base AS pyspark
+FROM python-base AS pyspark
 
 # Install python deps
 COPY ./requirements.txt .
 RUN pip3 install -r requirements.txt
+
 
 ENV PATH="/opt/spark/sbin:/opt/spark/bin:${PATH}"
 ENV SPARK_HOME="/opt/spark"
@@ -44,10 +53,10 @@ ENV SPARK_MASTER_HOST=spark-master
 ENV SPARK_MASTER_PORT=7077
 
 # set pyspark environmental variables like python3, jupyter as IDE and jupyter's parameters under 
-# ENV PYSPARK_PYTHON=python3
-# ENV PYSPARK_DRIVER_PYTHON=python3 
-ENV PYSPARK_DRIVER_PYTHON=jupyter
-ENV PYSPARK_DRIVER_PYTHON_OPTS='lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root'
+ENV PYSPARK_PYTHON=python3
+ENV PYSPARK_DRIVER_PYTHON=python3 
+# ENV PYSPARK_DRIVER_PYTHON=jupyter
+# ENV PYSPARK_DRIVER_PYTHON_OPTS='lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root'
 
 
 COPY ./spark-config/spark-defaults.conf "$SPARK_HOME/conf"
@@ -61,17 +70,23 @@ ENV PYTHONPATH=$SPARK_HOME/python/:$PYTHONPATH
 # Define a volume
 VOLUME ["/opt/spark/"]
 
-COPY entrypoint.sh .
+# Create working folder 
+RUN mkdir /usr/nessie
+RUN mkdir /usr/nessie/nessie-dev/
 
-ENTRYPOINT ["./entrypoint.sh"]
+# Set working dir
+WORKDIR /usr/nessie/nessie-dev/
 
 
+# Start pyspark jupyter
+COPY entrypoint-pysparkjupyter.sh .
+ENTRYPOINT ["./entrypoint-pysparkjupyter.sh"]
 
 ##****************** Very Important to Connect to Minio using AWS S3 Bundle Jars *************** ##
 # Following Minio Environmental Variables are used by the nessie and AWS bundle jars to access Minio
 # These environment variables need to be created in the container from where Spark scripts will be fired. 
-# In this case jupyter is used to execute the spark scripts and all the required jars including nessie and AWS S3 SDK jars are included in this container.
-# Since Minio is AWS S3 compatible therefore AWS S3 environmental variables are used here.
+# In this case jupyter is used to execute the spark scripts and all the required jars including nessie jars are included in this container.
+# Since Minio is AWS S3 compatible and AWS S3 SDK jars are used to access it therefore AWS S3 environmental variables are used here.
 # and Nessie access Minio through AWS S3 bundle jar which uses environment variables present in the docker container for region and credentials.
 
 # AWS_REGION environment variable will store region of minio
@@ -80,3 +95,6 @@ ENV AWS_REGION="us-east-1"
 ENV AWS_ACCESS_KEY_ID="root"  
 # Minio password
 ENV AWS_SECRET_ACCESS_KEY="jerinminioserver"   
+
+
+# CMD [ "tail","-f","/dev/null" ]

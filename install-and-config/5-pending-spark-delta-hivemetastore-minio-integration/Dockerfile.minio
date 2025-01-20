@@ -7,12 +7,12 @@ ENV MINIO_REGION_NAME="us-east-1"
 ENV MINIO_REGION="us-east-1"
 ENV MINIO_DOMAIN="minio"
  
-RUN mkdir /usr/spark
-RUN mkdir /usr/spark/delta-lake
+RUN mkdir /usr/unitycatalog/
+RUN mkdir /usr/unitycatalog/unity-catalog-dev
 
-RUN chmod -R 777 /usr/spark/
+RUN chmod -R 777 /usr/unitycatalog
 
-WORKDIR /usr/spark/delta-lake
+WORKDIR /usr/unitycatalog/unity-catalog-dev
 
 # Start Minio Server
 COPY entrypoint-minio.sh .

@@ -1,0 +1,9 @@
+MinIO Object Storage Server
+Copyright: 2015-2025 MinIO, Inc.
+License: GNU AGPLv3 - https://www.gnu.org/licenses/agpl-3.0.html
+Version: RELEASE.2025-01-18T00-31-37Z (go1.23.5 linux/amd64)
+
+API: http://172.19.0.2:9000  http://127.0.0.1:9000 
+WebUI: http://172.19.0.2:9001 http://127.0.0.1:9001  
+
+Docs: https://docs.min.io

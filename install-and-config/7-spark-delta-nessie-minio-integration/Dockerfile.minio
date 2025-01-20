@@ -1,4 +1,4 @@
-# Unity Catalog Openjdk 17 image
+# Minio Dockerfile
 FROM quay.io/minio/minio AS minio-base
  
 ENV MINIO_ROOT_USER="root" 
@@ -6,13 +6,13 @@ ENV MINIO_ROOT_PASSWORD="jerinminioserver"
 ENV MINIO_REGION_NAME="us-east-1"
 ENV MINIO_REGION="us-east-1"
 ENV MINIO_DOMAIN="minio"
- 
-RUN mkdir /usr/spark
-RUN mkdir /usr/spark/iceberg
 
-RUN chmod -R 777 /usr/spark/
+RUN mkdir /usr/nessie/
+RUN mkdir /usr/nessie/nessie-dev
 
-WORKDIR /usr/spark/iceberg
+RUN chmod -R 777 /usr/nessie/
+
+WORKDIR /usr/nessie/nessie-dev
 
 # Start Minio Server
 COPY entrypoint-minio.sh .

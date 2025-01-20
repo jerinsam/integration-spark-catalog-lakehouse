@@ -55,10 +55,10 @@ ENV SPARK_MASTER_HOST=spark-master
 ENV SPARK_MASTER_PORT=7077
 
 # set pyspark environmental variables like python3, jupyter as IDE and jupyter's parameters under 
-# ENV PYSPARK_PYTHON=python3
-# ENV PYSPARK_DRIVER_PYTHON=python3 
-ENV PYSPARK_DRIVER_PYTHON=jupyter
-ENV PYSPARK_DRIVER_PYTHON_OPTS='lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root'
+ENV PYSPARK_PYTHON=python3
+ENV PYSPARK_DRIVER_PYTHON=python3 
+# ENV PYSPARK_DRIVER_PYTHON=jupyter
+# ENV PYSPARK_DRIVER_PYTHON_OPTS='lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root'
 
 
 COPY ./spark-config/spark-defaults.conf "$SPARK_HOME/conf"
@@ -72,6 +72,7 @@ ENV PYTHONPATH=$SPARK_HOME/python/:$PYTHONPATH
 # Define a volume
 VOLUME ["/opt/spark/"]
 
+## ***************************** Unity Catalog Setup ***************************** ##
 # Create working folder 
 RUN mkdir /usr/unitycatalog
 
@@ -99,6 +100,21 @@ WORKDIR /usr/unitycatalog/unity-catalog-dev
 # Start Unity Catalog Server and UI
 COPY entrypoint-unitycatalog.sh .
 ENTRYPOINT ["./entrypoint-unitycatalog.sh"]
+
+
+##****************** Very Important to Connect to Minio using AWS S3 Bundle Jars *************** ##
+# Following Minio Environmental Variables are used by the nessie and AWS bundle jars to access Minio
+# These environment variables need to be created in the container from where Spark scripts will be fired. 
+# In this case jupyter is used to execute the spark scripts and all the required jars including Unity Catalog and AWS S3 SDK jars are included in this container.
+# Since Minio is AWS S3 compatible and AWS S3 SDK jars are used to access it therefore AWS S3 environmental variables are used here.
+# and Unity Catalog access Minio through AWS S3 bundle jar which uses environment variables present in the docker container for region and credentials.
+
+# AWS_REGION environment variable will store region of minio
+ENV AWS_REGION="us-east-1" 
+# Minio username
+ENV AWS_ACCESS_KEY_ID="root"  
+# Minio password
+ENV AWS_SECRET_ACCESS_KEY="jerinminioserver"   
 
 
 # CMD [ "tail","-f","/dev/null" ]

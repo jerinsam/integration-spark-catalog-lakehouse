@@ -1,4 +1,4 @@
-# Unity Catalog Openjdk 17 image
+# Minio Dockerfile
 FROM quay.io/minio/minio AS minio-base
  
 ENV MINIO_ROOT_USER="root" 
