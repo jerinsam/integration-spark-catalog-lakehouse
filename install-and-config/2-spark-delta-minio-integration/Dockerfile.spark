@@ -71,8 +71,7 @@ RUN chmod -R 777 /usr/spark
 
 WORKDIR /usr/spark/delta-lake
 
-
-# Entrypoint
+# Entrypoint script - It should be declared after the WORKDIR instruction, while creating the container, entrypoint script will be executed from the Working Directory.
 COPY entrypoint.sh .
 
 ENTRYPOINT ["./entrypoint.sh"]

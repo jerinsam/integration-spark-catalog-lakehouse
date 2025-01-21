@@ -1,4 +1,4 @@
-FROM python:3.11.11-bullseye AS spark-base
+FROM python:3.11.11-bullseye AS hive-base
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
@@ -19,47 +19,46 @@ RUN apt-get update && \
 ## Download spark and hadoop dependencies and install
 
 # Optional env variables
-ENV SPARK_HOME=${SPARK_HOME:-"/opt/spark"}
+ENV HIVE_HOME=${HIVE_HOME:-"/opt/hive"} 
 ENV HADOOP_HOME=${HADOOP_HOME:-"/opt/hadoop"}
+ENV HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
+# Java is already installed from above step and added in PATH. JAVA_HOME is required for hadoop 
+ENV JAVA_HOME=${JAVA_HOME:-"/usr/lib/jvm/java-11-openjdk-amd64"}
 
-RUN mkdir -p ${HADOOP_HOME} && mkdir -p ${SPARK_HOME}
-WORKDIR ${SPARK_HOME}
-
-
-RUN curl https://dlcdn.apache.org/spark/spark-3.5.4/spark-3.5.4-bin-hadoop3.tgz -o spark-3.5.4-bin-hadoop3.tgz \
- && tar xvzf spark-3.5.4-bin-hadoop3.tgz --directory /opt/spark --strip-components 1 \
- && rm -rf spark-3.5.4-bin-hadoop3.tgz
+RUN mkdir -p ${HADOOP_HOME} && mkdir -p ${HIVE_HOME}
 
 
-FROM spark-base AS pyspark
+# Install Hive
+WORKDIR ${HIVE_HOME}
+
+RUN curl https://dlcdn.apache.org/hive/hive-4.0.1/apache-hive-4.0.1-bin.tar.gz -o apache-hive-4.0.1-bin.tar.gz \
+ && tar xvzf apache-hive-4.0.1-bin.tar.gz --directory /opt/hive --strip-components 1 \
+ && rm -rf apache-hive-4.0.1-bin.tar.gz
+
+# Add Postgres DB as external metastore in Hive
+COPY ./hive-config/hive-default.xml "$HIVE_HOME/conf"
+
+
+# Install Hadoop
+WORKDIR ${HADOOP_HOME}
+
+RUN curl https://dlcdn.apache.org/hadoop/common/hadoop-3.4.1/hadoop-3.4.1.tar.gz -o hadoop-3.4.1.tar.gz \
+ && tar xvzf hadoop-3.4.1.tar.gz --directory /opt/hadoop --strip-components 1 \
+ && rm -rf hadoop-3.4.1.tar.gz
+
+
+# Add Hadoop and Hive bin in Path
+ENV PATH="/opt/hadoop/bin:/opt/hadoop/sbin:/opt/hive/bin:/opt/hive/sbin:${PATH}"
+
+RUN chmod u+x /opt/hive/bin/* && \
+chmod u+x /opt/hadoop/bin/* 
 
 # Install python deps
 COPY ./requirements.txt .
 RUN pip3 install -r requirements.txt
-
-ENV PATH="/opt/spark/sbin:/opt/spark/bin:${PATH}"
-ENV SPARK_HOME="/opt/spark"
-ENV SPARK_MASTER="spark://spark-master:7077"
-ENV SPARK_MASTER_HOST=spark-master
-ENV SPARK_MASTER_PORT=7077
-
-# set pyspark environmental variables like python3, jupyter as IDE and jupyter's parameters under 
-# ENV PYSPARK_PYTHON=python3
-# ENV PYSPARK_DRIVER_PYTHON=python3 
-ENV PYSPARK_DRIVER_PYTHON=jupyter
-ENV PYSPARK_DRIVER_PYTHON_OPTS='lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root'
-
-
-COPY ./spark-config/spark-defaults.conf "$SPARK_HOME/conf"
-
-RUN chmod u+x /opt/spark/sbin/* && \
-    chmod u+x /opt/spark/bin/*
-
-ENV PYTHONPATH=$SPARK_HOME/python/:$PYTHONPATH
-
-
+    
 # Define a volume
-VOLUME ["/opt/spark/"]
+VOLUME ["/opt/hive/"]
 
 # Create work directory 
 RUN mkdir /usr/hive-metastore
@@ -71,9 +70,9 @@ RUN chmod -R 777 /usr/hive-metastore
 WORKDIR /usr/hive-metastore
 
 # Entrypoint script - It should be declared after the WORKDIR instruction, while creating the container, entrypoint script will be executed from the Working Directory.
-COPY entrypoint.sh .
+COPY entrypoint-hivemetastore.sh .
 
-ENTRYPOINT ["./entrypoint.sh"]
+ENTRYPOINT ["./entrypoint-hivemetastore.sh"]
 
 
 ##****************** Very Important to Connect to Minio using AWS S3 Bundle Jars *************** ##

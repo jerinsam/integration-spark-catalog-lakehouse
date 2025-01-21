@@ -7,12 +7,12 @@ ENV MINIO_REGION_NAME="us-east-1"
 ENV MINIO_REGION="us-east-1"
 ENV MINIO_DOMAIN="minio"
  
-RUN mkdir /usr/unitycatalog/
-RUN mkdir /usr/unitycatalog/unity-catalog-dev
+RUN mkdir /usr/hive-metastore/
+RUN mkdir /usr/hive-metastore/minio
 
-RUN chmod -R 777 /usr/unitycatalog
+RUN chmod -R 777 /usr/hive-metastore/
 
-WORKDIR /usr/unitycatalog/unity-catalog-dev
+WORKDIR /usr/hive-metastore/minio
 
 # Start Minio Server
 COPY entrypoint-minio.sh .

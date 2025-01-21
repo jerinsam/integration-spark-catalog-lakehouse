@@ -1,24 +1,184 @@
-[I 2025-01-20 08:06:41.592 ServerApp] jupyter_lsp | extension was successfully linked.
-[I 2025-01-20 08:06:41.596 ServerApp] jupyter_server_terminals | extension was successfully linked.
-[I 2025-01-20 08:06:41.608 ServerApp] jupyterlab | extension was successfully linked.
-[I 2025-01-20 08:06:42.323 ServerApp] notebook_shim | extension was successfully linked.
-[I 2025-01-20 08:06:42.361 ServerApp] notebook_shim | extension was successfully loaded.
-[I 2025-01-20 08:06:42.364 ServerApp] jupyter_lsp | extension was successfully loaded.
-[I 2025-01-20 08:06:42.367 ServerApp] jupyter_server_terminals | extension was successfully loaded.
-[I 2025-01-20 08:06:42.373 LabApp] JupyterLab extension loaded from /usr/local/lib/python3.11/site-packages/jupyterlab
-[I 2025-01-20 08:06:42.373 LabApp] JupyterLab application directory is /usr/local/share/jupyter/lab
-[I 2025-01-20 08:06:42.374 LabApp] Extension Manager is 'pypi'.
-[I 2025-01-20 08:06:42.532 ServerApp] jupyterlab | extension was successfully loaded.
-[I 2025-01-20 08:06:42.535 ServerApp] Serving notebooks from local directory: /usr/unitycatalog/unity-catalog-dev
-[I 2025-01-20 08:06:42.535 ServerApp] Jupyter Server 2.15.0 is running at:
-[I 2025-01-20 08:06:42.536 ServerApp] http://2ac2dc00a164:8888/lab?token=f154f338874e829ae2650471779a8c4e5506245e05c92a63
-[I 2025-01-20 08:06:42.536 ServerApp]     http://127.0.0.1:8888/lab?token=f154f338874e829ae2650471779a8c4e5506245e05c92a63
-[I 2025-01-20 08:06:42.537 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[C 2025-01-20 08:06:42.544 ServerApp] 
+[I 2025-01-21 11:16:55.651 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-01-21 11:16:55.655 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-01-21 11:16:55.658 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-01-21 11:16:55.660 ServerApp] Writing Jupyter server cookie secret to /root/.local/share/jupyter/runtime/jupyter_cookie_secret
+[I 2025-01-21 11:16:55.986 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-01-21 11:16:56.005 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-01-21 11:16:56.007 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-01-21 11:16:56.008 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-01-21 11:16:56.009 LabApp] JupyterLab extension loaded from /usr/local/lib/python3.11/site-packages/jupyterlab
+[I 2025-01-21 11:16:56.009 LabApp] JupyterLab application directory is /usr/local/share/jupyter/lab
+[I 2025-01-21 11:16:56.011 LabApp] Extension Manager is 'pypi'.
+[I 2025-01-21 11:16:56.085 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-01-21 11:16:56.086 ServerApp] Serving notebooks from local directory: /usr/hive-metastore
+[I 2025-01-21 11:16:56.086 ServerApp] Jupyter Server 2.15.0 is running at:
+[I 2025-01-21 11:16:56.086 ServerApp] http://f2991f2de507:8888/lab?token=3af61dce48be3648975679d73b67f5715ff9d133d916a98a
+[I 2025-01-21 11:16:56.087 ServerApp]     http://127.0.0.1:8888/lab?token=3af61dce48be3648975679d73b67f5715ff9d133d916a98a
+[I 2025-01-21 11:16:56.087 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2025-01-21 11:16:56.090 ServerApp] 
     
     To access the server, open this file in a browser:
         file:///root/.local/share/jupyter/runtime/jpserver-8-open.html
     Or copy and paste one of these URLs:
-        http://2ac2dc00a164:8888/lab?token=f154f338874e829ae2650471779a8c4e5506245e05c92a63
-        http://127.0.0.1:8888/lab?token=f154f338874e829ae2650471779a8c4e5506245e05c92a63
-[I 2025-01-20 08:06:42.997 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+        http://f2991f2de507:8888/lab?token=3af61dce48be3648975679d73b67f5715ff9d133d916a98a
+        http://127.0.0.1:8888/lab?token=3af61dce48be3648975679d73b67f5715ff9d133d916a98a
+[I 2025-01-21 11:16:56.103 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2025-01-21 11:17:11.234 ServerApp] Clearing invalid/expired login cookie username-127-0-0-1-8888
+[W 2025-01-21 11:17:11.235 ServerApp] Couldn't authenticate WebSocket connection
+[W 2025-01-21 11:17:11.268 ServerApp] 403 GET /api/events/subscribe (@172.19.0.1) 36.75ms referer=None
+[W 2025-01-21 11:17:11.277 ServerApp] Clearing invalid/expired login cookie username-127-0-0-1-8888
+[W 2025-01-21 11:17:11.278 LabApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-01-21 11:17:11.288 LabApp] 403 GET /lab/api/workspaces?1737458231219 (@172.19.0.1) 16.69ms referer=http://127.0.0.1:8888/lab
+[W 2025-01-21 11:17:11.289 ServerApp] Clearing invalid/expired login cookie username-127-0-0-1-8888
+[W 2025-01-21 11:17:11.289 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-01-21 11:17:11.290 ServerApp] 403 GET /api/contents?content=1&hash=0&1737458231219 (@172.19.0.1) 17.99ms referer=http://127.0.0.1:8888/lab
+[W 2025-01-21 11:17:11.291 ServerApp] Clearing invalid/expired login cookie username-127-0-0-1-8888
+[W 2025-01-21 11:17:11.292 TerminalsExtensionApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-01-21 11:17:11.295 TerminalsExtensionApp] 403 GET /api/terminals?1737458231219 (@172.19.0.1) 21.06ms referer=http://127.0.0.1:8888/lab
+[W 2025-01-21 11:17:11.297 ServerApp] Clearing invalid/expired login cookie username-127-0-0-1-8888
+[W 2025-01-21 11:17:11.298 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-01-21 11:17:11.299 ServerApp] 403 GET /api/kernels?1737458231218 (@172.19.0.1) 24.59ms referer=http://127.0.0.1:8888/lab
+[W 2025-01-21 11:17:11.300 ServerApp] Clearing invalid/expired login cookie username-127-0-0-1-8888
+[W 2025-01-21 11:17:11.300 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-01-21 11:17:11.301 ServerApp] 403 GET /api/sessions?1737458231218 (@172.19.0.1) 25.99ms referer=http://127.0.0.1:8888/lab
+[W 2025-01-21 11:17:14.904 ServerApp] Couldn't authenticate WebSocket connection
+[W 2025-01-21 11:17:14.906 ServerApp] 403 GET /api/events/subscribe (@172.19.0.1) 1.65ms referer=None
+[W 2025-01-21 11:17:21.907 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-01-21 11:17:21.908 ServerApp] 403 GET /api/contents?content=1&hash=0&1737458241900 (@172.19.0.1) 2.81ms referer=http://127.0.0.1:8888/lab
+[W 2025-01-21 11:17:23.459 ServerApp] Couldn't authenticate WebSocket connection
+[W 2025-01-21 11:17:23.461 ServerApp] 403 GET /api/events/subscribe (@172.19.0.1) 2.08ms referer=None
+[W 2025-01-21 11:17:23.487 TerminalsExtensionApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-01-21 11:17:23.488 TerminalsExtensionApp] 403 GET /api/terminals?1737458243484 (@172.19.0.1) 1.69ms referer=http://127.0.0.1:8888/lab
+[W 2025-01-21 11:17:25.909 ServerApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-01-21 11:17:25.910 ServerApp] 403 GET /api/kernelspecs?1737458245906 (@172.19.0.1) 1.25ms referer=http://127.0.0.1:8888/lab
+[W 2025-01-21 11:17:26.220 LabApp] wrote error: 'Forbidden'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 1788, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 3289, in wrapper
+        url = self.get_login_url()
+              ^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/base/handlers.py", line 784, in get_login_url
+        raise web.HTTPError(403)
+    tornado.web.HTTPError: HTTP 403: Forbidden
+[W 2025-01-21 11:17:26.220 LabApp] 403 GET /lab/api/workspaces?1737458246216 (@172.19.0.1) 1.91ms referer=http://127.0.0.1:8888/lab
+[W 2025-01-21 11:17:26.222 ServerApp] Couldn't authenticate WebSocket connection
+[W 2025-01-21 11:17:26.223 ServerApp] 403 GET /api/events/subscribe (@172.19.0.1) 1.15ms referer=None
+[I 2025-01-21 11:17:26.320 ServerApp] 302 GET /?token=[secret] (@172.19.0.1) 0.30ms
+[W 2025-01-21 11:17:26.836 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-01-21 11:18:33.518 ServerApp] Writing notebook-signing key to /root/.local/share/jupyter/notebook_secret
+[W 2025-01-21 11:18:33.522 ServerApp] Notebook spark-apps/5-hive-metastore-and-minio-config.ipynb is not trusted
+[I 2025-01-21 11:18:34.011 ServerApp] Kernel started: 9fe90d35-736d-4a3d-b0a6-c7702f812116
+[I 2025-01-21 11:18:34.783 ServerApp] Connecting to kernel 9fe90d35-736d-4a3d-b0a6-c7702f812116.
+[I 2025-01-21 11:18:34.802 ServerApp] Connecting to kernel 9fe90d35-736d-4a3d-b0a6-c7702f812116.
+[I 2025-01-21 11:18:34.817 ServerApp] Connecting to kernel 9fe90d35-736d-4a3d-b0a6-c7702f812116.
+[W 2025-01-21 11:18:43.748 ServerApp] Notebook spark-apps/2-delta-lake-minio-config.ipynb is not trusted
+[I 2025-01-21 11:18:44.045 ServerApp] Kernel started: 1b8e5f0a-64a3-4022-9481-ad4b4bd238c7
+[I 2025-01-21 11:18:44.547 ServerApp] Connecting to kernel 1b8e5f0a-64a3-4022-9481-ad4b4bd238c7.
+[W 2025-01-21 11:18:50.936 ServerApp] Notebook spark-apps/1-delta-lake-config.ipynb is not trusted
+[I 2025-01-21 11:18:51.227 ServerApp] Kernel started: 0f51ad48-67ed-4958-ab10-76f6642b6a46
+[I 2025-01-21 11:18:51.794 ServerApp] Connecting to kernel 0f51ad48-67ed-4958-ab10-76f6642b6a46.
+[I 2025-01-21 11:19:21.174 ServerApp] Starting buffering for 1b8e5f0a-64a3-4022-9481-ad4b4bd238c7:c0fa34f0-e5be-431e-a1c0-1d4ccb90adf6
+[I 2025-01-21 11:19:30.214 ServerApp] Starting buffering for 0f51ad48-67ed-4958-ab10-76f6642b6a46:c09bcc29-571b-4c32-a3cd-35c225b93d61
+[W 2025-01-21 11:19:31.801 ServerApp] Notebook spark-apps/2-delta-lake-minio-config.ipynb is not trusted
+[I 2025-01-21 11:19:31.975 ServerApp] Connecting to kernel 1b8e5f0a-64a3-4022-9481-ad4b4bd238c7.
+[I 2025-01-21 11:19:36.062 ServerApp] Starting buffering for 1b8e5f0a-64a3-4022-9481-ad4b4bd238c7:68664cb6-f719-4aa5-b6a3-a5d133dd7c4b
+[I 2025-01-21 11:19:38.698 ServerApp] Saving file at /spark-apps/5-delta-hive-metastore-and-minio-config.ipynb
+[W 2025-01-21 11:19:38.700 ServerApp] Notebook spark-apps/5-delta-hive-metastore-and-minio-config.ipynb is not trusted
+[W 2025-01-21 11:20:14.574 ServerApp] Notebook spark-apps/7-nessie-minio-config.ipynb is not trusted
+[I 2025-01-21 11:20:14.818 ServerApp] Kernel started: 6a721bd8-0c5b-41e5-b0c8-a4cf406b425d
+[I 2025-01-21 11:20:15.355 ServerApp] Connecting to kernel 6a721bd8-0c5b-41e5-b0c8-a4cf406b425d.
+[W 2025-01-21 11:20:16.401 ServerApp] Notebook spark-apps/6-iceberg-minio-config.ipynb is not trusted
+[I 2025-01-21 11:20:16.637 ServerApp] Kernel started: 3c6540d0-99c7-4536-9dfd-bc18416fa439
+[I 2025-01-21 11:20:17.215 ServerApp] Connecting to kernel 3c6540d0-99c7-4536-9dfd-bc18416fa439.
+[W 2025-01-21 11:20:19.869 ServerApp] Notebook spark-apps/4-issue-unity-calatog-and-minio-config.ipynb is not trusted
+[I 2025-01-21 11:20:20.237 ServerApp] Kernel started: 64c2f2ea-7f90-4e21-90aa-3f5d31a31ba8
+[I 2025-01-21 11:20:20.747 ServerApp] Connecting to kernel 64c2f2ea-7f90-4e21-90aa-3f5d31a31ba8.
+[I 2025-01-21 11:20:32.747 ServerApp] Saving file at /spark-apps/4-issue-unity-calatog-and-minio-config.ipynb
+[W 2025-01-21 11:20:32.748 ServerApp] Notebook spark-apps/4-issue-unity-calatog-and-minio-config.ipynb is not trusted
+[I 2025-01-21 11:20:33.554 ServerApp] Starting buffering for 64c2f2ea-7f90-4e21-90aa-3f5d31a31ba8:01484f08-ce10-47c7-a9c9-4907c3f653ba
+[I 2025-01-21 11:20:35.306 ServerApp] Starting buffering for 3c6540d0-99c7-4536-9dfd-bc18416fa439:2df9c131-b77c-451c-bbef-e0b1003a2b78
+[I 2025-01-21 11:20:36.927 ServerApp] Starting buffering for 6a721bd8-0c5b-41e5-b0c8-a4cf406b425d:8e235457-25a3-424c-93cb-09ee85813f9e
+[I 2025-01-21 11:21:38.976 ServerApp] Saving file at /spark-apps/5-delta-hive-metastore-and-minio-config.ipynb
+[W 2025-01-21 11:21:38.978 ServerApp] Notebook spark-apps/5-delta-hive-metastore-and-minio-config.ipynb is not trusted
