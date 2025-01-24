@@ -61,11 +61,14 @@ ENV SPARK_MASTER="spark://spark-master:7077"
 ENV SPARK_MASTER_HOST=spark-master
 ENV SPARK_MASTER_PORT=7077
 
-# set pyspark environmental variables like python3, jupyter as IDE and jupyter's parameters under 
-ENV PYSPARK_PYTHON=python3
-ENV PYSPARK_DRIVER_PYTHON=python3 
-# ENV PYSPARK_DRIVER_PYTHON=jupyter
-# ENV PYSPARK_DRIVER_PYTHON_OPTS='lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root'
+# # Set pyspark environmental variables to python3, whenever Pyspark command is executed in bash shell then it will give python as the default development environment
+# ENV PYSPARK_PYTHON=python3
+# ENV PYSPARK_DRIVER_PYTHON=python3 
+
+# Set Pyspark Environment Variable to jupyter as IDE and add jupyter's parameters, whenever Pyspark command is executed in bash shell then it will start the jupyter server and give Jupyter IDE as the default development environment
+# Execute "jupyter server list" command to get the token to connect to jupyter.
+ENV PYSPARK_DRIVER_PYTHON=jupyter
+ENV PYSPARK_DRIVER_PYTHON_OPTS='lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root'
 
 
 # Copy Spark Defaults

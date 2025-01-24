@@ -1,4 +1,4 @@
-## LEARN SPARK, DELTA LAKE, AND UNITY CATALOG
+## LEARN INTEGRATION OF SPARK WITH DIFFERENT LAKEHOUSES AND CATALOGS
 **DATA ENGINEERING - Integration of Spark with different metastore/ catalogs and lakehouses**
 - In this tutorial, Docker Images are used to create services for Spark, Unity Catalog, Hive Metastore, Nessie, Minio etc., which is further integrated together.
 
@@ -13,6 +13,8 @@
 
 
 **How to navigate through this Repo -**
+Following table will show the mapping of installation/configs and notebook script with the integration of Spark and other services.
+
 |Integrations|Install and Config|Jupyter Notebook|
 | -------- | ------- |-------- |
 | Spark and Delta Lake Integration|./install-and-config/1-spark-delta-integration|./spark-working-folder/spark_apps/1-delta-lake-config.ipynb|
@@ -23,4 +25,9 @@
 | Spark, Iceberg and Minio Integration|./install-and-config/6-spark-iceberg-minio-integration|./spark-working-folder/spark_apps/6-iceberg-minio-config.ipynb|
 | Spark, Delta Lake, Nessie and Minio Integration|./install-and-config/7-spark-delta-nessie-minio-integration|./spark-working-folder/spark_apps/7-nessie-minio-config.ipynb|
 
+In each folder, following files can be found and for better understanding follow it in the same order:
+1. Dockerfile : Dockerfile for different services used in the integration.
+2. entrypoint.sh: Bash script which will be executed when the container is created from the above Dockerfiles.
+3. docker-compose.yml: This file is used to create and run multiple containers as a single service i.e. in the same network.
+4. requirement.txt: Contains the list of python packages to be installed in the container.
 

@@ -8,18 +8,13 @@ cd /usr/unitycatalog/unitycatalog/ui && yarn install && yarn start > /usr/unityc
 cd /usr/unitycatalog/unitycatalog && ./bin/start-uc-server > /usr/unitycatalog/unity-catalog-dev/logs/uc-server.log 2>&1 &
 
 
-# Start Jupyter Lab
+# # Start Jupyter Lab explicitly
+# # import pyspark command in python is required and spark session needs to be created from the jupyter notebook.
 # jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root &
 
-# Start Pyspark with delta lake and Jupyter Lab as Pyspark environment
-# pyspark --name "jupyter-pyspark-session" \
-#     --master "spark://spark-master:7077" \
-#     --packages io.delta:delta-spark_2.12:3.2.0 \
-#     --conf "spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension" \
-#     --conf "spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog" > /usr/unitycatalog/unity-catalog-dev/uc-logs/pyspark.log 2>&1 &
-
-
 # Start Pyspark with delta lake and unity catalog and Jupyter Lab as Pyspark environment
+# "import pyspark" command in python is not required as below code automatically do that and will give developer "spark" object for the development.
+# Explicit creation of spark session from jupyter notebook is not required
 pyspark --name "upyter-unity-catalog-pyspark-session" \
     --master "spark://spark-master:7077" \
     --packages "io.delta:delta-spark_2.12:3.2.1,io.unitycatalog:unitycatalog-spark_2.12:0.2.0" \

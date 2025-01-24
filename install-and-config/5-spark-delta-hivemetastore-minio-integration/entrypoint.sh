@@ -9,7 +9,8 @@ then
   # Start Spark Master
   start-master.sh -p 7077 &
 
-  # Start Jupyter lab
+  # # Start Jupyter Lab explicitly
+  # import pyspark command in python is required and spark session needs to be created from the jupyter notebook. 
   jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root > /usr/hive-metastore/logs/jupyter.log 2>&1 
 
 elif [ "$SPARK_WORKLOAD" == "worker" ];

@@ -81,10 +81,12 @@ services:
     environment:
       - POSTGRES_USER=jerin
       - POSTGRES_PASSWORD=jerinpostgresql
-      - POSTGRES_DB=hivemetastore
+      - POSTGRES_DB=hivemetastore # Database added in this Environment Variable will be cerated automatically
     ports:
       - "5332:5432" # Port to connect to Postgres 
     # volumes:
+    # #  Adding sql script in /docker-entrypoint-initdb.d/ directory will be automatically executed.
+    # # This is commented, since hive metastore will be created by hive init script mentioned in entrypoint file of hive metastore.
     #   - ./postgres-hive-script/hive-schema-4.0.0.postgres.sql:/docker-entrypoint-initdb.d/hive-schema-4.0.0.postgres.sql
     networks:
       hivemetastore:

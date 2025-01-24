@@ -9,15 +9,9 @@ then
   # Start Spark Master
   start-master.sh -p 7077 > /usr/spark/iceberg/logs/spark-master.log 2>&1 & \
 
-  # Start Jupyter Lab
+  # # Start Jupyter Lab explicitly
+  # import pyspark command in python is required and spark session needs to be created from the jupyter notebook. 
   jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root > /usr/spark/iceberg/logs/jupyter.log 2>&1 
-
-  # # Start Pyspark with delta lake and Jupyter Lab as Pyspark environment
-  # pyspark --name "jupyter-pyspark-session" \
-  #     --master "spark://spark-master:7077" \
-  #     --packages io.delta:delta-spark_2.12:3.2.0 \
-  #     --conf "spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension" \
-  #     --conf "spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog" > /usr/spark/iceberg/logs/pyspark.log 2>&1 
 
 elif [ "$SPARK_WORKLOAD" == "worker" ];
 then

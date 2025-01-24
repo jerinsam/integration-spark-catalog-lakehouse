@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-# Initialize Hive schema for PostgreSQL
+# Initialize Hive schema for PostgreSQL: This will create all the necessary tables in the database
 $HIVE_HOME/bin/schematool -initSchema -dbType postgres > /usr/hive-metastore/logs/initilizePostgres.log 2>&1
 
 # Start Hive metastore service

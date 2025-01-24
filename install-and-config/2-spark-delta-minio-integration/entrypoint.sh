@@ -9,10 +9,15 @@ then
   # Start Spark Master
   start-master.sh -p 7077 > /usr/spark/delta-lake/logs/spark-master.log 2>&1 & \
 
-  # Start Jupyter Lab
+  ## Start Jupyter Lab explicitly
+  ## import pyspark command in python is required and spark session needs to be created from the jupyter notebook.
   jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root > /usr/spark/delta-lake/logs/jupyter.log 2>&1 
 
   # # Start Pyspark with delta lake and Jupyter Lab as Pyspark environment
+  # # Use latest jars or compatible delta jars
+  # # "import pyspark" command in python is not required as below code automatically do that and will give developer "spark" object for the development.
+  # # Explicit creation of spark session from jupyter notebook is not required
+
   # pyspark --name "jupyter-pyspark-session" \
   #     --master "spark://spark-master:7077" \
   #     --packages io.delta:delta-spark_2.12:3.2.0 \
