@@ -14,9 +14,9 @@ services:
       timeout: 3s
       retries: 3
     volumes:
-      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/data:/usr/spark/delta-lake/data"
-      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/spark_apps:/usr/spark/delta-lake/spark-apps"
-      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/logs:/usr/spark/delta-lake/logs"
+      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/integration-spark-catalog-lakehouse/spark-working-folder/data:/usr/spark/delta-lake/data"
+      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/integration-spark-catalog-lakehouse/spark-working-folder/spark_apps:/usr/spark/delta-lake/spark-apps"
+      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/integration-spark-catalog-lakehouse/spark-working-folder/logs:/usr/spark/delta-lake/logs"
       - "spark-logs:/opt/spark/spark-events"
     env_file:
       - ./spark-config/.env.spark
@@ -36,7 +36,7 @@ services:
     env_file:
       - ./spark-config/.env.spark
     volumes:
-      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/logs:/usr/spark/delta-lake/logs"
+      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/integration-spark-catalog-lakehouse/spark-working-folder/logs:/usr/spark/delta-lake/logs"
       - spark-logs:/opt/spark/spark-events
     ports:
       - '18080:18080'
@@ -50,9 +50,9 @@ services:
     env_file:
       - ./spark-config/.env.spark
     volumes:
-      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/data:/usr/spark/delta-lake/data"
-      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/spark_apps:/usr/spark/delta-lake/spark-apps"
-      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/logs:/usr/spark/delta-lake/logs"
+      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/integration-spark-catalog-lakehouse/spark-working-folder/data:/usr/spark/delta-lake/data"
+      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/integration-spark-catalog-lakehouse/spark-working-folder/spark_apps:/usr/spark/delta-lake/spark-apps"
+      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/integration-spark-catalog-lakehouse/spark-working-folder/logs:/usr/spark/delta-lake/logs"
       - "spark-logs:/opt/spark/spark-events"
 
   minio:
@@ -65,9 +65,9 @@ services:
       - "9000:9000"
       - "9001:9001" 
     volumes:
-      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/data:/usr/spark/delta-lake/data"
-      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/spark_apps:/usr/spark/delta-lake/spark-apps"
-      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/logs:/usr/spark/delta-lake/logs" 
+      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/integration-spark-catalog-lakehouse/spark-working-folder/data:/usr/spark/delta-lake/data"
+      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/integration-spark-catalog-lakehouse/spark-working-folder/spark_apps:/usr/spark/delta-lake/spark-apps"
+      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/integration-spark-catalog-lakehouse/spark-working-folder/logs:/usr/spark/delta-lake/logs" 
 
 volumes:
   spark-logs:
