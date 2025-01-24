@@ -15,8 +15,8 @@ services:
       retries: 3
     volumes:
       # - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/data:/usr/hive-metastore/data"
-      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/spark_apps:/usr/hive-metastore/spark-apps"
       - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/logs:/usr/hive-metastore/logs"
+      - "/mnt/c/Users/jerin/OneDrive\ -\ Aligned\ Automation/Work/Learn/Tech Solutions/spark-deltalake-unitiycatalog-learn-hands-on/spark-working-folder/spark_apps:/usr/hive-metastore/spark-apps"
       - "spark-logs:/opt/spark/spark-events"
     env_file:
       - ./spark-config/.env.spark
@@ -84,6 +84,8 @@ services:
       - POSTGRES_DB=hivemetastore
     ports:
       - "5332:5432" # Port to connect to Postgres 
+    # volumes:
+    #   - ./postgres-hive-script/hive-schema-4.0.0.postgres.sql:/docker-entrypoint-initdb.d/hive-schema-4.0.0.postgres.sql
     networks:
       hivemetastore:
     healthcheck:
@@ -92,7 +94,6 @@ services:
       timeout: 10s
       retries: 5
 
-      
   hive-metastore:
     container_name: container-hive-metastore
     build: 

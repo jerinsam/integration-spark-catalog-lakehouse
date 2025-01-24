@@ -25,11 +25,29 @@ ENV HADOOP_HOME=${HADOOP_HOME:-"/opt/hadoop"}
 RUN mkdir -p ${HADOOP_HOME} && mkdir -p ${SPARK_HOME}
 WORKDIR ${SPARK_HOME}
 
-
+# Install spark
 RUN curl https://dlcdn.apache.org/spark/spark-3.5.4/spark-3.5.4-bin-hadoop3.tgz -o spark-3.5.4-bin-hadoop3.tgz \
  && tar xvzf spark-3.5.4-bin-hadoop3.tgz --directory /opt/spark --strip-components 1 \
  && rm -rf spark-3.5.4-bin-hadoop3.tgz
 
+######### Spark 3.5.4 supports Hive 2.3.9 by default and the latest version of Hive gives error during connection with hive extername metastore.
+######### Also by default, Spark 3.5.4 tar has Hive 2.3.9 jars available in its directory.
+######### Due to above reason, following code is commented.
+
+
+# Install Hive for Hive 4.0.1 jars: These hive jars needs to be copied to spark jars folder
+
+# RUN mkdir /opt/hive 
+
+# RUN curl https://dlcdn.apache.org/hive/hive-4.0.1/apache-hive-4.0.1-bin.tar.gz -o apache-hive-4.0.1-bin.tar.gz \
+#  && tar xvzf apache-hive-4.0.1-bin.tar.gz --directory /opt/hive --strip-components 1 \
+#  && rm -rf apache-hive-4.0.1-bin.tar.gz
+
+# # Remove all hive jars from Spark jar folder
+# RUN rm -f /opt/spark/jars/hive*.jar
+
+# # Copy all hive 4.0.1 jars from hive folder to Spark jar folder
+# RUN cp /opt/hive/lib/hive*.jar /opt/spark/jars/
 
 FROM spark-base AS pyspark
 
@@ -44,13 +62,27 @@ ENV SPARK_MASTER_HOST=spark-master
 ENV SPARK_MASTER_PORT=7077
 
 # set pyspark environmental variables like python3, jupyter as IDE and jupyter's parameters under 
-# ENV PYSPARK_PYTHON=python3
-# ENV PYSPARK_DRIVER_PYTHON=python3 
-ENV PYSPARK_DRIVER_PYTHON=jupyter
-ENV PYSPARK_DRIVER_PYTHON_OPTS='lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root'
+ENV PYSPARK_PYTHON=python3
+ENV PYSPARK_DRIVER_PYTHON=python3 
+# ENV PYSPARK_DRIVER_PYTHON=jupyter
+# ENV PYSPARK_DRIVER_PYTHON_OPTS='lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root'
 
 
+# Copy Spark Defaults
 COPY ./spark-config/spark-defaults.conf "$SPARK_HOME/conf"
+
+# Add Postgres DB as external metastore in Hive
+COPY ./spark-config/hive-site.xml "$SPARK_HOME/conf"
+
+
+# Download Postgresql jar to connect postgres which will act as hive external metastore
+RUN curl https://jdbc.postgresql.org/download/postgresql-42.7.5.jar -o /opt/spark/jars/postgresql-42.7.5.jar
+
+# # Install hadoop aws s3 dependencies for minio
+# RUN curl https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-aws/3.4.1/hadoop-aws-3.4.1.jar -o /opt/spark/jars/hadoop-aws-3.4.1.jar
+# RUN curl https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-bundle/1.12.780/aws-java-sdk-bundle-1.12.780.jar -o /opt/spark/jars/aws-java-sdk-bundle-1.12.780.jar
+
+
 
 RUN chmod u+x /opt/spark/sbin/* && \
     chmod u+x /opt/spark/bin/*
