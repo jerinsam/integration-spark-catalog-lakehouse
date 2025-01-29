@@ -1,4 +1,4 @@
-## LEARN INTEGRATION OF SPARK WITH DIFFERENT LAKEHOUSES AND CATALOGS
+## INTEGRATION OF SPARK WITH DIFFERENT LAKEHOUSES AND CATALOGS
 **DATA ENGINEERING - Integration of Spark with different metastore/ catalogs and lakehouses**
 - In this tutorial, Docker Images are used to create services for Spark, Unity Catalog, Hive Metastore, Nessie, Minio etc., which is further integrated together.
 
@@ -9,7 +9,7 @@
 4. Spark, Delta Lake and Unity Catalog and Minio Integration - Issue integrating Minio with Unity Catalog due to absence of AWS endpoint parameter in server.properties of Unity Catalog
 5. Spark, Delta Lake, Hive Metastore and Minio Integration
 6. Spark, Iceberg and Minio Integration
-7. Spark, Delta Lake, Nessie and Minio Integration
+7. Spark, Iceberg, Nessie and Minio Integration
 
 
 **How to navigate through this Repo -**
@@ -23,7 +23,7 @@ Following table will show the mapping of installation/configs and notebook scrip
 | Spark, Delta Lake and Unity Catalog and Minio Integration - Issue integrating Minio with Unity Catalog |./install-and-config/4-issue-spark-delta-unity-minio-integration|./spark-working-folder/spark_apps/4-issue-unity-calatog-and-minio-config.ipynb|
 | Spark, Delta Lake, Hive Metastore and Minio Integration|./install-and-config/5-spark-delta-hivemetastore-minio-integration|./spark-working-folder/spark_apps/5-delta-hive-metastore-and-minio-config.ipynb|
 | Spark, Iceberg and Minio Integration|./install-and-config/6-spark-iceberg-minio-integration|./spark-working-folder/spark_apps/6-iceberg-minio-config.ipynb|
-| Spark, Delta Lake, Nessie and Minio Integration|./install-and-config/7-spark-delta-nessie-minio-integration|./spark-working-folder/spark_apps/7-nessie-minio-config.ipynb|
+| Spark, Iceberg, Nessie and Minio Integration|./install-and-config/7-spark-iceberg-nessie-minio-integration|./spark-working-folder/spark_apps/7-nessie-minio-config.ipynb|
 
 In each folder, following files can be found and for better understanding follow it in the same order:
 1. Dockerfile : Dockerfile for different services used in the integration.
