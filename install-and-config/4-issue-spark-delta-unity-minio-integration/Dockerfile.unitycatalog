@@ -106,7 +106,7 @@ ENTRYPOINT ["./entrypoint-unitycatalog.sh"]
 
 
 ##****************** Very Important to Connect to Minio using AWS S3 Bundle Jars *************** ##
-# Following Minio Environmental Variables are used by the nessie and AWS bundle jars to access Minio
+# Following Minio Environmental Variables are used by the AWS bundle jars to access Minio
 # These environment variables need to be created in the container from where Spark scripts will be fired. 
 # In this case jupyter is used to execute the spark scripts and all the required jars including Unity Catalog and AWS S3 SDK jars are included in this container.
 # Since Minio is AWS S3 compatible and AWS S3 SDK jars are used to access it therefore AWS S3 environmental variables are used here.

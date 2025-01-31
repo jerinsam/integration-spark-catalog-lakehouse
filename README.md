@@ -13,6 +13,8 @@
 
 
 **How to navigate through this Repo -**
+Details of the integration can be found in **"integration-document.docx"**. Each integration is explained in detail with the snippets of configurations and details of Spark Session.
+
 Following table will show the mapping of installation/configs and notebook script with the integration of Spark and other services.
 
 |Integrations|Install and Config|Jupyter Notebook|
