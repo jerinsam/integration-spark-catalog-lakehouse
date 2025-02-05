@@ -1,0 +1,548 @@
+[I 2025-02-05 09:04:05.658 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2025-02-05 09:04:05.662 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[I 2025-02-05 09:04:05.668 ServerApp] jupyterlab | extension was successfully linked.
+[I 2025-02-05 09:04:06.139 ServerApp] notebook_shim | extension was successfully linked.
+[I 2025-02-05 09:04:06.163 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2025-02-05 09:04:06.165 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2025-02-05 09:04:06.166 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2025-02-05 09:04:06.174 LabApp] JupyterLab extension loaded from /usr/local/lib/python3.11/site-packages/jupyterlab
+[I 2025-02-05 09:04:06.174 LabApp] JupyterLab application directory is /usr/local/share/jupyter/lab
+[I 2025-02-05 09:04:06.175 LabApp] Extension Manager is 'pypi'.
+[I 2025-02-05 09:04:06.263 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2025-02-05 09:04:06.264 ServerApp] Serving notebooks from local directory: /usr/hive-metastore
+[I 2025-02-05 09:04:06.264 ServerApp] Jupyter Server 2.15.0 is running at:
+[I 2025-02-05 09:04:06.265 ServerApp] http://49ea5956cc26:8888/lab?token=3ee2e5012eac82a227e7eb054b3d6153ef1afa424edf88d0
+[I 2025-02-05 09:04:06.265 ServerApp]     http://127.0.0.1:8888/lab?token=3ee2e5012eac82a227e7eb054b3d6153ef1afa424edf88d0
+[I 2025-02-05 09:04:06.265 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 2025-02-05 09:04:06.270 ServerApp] 
+    
+    To access the server, open this file in a browser:
+        file:///root/.local/share/jupyter/runtime/jpserver-8-open.html
+    Or copy and paste one of these URLs:
+        http://49ea5956cc26:8888/lab?token=3ee2e5012eac82a227e7eb054b3d6153ef1afa424edf88d0
+        http://127.0.0.1:8888/lab?token=3ee2e5012eac82a227e7eb054b3d6153ef1afa424edf88d0
+[I 2025-02-05 09:04:06.283 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[W 2025-02-05 09:04:10.487 ServerApp] 404 GET /api/kernels/4a20538e-b1ce-4baf-a6c7-39b2376a7c84?1738746250480 (172.19.0.1): Kernel does not exist: 4a20538e-b1ce-4baf-a6c7-39b2376a7c84
+[W 2025-02-05 09:04:10.488 ServerApp] wrote error: 'Kernel does not exist: 4a20538e-b1ce-4baf-a6c7-39b2376a7c84'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+                 ^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+               ^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 508, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 539, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 4a20538e-b1ce-4baf-a6c7-39b2376a7c84)
+[W 2025-02-05 09:04:10.494 ServerApp] 404 GET /api/kernels/4a20538e-b1ce-4baf-a6c7-39b2376a7c84?1738746250480 (20cf9d01941b4d128b8956fd0a04b94c@172.19.0.1) 7.02ms referer=http://localhost:8888/lab/tree/spark-apps/5-delta-hive-metastore-and-minio-config.ipynb
+[W 2025-02-05 09:04:11.495 ServerApp] 404 GET /api/kernels/4a20538e-b1ce-4baf-a6c7-39b2376a7c84/channels?session_id=a06061d8-4511-4c74-a7a9-19c830ee3138 (172.19.0.1): Kernel does not exist: 4a20538e-b1ce-4baf-a6c7-39b2376a7c84
+[W 2025-02-05 09:04:11.536 ServerApp] 404 GET /api/kernels/4a20538e-b1ce-4baf-a6c7-39b2376a7c84/channels?session_id=a06061d8-4511-4c74-a7a9-19c830ee3138 (20cf9d01941b4d128b8956fd0a04b94c@172.19.0.1) 40.87ms referer=None
+[W 2025-02-05 09:04:11.539 ServerApp] 404 GET /api/kernels/4a20538e-b1ce-4baf-a6c7-39b2376a7c84?1738746251537 (172.19.0.1): Kernel does not exist: 4a20538e-b1ce-4baf-a6c7-39b2376a7c84
+[W 2025-02-05 09:04:11.539 ServerApp] wrote error: 'Kernel does not exist: 4a20538e-b1ce-4baf-a6c7-39b2376a7c84'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+                 ^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+               ^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 508, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 539, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 4a20538e-b1ce-4baf-a6c7-39b2376a7c84)
+[W 2025-02-05 09:04:11.541 ServerApp] 404 GET /api/kernels/4a20538e-b1ce-4baf-a6c7-39b2376a7c84?1738746251537 (20cf9d01941b4d128b8956fd0a04b94c@172.19.0.1) 2.24ms referer=http://localhost:8888/lab/tree/spark-apps/5-delta-hive-metastore-and-minio-config.ipynb
+[W 2025-02-05 09:04:13.499 ServerApp] 404 GET /api/kernels/4a20538e-b1ce-4baf-a6c7-39b2376a7c84/channels?session_id=a06061d8-4511-4c74-a7a9-19c830ee3138 (172.19.0.1): Kernel does not exist: 4a20538e-b1ce-4baf-a6c7-39b2376a7c84
+[W 2025-02-05 09:04:13.504 ServerApp] 404 GET /api/kernels/4a20538e-b1ce-4baf-a6c7-39b2376a7c84/channels?session_id=a06061d8-4511-4c74-a7a9-19c830ee3138 (20cf9d01941b4d128b8956fd0a04b94c@172.19.0.1) 6.02ms referer=None
+[W 2025-02-05 09:04:13.510 ServerApp] 404 GET /api/kernels/4a20538e-b1ce-4baf-a6c7-39b2376a7c84?1738746253505 (172.19.0.1): Kernel does not exist: 4a20538e-b1ce-4baf-a6c7-39b2376a7c84
+[W 2025-02-05 09:04:13.510 ServerApp] wrote error: 'Kernel does not exist: 4a20538e-b1ce-4baf-a6c7-39b2376a7c84'
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.11/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+                 ^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+               ^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/services/kernels/handlers.py", line 75, in get
+        model = await ensure_async(km.kernel_model(kernel_id))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 508, in kernel_model
+        self._check_kernel_id(kernel_id)
+      File "/usr/local/lib/python3.11/site-packages/jupyter_server/services/kernels/kernelmanager.py", line 539, in _check_kernel_id
+        raise web.HTTPError(404, "Kernel does not exist: %s" % kernel_id)
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 4a20538e-b1ce-4baf-a6c7-39b2376a7c84)
+[W 2025-02-05 09:04:13.512 ServerApp] 404 GET /api/kernels/4a20538e-b1ce-4baf-a6c7-39b2376a7c84?1738746253505 (20cf9d01941b4d128b8956fd0a04b94c@172.19.0.1) 3.52ms referer=http://localhost:8888/lab/tree/spark-apps/5-delta-hive-metastore-and-minio-config.ipynb
+[W 2025-02-05 09:04:18.286 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2025-02-05 09:04:19.227 ServerApp] Notebook spark-apps/5-delta-hive-metastore-and-minio-config.ipynb is not trusted
+[I 2025-02-05 09:04:19.662 ServerApp] Kernel started: 1556a0d0-45fa-4588-94c3-0091787309fa
+[I 2025-02-05 09:04:20.345 ServerApp] Connecting to kernel 1556a0d0-45fa-4588-94c3-0091787309fa.
+[I 2025-02-05 09:04:20.350 ServerApp] Connecting to kernel 1556a0d0-45fa-4588-94c3-0091787309fa.
+[I 2025-02-05 09:04:20.386 ServerApp] Connecting to kernel 1556a0d0-45fa-4588-94c3-0091787309fa.
+:: loading settings :: url = jar:file:/opt/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /root/.ivy2/cache
+The jars for the packages stored in: /root/.ivy2/jars
+io.delta#delta-spark_2.12 added as a dependency
+org.apache.hadoop#hadoop-aws added as a dependency
+org.postgresql#postgresql added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-33ff9e8d-abb3-4068-a943-f981580790a8;1.0
+	confs: [default]
+	found io.delta#delta-spark_2.12;3.3.0 in central
+	found io.delta#delta-storage;3.3.0 in central
+	found org.antlr#antlr4-runtime;4.9.3 in central
+	found org.apache.hadoop#hadoop-aws;3.3.4 in central
+	found com.amazonaws#aws-java-sdk-bundle;1.12.262 in central
+	found org.wildfly.openssl#wildfly-openssl;1.0.7.Final in central
+	found org.postgresql#postgresql;42.6.0 in central
+	found org.checkerframework#checker-qual;3.31.0 in central
+:: resolution report :: resolve 463ms :: artifacts dl 13ms
+	:: modules in use:
+	com.amazonaws#aws-java-sdk-bundle;1.12.262 from central in [default]
+	io.delta#delta-spark_2.12;3.3.0 from central in [default]
+	io.delta#delta-storage;3.3.0 from central in [default]
+	org.antlr#antlr4-runtime;4.9.3 from central in [default]
+	org.apache.hadoop#hadoop-aws;3.3.4 from central in [default]
+	org.checkerframework#checker-qual;3.31.0 from central in [default]
+	org.postgresql#postgresql;42.6.0 from central in [default]
+	org.wildfly.openssl#wildfly-openssl;1.0.7.Final from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   8   |   0   |   0   |   0   ||   8   |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-33ff9e8d-abb3-4068-a943-f981580790a8
+	confs: [default]
+	0 artifacts copied, 8 already retrieved (0kB/16ms)
+25/02/05 09:04:36 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+25/02/05 09:04:44 WARN MetricsConfig: Cannot locate configuration: tried hadoop-metrics2-s3a-file-system.properties,hadoop-metrics2.properties
+https://maven-central.storage-download.googleapis.com/maven2/ added as a remote repository with the name: repo-1
+https://maven-central.storage-download.googleapis.com/maven2/ added as a remote repository with the name: repo-1
+Ivy Default Cache set to: /root/.ivy2/cache
+The jars for the packages stored in: /root/.ivy2/jars
+org.apache.hive#hive-metastore added as a dependency
+org.apache.hive#hive-exec added as a dependency
+org.apache.hive#hive-common added as a dependency
+org.apache.hive#hive-serde added as a dependency
+com.google.guava#guava added as a dependency
+org.apache.hadoop#hadoop-client-api added as a dependency
+org.apache.hadoop#hadoop-client-runtime added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-5046e1d8-87de-45c0-aa0d-f4ce2243bbb7;1.0
+	confs: [default]
+	found org.apache.hive#hive-metastore;2.3.9 in central
+	found org.apache.hive#hive-serde;2.3.9 in central
+	found org.apache.hive#hive-common;2.3.9 in central
+	found org.apache.hive#hive-shims;2.3.9 in central
+	found org.apache.hive.shims#hive-shims-common;2.3.9 in central
+	found org.apache.logging.log4j#log4j-slf4j-impl;2.6.2 in central
+	found org.slf4j#slf4j-api;1.7.10 in central
+	found com.google.guava#guava;14.0.1 in central
+	found commons-lang#commons-lang;2.6 in central
+	found org.apache.thrift#libthrift;0.9.3 in central
+	found org.apache.httpcomponents#httpclient;4.4 in central
+	found org.apache.httpcomponents#httpcore;4.4 in central
+	found commons-logging#commons-logging;1.2 in central
+	found commons-codec#commons-codec;1.4 in central
+	found org.apache.zookeeper#zookeeper;3.4.6 in central
+	found org.slf4j#slf4j-log4j12;1.6.1 in central
+	found log4j#log4j;1.2.16 in central
+	found jline#jline;2.12 in central
+	found io.netty#netty;3.7.0.Final in central
+	found org.apache.hive.shims#hive-shims-0.23;2.3.9 in central
+	found org.apache.hadoop#hadoop-yarn-server-resourcemanager;2.7.2 in central
+	found org.apache.hadoop#hadoop-annotations;2.7.2 in central
+	found com.google.inject.extensions#guice-servlet;3.0 in central
+	found com.google.inject#guice;3.0 in central
+	found javax.inject#javax.inject;1 in central
+	found aopalliance#aopalliance;1.0 in central
+	found org.sonatype.sisu.inject#cglib;2.2.1-v20090111 in central
+	found asm#asm;3.2 in central
+	found com.google.protobuf#protobuf-java;2.5.0 in central
+	found commons-io#commons-io;2.4 in central
+	found com.sun.jersey#jersey-json;1.14 in central
+	found org.codehaus.jettison#jettison;1.1 in central
+	found com.sun.xml.bind#jaxb-impl;2.2.3-1 in central
+	found javax.xml.bind#jaxb-api;2.2.2 in central
+	found javax.xml.stream#stax-api;1.0-2 in central
+	found javax.activation#activation;1.1 in central
+	found org.codehaus.jackson#jackson-core-asl;1.9.13 in central
+	found org.codehaus.jackson#jackson-mapper-asl;1.9.13 in central
+	found org.codehaus.jackson#jackson-jaxrs;1.9.13 in central
+	found org.codehaus.jackson#jackson-xc;1.9.13 in central
+	found com.sun.jersey#jersey-core;1.14 in central
+	found com.sun.jersey.contribs#jersey-guice;1.9 in central
+	found com.sun.jersey#jersey-server;1.14 in central
+	found org.apache.hadoop#hadoop-yarn-common;2.7.2 in central
+	found org.apache.hadoop#hadoop-yarn-api;2.7.2 in central
+	found org.apache.commons#commons-compress;1.9 in central
+	found org.mortbay.jetty#jetty-util;6.1.26 in central
+	found com.sun.jersey#jersey-client;1.9 in central
+	found commons-cli#commons-cli;1.2 in central
+	found log4j#log4j;1.2.17 in central
+	found org.apache.hadoop#hadoop-yarn-server-common;2.7.2 in central
+	found org.fusesource.leveldbjni#leveldbjni-all;1.8 in central
+	found org.apache.hadoop#hadoop-yarn-server-applicationhistoryservice;2.7.2 in central
+	found commons-collections#commons-collections;3.2.2 in central
+	found org.apache.hadoop#hadoop-yarn-server-web-proxy;2.7.2 in central
+	found org.mortbay.jetty#jetty;6.1.26 in central
+	found org.apache.hive.shims#hive-shims-scheduler;2.3.9 in central
+	found org.apache.hive#hive-storage-api;2.4.0 in central
+	found org.apache.commons#commons-lang3;3.1 in central
+	found org.apache.orc#orc-core;1.3.4 in central
+	found io.airlift#aircompressor;0.8 in central
+	found io.airlift#slice;0.29 in central
+	found org.openjdk.jol#jol-core;0.2 in central
+	found org.eclipse.jetty.aggregate#jetty-all;7.6.0.v20120127 in central
+	found org.apache.geronimo.specs#geronimo-jta_1.1_spec;1.1.1 in central
+	found javax.mail#mail;1.4.1 in central
+	found org.apache.geronimo.specs#geronimo-jaspic_1.0_spec;1.0 in central
+	found org.apache.geronimo.specs#geronimo-annotation_1.0_spec;1.1.1 in central
+	found asm#asm-commons;3.1 in central
+	found asm#asm-tree;3.1 in central
+	found org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 in central
+	found joda-time#joda-time;2.8.1 in central
+	found org.apache.logging.log4j#log4j-1.2-api;2.6.2 in central
+	found org.apache.logging.log4j#log4j-web;2.6.2 in central
+	found org.apache.ant#ant;1.9.1 in central
+	found org.apache.ant#ant-launcher;1.9.1 in central
+	found com.tdunning#json;1.8 in central
+	found io.dropwizard.metrics#metrics-core;3.1.0 in central
+	found io.dropwizard.metrics#metrics-jvm;3.1.0 in central
+	found io.dropwizard.metrics#metrics-json;3.1.0 in central
+	found com.github.joshelser#dropwizard-metrics-hadoop-metrics2-reporter;0.1.2 in central
+	found org.apache.hadoop#hadoop-common;2.7.2 in central
+	found org.apache.commons#commons-math3;3.1.1 in central
+	found xmlenc#xmlenc;0.52 in central
+	found commons-httpclient#commons-httpclient;3.1 in central
+	found commons-net#commons-net;3.1 in central
+	found javax.servlet#servlet-api;2.5 in central
+	found net.java.dev.jets3t#jets3t;0.9.0 in central
+	found com.jamesmurty.utils#java-xmlbuilder;0.4 in central
+	found commons-configuration#commons-configuration;1.6 in central
+	found commons-digester#commons-digester;1.8 in central
+	found commons-beanutils#commons-beanutils;1.7.0 in central
+	found commons-beanutils#commons-beanutils-core;1.8.0 in central
+	found org.apache.avro#avro;1.8.2 in central
+	found com.thoughtworks.paranamer#paranamer;2.7 in central
+	found org.xerial.snappy#snappy-java;1.1.1.3 in central
+	found org.tukaani#xz;1.5 in central
+	found com.google.code.gson#gson;2.2.4 in central
+	found org.apache.hadoop#hadoop-auth;2.7.2 in central
+	found org.apache.directory.server#apacheds-kerberos-codec;2.0.0-M15 in central
+	found org.apache.directory.server#apacheds-i18n;2.0.0-M15 in central
+	found org.apache.directory.api#api-asn1-api;1.0.0-M20 in central
+	found org.apache.directory.api#api-util;1.0.0-M20 in central
+	found com.jcraft#jsch;0.1.42 in central
+	found com.google.code.findbugs#jsr305;3.0.0 in central
+	found org.apache.htrace#htrace-core;3.1.0-incubating in central
+	found javax.servlet.jsp#jsp-api;2.1 in central
+	found org.slf4j#slf4j-log4j12;1.7.14 in central
+	found org.apache.hive#hive-service-rpc;2.3.9 in central
+	found tomcat#jasper-compiler;5.5.23 in central
+	found javax.servlet#jsp-api;2.0 in central
+	found ant#ant;1.6.5 in central
+	found tomcat#jasper-runtime;5.5.23 in central
+	found commons-el#commons-el;1.0 in central
+	found org.apache.thrift#libfb303;0.9.3 in central
+	found net.sf.opencsv#opencsv;2.3 in central
+	found org.apache.parquet#parquet-hadoop-bundle;1.8.1 in central
+	found javolution#javolution;5.5.1 in central
+	found org.apache.hbase#hbase-client;1.1.1 in central
+	found org.apache.hbase#hbase-annotations;1.1.1 in central
+	found com.github.stephenc.findbugs#findbugs-annotations;1.3.9-1 in central
+	found junit#junit;4.11 in central
+	found org.hamcrest#hamcrest-core;1.3 in central
+	found org.apache.hbase#hbase-protocol;1.1.1 in central
+	found io.netty#netty-all;4.0.52.Final in central
+	found org.jruby.jcodings#jcodings;1.0.8 in central
+	found org.jruby.joni#joni;2.1.2 in central
+	found org.apache.hadoop#hadoop-mapreduce-client-core;2.7.2 in central
+	found com.jolbox#bonecp;0.8.0.RELEASE in central
+	found com.zaxxer#HikariCP;2.5.1 in central
+	found org.apache.derby#derby;10.10.2.0 in central
+	found org.datanucleus#datanucleus-api-jdo;4.2.4 in central
+	found org.datanucleus#datanucleus-core;4.1.17 in central
+	found org.datanucleus#datanucleus-rdbms;4.1.19 in central
+	found commons-pool#commons-pool;1.5.4 in central
+	found commons-dbcp#commons-dbcp;1.4 in central
+	found javax.jdo#jdo-api;3.0.1 in central
+	found javax.transaction#jta;1.1 in central
+	found org.datanucleus#javax.jdo;3.2.0-m3 in central
+	found javax.transaction#transaction-api;1.1 in central
+	found org.antlr#antlr-runtime;3.5.2 in central
+	found co.cask.tephra#tephra-api;0.6.0 in central
+	found co.cask.tephra#tephra-core;0.6.0 in central
+	found com.google.inject.extensions#guice-assistedinject;3.0 in central
+	found it.unimi.dsi#fastutil;6.5.6 in central
+	found org.apache.twill#twill-common;0.6.0-incubating in central
+	found org.apache.twill#twill-core;0.6.0-incubating in central
+	found org.apache.twill#twill-api;0.6.0-incubating in central
+	found org.apache.twill#twill-discovery-api;0.6.0-incubating in central
+	found org.apache.twill#twill-zookeeper;0.6.0-incubating in central
+	found org.apache.twill#twill-discovery-core;0.6.0-incubating in central
+	found co.cask.tephra#tephra-hbase-compat-1.0;0.6.0 in central
+	found org.apache.hive#hive-exec;2.3.9 in central
+	found org.apache.hive#hive-llap-tez;2.3.9 in central
+	found org.apache.hive#hive-llap-client;2.3.9 in central
+	found org.apache.hive#hive-llap-common;2.3.9 in central
+	found org.antlr#ST4;4.0.4 in central
+	found org.apache.ivy#ivy;2.4.0 in central
+	found org.codehaus.groovy#groovy-all;2.4.4 in central
+	found stax#stax-api;1.0.1 in central
+	found net.hydromatic#eigenbase-properties;1.1.5 in central
+	found org.codehaus.janino#commons-compiler;2.7.6 in central
+	found org.codehaus.janino#janino;2.7.6 in central
+	found org.apache.hadoop#hadoop-client-api;3.3.4 in central
+	found org.xerial.snappy#snappy-java;1.1.8.2 in central
+	found org.apache.hadoop#hadoop-client-runtime;3.3.4 in central
+	found org.slf4j#slf4j-api;1.7.36 in central
+	found com.google.code.findbugs#jsr305;3.0.2 in central
+:: resolution report :: resolve 9565ms :: artifacts dl 303ms
+	:: modules in use:
+	ant#ant;1.6.5 from central in [default]
+	aopalliance#aopalliance;1.0 from central in [default]
+	asm#asm;3.2 from central in [default]
+	asm#asm-commons;3.1 from central in [default]
+	asm#asm-tree;3.1 from central in [default]
+	co.cask.tephra#tephra-api;0.6.0 from central in [default]
+	co.cask.tephra#tephra-core;0.6.0 from central in [default]
+	co.cask.tephra#tephra-hbase-compat-1.0;0.6.0 from central in [default]
+	com.github.joshelser#dropwizard-metrics-hadoop-metrics2-reporter;0.1.2 from central in [default]
+	com.github.stephenc.findbugs#findbugs-annotations;1.3.9-1 from central in [default]
+	com.google.code.findbugs#jsr305;3.0.2 from central in [default]
+	com.google.code.gson#gson;2.2.4 from central in [default]
+	com.google.guava#guava;14.0.1 from central in [default]
+	com.google.inject#guice;3.0 from central in [default]
+	com.google.inject.extensions#guice-assistedinject;3.0 from central in [default]
+	com.google.inject.extensions#guice-servlet;3.0 from central in [default]
+	com.google.protobuf#protobuf-java;2.5.0 from central in [default]
+	com.jamesmurty.utils#java-xmlbuilder;0.4 from central in [default]
+	com.jcraft#jsch;0.1.42 from central in [default]
+	com.jolbox#bonecp;0.8.0.RELEASE from central in [default]
+	com.sun.jersey#jersey-client;1.9 from central in [default]
+	com.sun.jersey#jersey-core;1.14 from central in [default]
+	com.sun.jersey#jersey-json;1.14 from central in [default]
+	com.sun.jersey#jersey-server;1.14 from central in [default]
+	com.sun.jersey.contribs#jersey-guice;1.9 from central in [default]
+	com.sun.xml.bind#jaxb-impl;2.2.3-1 from central in [default]
+	com.tdunning#json;1.8 from central in [default]
+	com.thoughtworks.paranamer#paranamer;2.7 from central in [default]
+	com.zaxxer#HikariCP;2.5.1 from central in [default]
+	commons-beanutils#commons-beanutils;1.7.0 from central in [default]
+	commons-beanutils#commons-beanutils-core;1.8.0 from central in [default]
+	commons-cli#commons-cli;1.2 from central in [default]
+	commons-codec#commons-codec;1.4 from central in [default]
+	commons-collections#commons-collections;3.2.2 from central in [default]
+	commons-configuration#commons-configuration;1.6 from central in [default]
+	commons-dbcp#commons-dbcp;1.4 from central in [default]
+	commons-digester#commons-digester;1.8 from central in [default]
+	commons-el#commons-el;1.0 from central in [default]
+	commons-httpclient#commons-httpclient;3.1 from central in [default]
+	commons-io#commons-io;2.4 from central in [default]
+	commons-lang#commons-lang;2.6 from central in [default]
+	commons-logging#commons-logging;1.2 from central in [default]
+	commons-net#commons-net;3.1 from central in [default]
+	commons-pool#commons-pool;1.5.4 from central in [default]
+	io.airlift#aircompressor;0.8 from central in [default]
+	io.airlift#slice;0.29 from central in [default]
+	io.dropwizard.metrics#metrics-core;3.1.0 from central in [default]
+	io.dropwizard.metrics#metrics-json;3.1.0 from central in [default]
+	io.dropwizard.metrics#metrics-jvm;3.1.0 from central in [default]
+	io.netty#netty;3.7.0.Final from central in [default]
+	io.netty#netty-all;4.0.52.Final from central in [default]
+	it.unimi.dsi#fastutil;6.5.6 from central in [default]
+	javax.activation#activation;1.1 from central in [default]
+	javax.inject#javax.inject;1 from central in [default]
+	javax.jdo#jdo-api;3.0.1 from central in [default]
+	javax.mail#mail;1.4.1 from central in [default]
+	javax.servlet#jsp-api;2.0 from central in [default]
+	javax.servlet#servlet-api;2.5 from central in [default]
+	javax.servlet.jsp#jsp-api;2.1 from central in [default]
+	javax.transaction#jta;1.1 from central in [default]
+	javax.transaction#transaction-api;1.1 from central in [default]
+	javax.xml.bind#jaxb-api;2.2.2 from central in [default]
+	javax.xml.stream#stax-api;1.0-2 from central in [default]
+	javolution#javolution;5.5.1 from central in [default]
+	jline#jline;2.12 from central in [default]
+	joda-time#joda-time;2.8.1 from central in [default]
+	junit#junit;4.11 from central in [default]
+	log4j#log4j;1.2.17 from central in [default]
+	net.hydromatic#eigenbase-properties;1.1.5 from central in [default]
+	net.java.dev.jets3t#jets3t;0.9.0 from central in [default]
+	net.sf.opencsv#opencsv;2.3 from central in [default]
+	org.antlr#ST4;4.0.4 from central in [default]
+	org.antlr#antlr-runtime;3.5.2 from central in [default]
+	org.apache.ant#ant;1.9.1 from central in [default]
+	org.apache.ant#ant-launcher;1.9.1 from central in [default]
+	org.apache.avro#avro;1.8.2 from central in [default]
+	org.apache.commons#commons-compress;1.9 from central in [default]
+	org.apache.commons#commons-lang3;3.1 from central in [default]
+	org.apache.commons#commons-math3;3.1.1 from central in [default]
+	org.apache.derby#derby;10.10.2.0 from central in [default]
+	org.apache.directory.api#api-asn1-api;1.0.0-M20 from central in [default]
+	org.apache.directory.api#api-util;1.0.0-M20 from central in [default]
+	org.apache.directory.server#apacheds-i18n;2.0.0-M15 from central in [default]
+	org.apache.directory.server#apacheds-kerberos-codec;2.0.0-M15 from central in [default]
+	org.apache.geronimo.specs#geronimo-annotation_1.0_spec;1.1.1 from central in [default]
+	org.apache.geronimo.specs#geronimo-jaspic_1.0_spec;1.0 from central in [default]
+	org.apache.geronimo.specs#geronimo-jta_1.1_spec;1.1.1 from central in [default]
+	org.apache.hadoop#hadoop-annotations;2.7.2 from central in [default]
+	org.apache.hadoop#hadoop-auth;2.7.2 from central in [default]
+	org.apache.hadoop#hadoop-client-api;3.3.4 from central in [default]
+	org.apache.hadoop#hadoop-client-runtime;3.3.4 from central in [default]
+	org.apache.hadoop#hadoop-common;2.7.2 from central in [default]
+	org.apache.hadoop#hadoop-mapreduce-client-core;2.7.2 from central in [default]
+	org.apache.hadoop#hadoop-yarn-api;2.7.2 from central in [default]
+	org.apache.hadoop#hadoop-yarn-common;2.7.2 from central in [default]
+	org.apache.hadoop#hadoop-yarn-server-applicationhistoryservice;2.7.2 from central in [default]
+	org.apache.hadoop#hadoop-yarn-server-common;2.7.2 from central in [default]
+	org.apache.hadoop#hadoop-yarn-server-resourcemanager;2.7.2 from central in [default]
+	org.apache.hadoop#hadoop-yarn-server-web-proxy;2.7.2 from central in [default]
+	org.apache.hbase#hbase-annotations;1.1.1 from central in [default]
+	org.apache.hbase#hbase-client;1.1.1 from central in [default]
+	org.apache.hbase#hbase-protocol;1.1.1 from central in [default]
+	org.apache.hive#hive-common;2.3.9 from central in [default]
+	org.apache.hive#hive-exec;2.3.9 from central in [default]
+	org.apache.hive#hive-llap-client;2.3.9 from central in [default]
+	org.apache.hive#hive-llap-common;2.3.9 from central in [default]
+	org.apache.hive#hive-llap-tez;2.3.9 from central in [default]
+	org.apache.hive#hive-metastore;2.3.9 from central in [default]
+	org.apache.hive#hive-serde;2.3.9 from central in [default]
+	org.apache.hive#hive-service-rpc;2.3.9 from central in [default]
+	org.apache.hive#hive-shims;2.3.9 from central in [default]
+	org.apache.hive#hive-storage-api;2.4.0 from central in [default]
+	org.apache.hive.shims#hive-shims-0.23;2.3.9 from central in [default]
+	org.apache.hive.shims#hive-shims-common;2.3.9 from central in [default]
+	org.apache.hive.shims#hive-shims-scheduler;2.3.9 from central in [default]
+	org.apache.htrace#htrace-core;3.1.0-incubating from central in [default]
+	org.apache.httpcomponents#httpclient;4.4 from central in [default]
+	org.apache.httpcomponents#httpcore;4.4 from central in [default]
+	org.apache.ivy#ivy;2.4.0 from central in [default]
+	org.apache.logging.log4j#log4j-1.2-api;2.6.2 from central in [default]
+	org.apache.logging.log4j#log4j-slf4j-impl;2.6.2 from central in [default]
+	org.apache.logging.log4j#log4j-web;2.6.2 from central in [default]
+	org.apache.orc#orc-core;1.3.4 from central in [default]
+	org.apache.parquet#parquet-hadoop-bundle;1.8.1 from central in [default]
+	org.apache.thrift#libfb303;0.9.3 from central in [default]
+	org.apache.thrift#libthrift;0.9.3 from central in [default]
+	org.apache.twill#twill-api;0.6.0-incubating from central in [default]
+	org.apache.twill#twill-common;0.6.0-incubating from central in [default]
+	org.apache.twill#twill-core;0.6.0-incubating from central in [default]
+	org.apache.twill#twill-discovery-api;0.6.0-incubating from central in [default]
+	org.apache.twill#twill-discovery-core;0.6.0-incubating from central in [default]
+	org.apache.twill#twill-zookeeper;0.6.0-incubating from central in [default]
+	org.apache.zookeeper#zookeeper;3.4.6 from central in [default]
+	org.codehaus.groovy#groovy-all;2.4.4 from central in [default]
+	org.codehaus.jackson#jackson-core-asl;1.9.13 from central in [default]
+	org.codehaus.jackson#jackson-jaxrs;1.9.13 from central in [default]
+	org.codehaus.jackson#jackson-mapper-asl;1.9.13 from central in [default]
+	org.codehaus.jackson#jackson-xc;1.9.13 from central in [default]
+	org.codehaus.janino#commons-compiler;2.7.6 from central in [default]
+	org.codehaus.janino#janino;2.7.6 from central in [default]
+	org.codehaus.jettison#jettison;1.1 from central in [default]
+	org.datanucleus#datanucleus-api-jdo;4.2.4 from central in [default]
+	org.datanucleus#datanucleus-core;4.1.17 from central in [default]
+	org.datanucleus#datanucleus-rdbms;4.1.19 from central in [default]
+	org.datanucleus#javax.jdo;3.2.0-m3 from central in [default]
+	org.eclipse.jetty.aggregate#jetty-all;7.6.0.v20120127 from central in [default]
+	org.eclipse.jetty.orbit#javax.servlet;3.0.0.v201112011016 from central in [default]
+	org.fusesource.leveldbjni#leveldbjni-all;1.8 from central in [default]
+	org.hamcrest#hamcrest-core;1.3 from central in [default]
+	org.jruby.jcodings#jcodings;1.0.8 from central in [default]
+	org.jruby.joni#joni;2.1.2 from central in [default]
+	org.mortbay.jetty#jetty;6.1.26 from central in [default]
+	org.mortbay.jetty#jetty-util;6.1.26 from central in [default]
+	org.openjdk.jol#jol-core;0.2 from central in [default]
+	org.slf4j#slf4j-api;1.7.36 from central in [default]
+	org.slf4j#slf4j-log4j12;1.7.14 from central in [default]
+	org.sonatype.sisu.inject#cglib;2.2.1-v20090111 from central in [default]
+	org.tukaani#xz;1.5 from central in [default]
+	org.xerial.snappy#snappy-java;1.1.8.2 from central in [default]
+	stax#stax-api;1.0.1 from central in [default]
+	tomcat#jasper-compiler;5.5.23 from central in [default]
+	tomcat#jasper-runtime;5.5.23 from central in [default]
+	xmlenc#xmlenc;0.52 from central in [default]
+	:: evicted modules:
+	org.slf4j#slf4j-api;1.7.10 by [org.slf4j#slf4j-api;1.7.36] in [default]
+	org.slf4j#slf4j-log4j12;1.6.1 by [org.slf4j#slf4j-log4j12;1.7.14] in [default]
+	log4j#log4j;1.2.16 by [log4j#log4j;1.2.17] in [default]
+	commons-logging#commons-logging;1.1.3 by [commons-logging#commons-logging;1.2] in [default]
+	asm#asm;3.1 by [asm#asm;3.2] in [default]
+	io.dropwizard.metrics#metrics-core;3.1.2 by [io.dropwizard.metrics#metrics-core;3.1.0] in [default]
+	org.xerial.snappy#snappy-java;1.1.1.3 by [org.xerial.snappy#snappy-java;1.1.8.2] in [default]
+	com.google.code.findbugs#jsr305;3.0.0 by [com.google.code.findbugs#jsr305;3.0.2] in [default]
+	javax.servlet#servlet-api;2.4 by [javax.servlet#servlet-api;2.5] in [default]
+	commons-logging#commons-logging;1.0.3 by [commons-logging#commons-logging;1.2] in [default]
+	org.apache.hadoop#hadoop-auth;2.5.1 by [org.apache.hadoop#hadoop-auth;2.7.2] in [default]
+	io.netty#netty;3.6.2.Final by [io.netty#netty;3.7.0.Final] in [default]
+	com.google.code.findbugs#jsr305;2.0.1 by [com.google.code.findbugs#jsr305;3.0.0] in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |  176  |   0   |   0   |   13  ||  164  |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-5046e1d8-87de-45c0-aa0d-f4ce2243bbb7
+	confs: [default]
+	0 artifacts copied, 164 already retrieved (0kB/72ms)
+[Stage 0:>                                                          (0 + 1) / 1]                                                                                [I 2025-02-05 09:05:47.935 ServerApp] Starting buffering for 1556a0d0-45fa-4588-94c3-0091787309fa:f15010dc-fba0-4df0-b107-adffa56af841
+[W 2025-02-05 09:05:48.580 LabApp] Could not determine jupyterlab build status without nodejs
+[W 2025-02-05 09:06:18.428 ServerApp] Notebook spark-apps/5-delta-hive-metastore-and-minio-config.ipynb is not trusted
+[I 2025-02-05 09:06:18.682 ServerApp] Connecting to kernel 1556a0d0-45fa-4588-94c3-0091787309fa.
+[I 2025-02-05 09:06:18.716 ServerApp] Connecting to kernel 1556a0d0-45fa-4588-94c3-0091787309fa.
+25/02/05 09:39:15 WARN ResolveSessionCatalog: A Hive serde table will be created as there is no table provider specified. You can set spark.sql.legacy.createHiveTableByDefault to false so that native data source table will be created instead.
+[I 2025-02-05 09:39:54.595 ServerApp] Saving file at /spark-apps/5-delta-hive-metastore-and-minio-config.ipynb
+[W 2025-02-05 09:39:54.605 ServerApp] Notebook spark-apps/5-delta-hive-metastore-and-minio-config.ipynb is not trusted
+[I 2025-02-05 11:48:49.217 ServerApp] Saving file at /spark-apps/5-delta-hive-metastore-and-minio-config.ipynb
+[W 2025-02-05 11:48:49.229 ServerApp] Notebook spark-apps/5-delta-hive-metastore-and-minio-config.ipynb is not trusted
+25/02/05 11:49:03 WARN ResolveSessionCatalog: A Hive serde table will be created as there is no table provider specified. You can set spark.sql.legacy.createHiveTableByDefault to false so that native data source table will be created instead.
+[I 2025-02-05 11:50:49.573 ServerApp] Saving file at /spark-apps/5-delta-hive-metastore-and-minio-config.ipynb
+[W 2025-02-05 11:50:49.575 ServerApp] Notebook spark-apps/5-delta-hive-metastore-and-minio-config.ipynb is not trusted
+[I 2025-02-05 12:19:51.142 ServerApp] Copying 'spark-apps/5-delta-hive-metastore-and-minio-config.ipynb' to '/spark-apps'
+[W 2025-02-05 12:19:51.166 ServerApp] Notebook spark-apps/5-delta-hive-metastore-and-minio-config.ipynb is not trusted
+[W 2025-02-05 12:19:51.191 ServerApp] Notebook spark-apps/5-delta-hive-metastore-and-minio-config.ipynb is not trusted
+[W 2025-02-05 12:19:51.195 ServerApp] Notebook spark-apps/5-delta-hive-metastore-and-minio-config-Copy1.ipynb is not trusted
+[W 2025-02-05 12:20:00.059 ServerApp] Notebook spark-apps/ABCD.ipynb is not trusted
+[I 2025-02-05 12:20:00.554 ServerApp] Kernel started: e5d917ba-404b-4912-b85c-d37f863b84cc
+[I 2025-02-05 12:20:01.967 ServerApp] Connecting to kernel e5d917ba-404b-4912-b85c-d37f863b84cc.
+[I 2025-02-05 12:20:22.807 ServerApp] Saving file at /spark-apps/ABCD.ipynb
+[W 2025-02-05 12:20:22.810 ServerApp] Notebook spark-apps/ABCD.ipynb is not trusted
+[I 2025-02-05 12:30:38.464 ServerApp] Starting buffering for e5d917ba-404b-4912-b85c-d37f863b84cc:bae5e6f8-70b5-42c2-ba40-8db67bfd4a1c
+25/02/05 12:36:15 WARN AbstractS3ACommitterFactory: Using standard FileOutputCommitter to commit work. This is slow and potentially unsafe.
+[Stage 2:>                                                          (0 + 2) / 2][Stage 2:=============================>                             (1 + 1) / 2]                                                                                [I 2025-02-05 12:36:53.565 ServerApp] Saving file at /spark-apps/5-delta-hive-metastore-and-minio-config.ipynb
+[W 2025-02-05 12:36:53.566 ServerApp] Notebook spark-apps/5-delta-hive-metastore-and-minio-config.ipynb is not trusted
+25/02/05 13:33:29 WARN ResolveSessionCatalog: A Hive serde table will be created as there is no table provider specified. You can set spark.sql.legacy.createHiveTableByDefault to false so that native data source table will be created instead.
+25/02/05 13:33:39 WARN AbstractS3ACommitterFactory: Using standard FileOutputCommitter to commit work. This is slow and potentially unsafe.
+[Stage 3:>                                                          (0 + 2) / 2]                                                                                [I 2025-02-05 13:34:51.042 ServerApp] Saving file at /spark-apps/5-delta-hive-metastore-and-minio-config.ipynb
+[W 2025-02-05 13:34:51.046 ServerApp] Notebook spark-apps/5-delta-hive-metastore-and-minio-config.ipynb is not trusted
+[I 2025-02-05 13:43:57.468 ServerApp] Starting buffering for 1556a0d0-45fa-4588-94c3-0091787309fa:3fe6e9c8-27d1-4a40-a43b-15d404ea79e3
+[W 2025-02-05 13:43:58.288 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2025-02-05 13:43:58.310 ServerApp] Connecting to kernel 1556a0d0-45fa-4588-94c3-0091787309fa.
+[I 2025-02-05 13:43:58.370 ServerApp] Connecting to kernel e5d917ba-404b-4912-b85c-d37f863b84cc.
+[I 2025-02-05 13:43:58.456 ServerApp] Starting buffering for 1556a0d0-45fa-4588-94c3-0091787309fa:4f6bbb53-7c57-4bbc-a6fc-ead40234e112
+[W 2025-02-05 13:43:58.723 ServerApp] 404 GET /api/contents/spark-apps/ABCD.ipynb?content=0&hash=0&1738763038642 (20cf9d01941b4d128b8956fd0a04b94c@172.19.0.1) 7.59ms referer=http://localhost:8888/lab/tree/spark-apps/5-delta-hive-metastore-and-minio-config.ipynb
+[W 2025-02-05 13:43:58.732 ServerApp] 404 GET /api/contents/spark-apps/ABCD.ipynb?content=0&hash=0&1738763038642 (172.19.0.1): No such file or directory: spark-apps/ABCD.ipynb
+[W 2025-02-05 13:43:58.736 ServerApp] 404 GET /api/contents/spark-apps/ABCD.ipynb?content=0&hash=0&1738763038643 (20cf9d01941b4d128b8956fd0a04b94c@172.19.0.1) 19.77ms referer=http://localhost:8888/lab/tree/spark-apps/5-delta-hive-metastore-and-minio-config.ipynb
+[W 2025-02-05 13:43:58.737 ServerApp] 404 GET /api/contents/spark-apps/ABCD.ipynb?content=0&hash=0&1738763038643 (172.19.0.1): No such file or directory: spark-apps/ABCD.ipynb
+[W 2025-02-05 13:43:58.966 ServerApp] Notebook spark-apps/5-delta-hive-metastore-and-minio-config.ipynb is not trusted
+[I 2025-02-05 13:43:58.988 ServerApp] Starting buffering for e5d917ba-404b-4912-b85c-d37f863b84cc:217bde8f-d026-4ad5-933d-4e9823697838
+[I 2025-02-05 13:43:59.229 ServerApp] Connecting to kernel 1556a0d0-45fa-4588-94c3-0091787309fa.
+[I 2025-02-05 13:45:59.607 ServerApp] Saving file at /spark-apps/5-delta-hive-metastore-and-minio-config.ipynb
+[W 2025-02-05 13:45:59.609 ServerApp] Notebook spark-apps/5-delta-hive-metastore-and-minio-config.ipynb is not trusted
+[I 2025-02-05 13:46:13.760 ServerApp] Saving file at /spark-apps/5-delta-hive-metastore-and-minio-config.ipynb
+[W 2025-02-05 13:46:13.762 ServerApp] Notebook spark-apps/5-delta-hive-metastore-and-minio-config.ipynb is not trusted
+[I 2025-02-05 13:48:14.601 ServerApp] Saving file at /spark-apps/5-delta-hive-metastore-and-minio-config.ipynb
+[W 2025-02-05 13:48:14.602 ServerApp] Notebook spark-apps/5-delta-hive-metastore-and-minio-config.ipynb is not trusted
+[I 2025-02-05 13:49:33.004 ServerApp] Saving file at /spark-apps/5-delta-hive-metastore-and-minio-config.ipynb
+[W 2025-02-05 13:49:33.006 ServerApp] Notebook spark-apps/5-delta-hive-metastore-and-minio-config.ipynb is not trusted
+[I 2025-02-05 14:11:48.386 ServerApp] Starting buffering for 1556a0d0-45fa-4588-94c3-0091787309fa:987ae567-585f-4654-a349-a8734d90c6a0
+25/02/05 14:12:53 ERROR TaskSchedulerImpl: Lost executor 0 on 172.19.0.5: worker lost: 172.19.0.5:34387 got disassociated

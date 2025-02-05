@@ -74,7 +74,8 @@ ENV PYSPARK_DRIVER_PYTHON_OPTS='lab --ip=0.0.0.0 --port=8888 --no-browser --allo
 # Copy Spark Defaults
 COPY ./spark-config/spark-defaults.conf "$SPARK_HOME/conf"
 
-# Add Postgres DB as external metastore in Hive
+
+# Add Hive default configs, Postgres DB as external metastore and Minio as Object Storeage in Hive
 COPY ./spark-config/hive-site.xml "$SPARK_HOME/conf"
 
 

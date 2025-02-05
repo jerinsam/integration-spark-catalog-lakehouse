@@ -36,18 +36,18 @@ RUN curl https://archive.apache.org/dist/hive/hive-2.3.9/apache-hive-2.3.9-bin.t
  && rm -rf apache-hive-2.3.9-bin.tar.gz
 
 
-######### Spark 3.5.4 supports Hive 2.3.9 by default and the latest version of Hive gives error during connection with hive extername metastore.
+######### Spark 3.5.4 supports Hive 2.3.9 by default and the latest version of Hive gives error during connection with hive external metastore.
 ######### Due to above reason, following code is commented.
 
 # RUN curl https://dlcdn.apache.org/hive/hive-4.0.1/apache-hive-4.0.1-bin.tar.gz -o apache-hive-4.0.1-bin.tar.gz \
 #  && tar xvzf apache-hive-4.0.1-bin.tar.gz --directory /opt/hive --strip-components 1 \
 #  && rm -rf apache-hive-4.0.1-bin.tar.gz
 
-# Add Postgres DB as external metastore in Hive
+# Add Hive default configs, Postgres DB as external metastore and Minio as Object Storeage in Hive
 COPY ./hive-config/hive-site.xml "$HIVE_HOME/conf"
 
 
-# Add Hadoop Path in Hive using hive-enc.sh file
+# Add Hadoop Path as environment variable in Hive using hive-env.sh file
 COPY ./hive-config/hive-env.sh "$HIVE_HOME/conf"
 
 # Download Postgresql jar to connect postgres which will act as hive external metastore
@@ -67,7 +67,7 @@ RUN curl https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-aws/3.3.4/hadoo
 RUN curl https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-bundle/1.12.262/aws-java-sdk-bundle-1.12.262.jar -o /opt/hive/lib/aws-java-sdk-bundle-1.12.262.jar
 
 
-######### Spark 3.5.4 supports Hadoop 3.3.4 by default and the latest version of Hadoop gives error (Number conversion) during connection with hive extername metastore.
+######### Spark 3.5.4 supports Hadoop 3.3.4 by default and the latest version of Hadoop gives error (Number conversion error) during connection with hive extername metastore.
 ######### Due to above reason, following code is commented.
 
 # RUN curl https://dlcdn.apache.org/hadoop/common/hadoop-3.4.1/hadoop-3.4.1.tar.gz -o hadoop-3.4.1.tar.gz \
